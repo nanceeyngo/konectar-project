@@ -1,13 +1,62 @@
 import React from 'react';
+import blogimage4 from "../assets/images/blogimage4.png";
 
 const FarmersOfferSection = () => {
     return (
         <>
-           <section className='w-full bg-[#55D480]'>
+           <section className='w-full bg-[#55D480] py-16'>
             
            <h1 className='text-center font-Manrope font-semibold text-[1.4rem] md:text-[2.3rem] leading-tight md:leading-snug'>What Konectar Offers Farmers</h1>
 
-           <div className='w-full'>
+           <div className='w-full flex justify-between items-center mt-10'>
+
+            <div className='basis-[46%] ml-12'>
+            <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Unlocking Market Potential</h1>
+            <p className='text-[0.8rem] md:text-[1.4rem]'>Konectar bridges the gap between farmers and markets, providing unparalleled access to buyers and wholesalers. 
+                By eliminating intermediaries, farmers reap better prices for their produces, boosting sales revenue 
+                and negotiation power.
+            </p>
+            </div>
+
+            <div className='basis-[47%]'>
+                <img className='rounded-l-full h-full w-full' src={blogimage4} alt="Picture 1" />
+            </div>
+
+           </div>
+
+           
+           
+           <div className='w-full flex justify-between items-center mt-10'>
+
+            <div className='basis-[47%]'>
+                <img className='rounded-r-full h-full w-full' src={blogimage4} alt="Picture 1" />
+            </div>
+
+
+            <div className='basis-[46%] md:mr-12 mr-6'>
+            <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Boosting Farmers Productivity</h1>
+            <p className='text-[0.8rem] md:text-[1.4rem]'>Konectar provides a much-needed solution to the challenges faced by farmers in accessing markets and 
+                sourcing raw materials. With our platform, farmers can reduce spoilage and increase their earnings.
+            </p>
+            </div>
+
+           </div>
+
+          
+          
+           <div className='w-full flex justify-between items-center mt-10'>
+
+            <div className='basis-[46%] ml-12'>
+            <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Supply Chain Efficiency</h1>
+            <p className='text-[0.8rem] md:text-[1.4rem]'>Konectar provides streamlined logistics by collaborating with logistics providers. Konectar's logistics 
+                module optimizes route planning, tracking and delivery scheduling. This reduces transportation costs and 
+                improves delivery times.
+            </p>
+            </div>
+
+            <div className='basis-[47%]'>
+                <img className='rounded-l-full h-full w-full' src={blogimage4} alt="Picture 1" />
+            </div>
 
            </div>
 

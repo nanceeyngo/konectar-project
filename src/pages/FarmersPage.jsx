@@ -2,6 +2,7 @@ import React from 'react';
 import FHeroSection from '../farmspageComponents/FHeroSection';
 import FarmersOfferSection from '../farmspageComponents/FarmersOfferSection';
 import OpportunitySection from '../farmspageComponents/OpportunitySection';
+import FarmersReviewSection from '../farmspageComponents/FarmersReviewSection';
 
 const FarmersPage = () => {
     return (
@@ -10,6 +11,7 @@ const FarmersPage = () => {
         <FHeroSection />
         <FarmersOfferSection />
         <OpportunitySection/>
+        <FarmersReviewSection/>
 
        </>
     );
