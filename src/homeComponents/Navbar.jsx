@@ -31,9 +31,8 @@ const Navbar = () => {
 
     <div className='hidden lg:flex justify-center items-center space-x-12'>
     
-    <a href="#" className='bg-primary100 text-basewhite py-2 px-2 rounded-md'>
-    Join Waitlist 
-    </a>
+    <button type="button"
+       className='bg-[#009933] px-7 rounded-lg py-2 text-white text-[0.8rem] md:text-[1rem]'>Join Waitlist</button>
     </div>
 
     <div className='lg:hidden md:flex flex-col justify-end'>
@@ -55,7 +54,9 @@ const Navbar = () => {
         </li>
       ))}
       </ul>
-      <a href="#" className='bg-primary100 py-2 px-2 rounded-md'> Join Waitlist</a>
+      <button type="button"
+       className='bg-[#009933] px-7 rounded-lg py-2 text-white text-[0.8rem] md:text-[1rem]'>Join Waitlist</button>
+     
       
       </div>
     )}

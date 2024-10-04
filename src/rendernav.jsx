@@ -5,6 +5,8 @@ import Home from './pages/home';
 import About from './pages/about';
 import FarmersPage from './pages/FarmersPage';
 import Footer from './homeComponents/Footer';
+import BuyersPage from './pages/BuyersPage';
+import TruckersPage from './pages/TruckersPage';
 
 
 const Rendernav = () => {
@@ -16,6 +18,8 @@ const Rendernav = () => {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/FarmersPage' element={<FarmersPage />} />
+            <Route path='/BuyersPage' element={<BuyersPage />} />
+            <Route path='/TruckersPage' element={<TruckersPage />} />
             
         
         

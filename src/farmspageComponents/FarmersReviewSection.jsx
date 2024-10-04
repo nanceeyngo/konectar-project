@@ -1,6 +1,9 @@
 import React from 'react';
 import person1 from "../assets/images/Hero Image-1.png"
 import { ImQuotesLeft } from "react-icons/im";
+import cust1 from '../assets/images/Linda Gift/cust1.png';
+import cust2 from '../assets/images/Linda Gift/cust2.png';
+import cust3 from '../assets/images/Linda Gift/cust3.png';
 
 const FarmersReviewSection = () => {
     return (
@@ -12,7 +15,7 @@ const FarmersReviewSection = () => {
 
                     <div className='container bg-white rounded-lg px-4 py-5 text-center flex flex-col items-center'>
                         <div className='size-24 mt-[-3.9rem]'>
-                        <img className='w-full h-full rounded-full' src={person1} alt="First Review Customer" />
+                        <img className='w-full h-full' src={cust1} alt="First Review Customer" />
                         </div>        
 
                         <div className='text-[#003311] mt-14'>
@@ -33,7 +36,7 @@ const FarmersReviewSection = () => {
 
                     <div className='container bg-white rounded-lg px-4 py-5 text-center flex flex-col items-center'>
                         <div className='size-24 mt-[-3.9rem]'>
-                        <img className='w-full h-full rounded-full' src={person1} alt="First Review Customer" />
+                        <img className='w-full h-full' src={cust2} alt="First Review Customer" />
                         </div>        
 
                         <div className='text-[#003311] mt-14'>
@@ -53,7 +56,7 @@ const FarmersReviewSection = () => {
 
                     <div className='container bg-white rounded-lg px-4 py-5 text-center flex flex-col items-center'>
                         <div className='size-24 mt-[-3.9rem]'>
-                        <img className='w-full h-full rounded-full' src={person1} alt="First Review Customer" />
+                        <img className='w-full h-full' src={cust3} alt="First Review Customer" />
                         </div>        
 
                         <div className='text-[#003311] mt-14'>

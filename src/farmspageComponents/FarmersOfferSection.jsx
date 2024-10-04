@@ -1,5 +1,8 @@
 import React from 'react';
 import blogimage4 from "../assets/images/blogimage4.png";
+import pic1 from '../assets/images/Linda Gift/sec1.png';
+import pic2 from '../assets/images/Linda Gift/sec2.png';
+import pic3 from '../assets/images/Linda Gift/sec3.png';
 
 const FarmersOfferSection = () => {
     return (
@@ -19,7 +22,7 @@ const FarmersOfferSection = () => {
             </div>
 
             <div className='basis-[47%]'>
-                <img className='rounded-l-full h-full w-full' src={blogimage4} alt="Picture 1" />
+                <img className='h-full w-full' src={pic1} alt="Picture 1" />
             </div>
 
            </div>
@@ -29,7 +32,7 @@ const FarmersOfferSection = () => {
            <div className='w-full flex justify-between items-center mt-10'>
 
             <div className='basis-[47%]'>
-                <img className='rounded-r-full h-full w-full' src={blogimage4} alt="Picture 1" />
+                <img className='h-full w-full' src={pic2} alt="Picture 2" />
             </div>
 
 
@@ -55,7 +58,7 @@ const FarmersOfferSection = () => {
             </div>
 
             <div className='basis-[47%]'>
-                <img className='rounded-l-full h-full w-full' src={blogimage4} alt="Picture 1" />
+                <img className='h-full w-full' src={pic3} alt="Picture 3" />
             </div>
 
            </div>
