@@ -18,12 +18,12 @@ const TeamSection = () => {
       </section>
 
       {/* Team members grid */}
-      <section className="flex flex-wrap justify-center gap-32 mt-48">
+      <section className="flex flex-wrap flex-col md:flex-row justify-center px-16 gap-32 mt-48">
         {teamMembers.map((member, index) => (
           <div key={index} className="basis-[20%]">
             <div className="bg-[#003311] rounded-[50%] h-[16.6rem] flex justify-center items-center">
               <img
-                className="w-[100%] rounded-[50%]"
+                className="md:w-[100%] rounded-[50%]"
                 style={{
                   height: member.imageHeight,
                   marginBottom: member.marginBottom,

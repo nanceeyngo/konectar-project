@@ -23,7 +23,7 @@ const SdgSection = () => {
       <h1 className='font-Manrope text-white text-[2rem] font-bold ml-16 mb-6'>KONECTAR's SDG MISSION</h1>
       <hr />
 
-      <div className='flex gap-5 justify-center items-center mt-10'>
+      <div className='flex gap-5 justify-center items-center mt-10 px-10'>
         {sdgImages.map((image, index) => (
           <div
             key={index}

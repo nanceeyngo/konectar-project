@@ -10,7 +10,7 @@ const PartnersSection = () => {
           <section className='font-Manrope bg-[#55BB77] py-5'>
             <h1 className='text-[#001F0A] font-extrabold text-[2rem] text-center'>OUR PARTNERS</h1>
 
-            <div className='flex gap-16 justify-center items-center mt-5'>
+            <div className='flex gap-16 justify-center items-center mt-5 px-14'>
             <div>
              <img className='w-[80%]' src={emery} alt="Emery Logo" />
             </div>

@@ -12,7 +12,7 @@ const BlogSection = () => {
   return (
     <section className="bg-[#001F0A] font-Manrope justify-center items-center py-14 lg:px-16 px-24">
       <h1 className='font-Manrope text-white text-[2.5rem] font-bold ml-16 mb-6 text-center'>OUR BLOG POST</h1>
-      <div className='flex flex-wrap gap-5 justify-center items-center mt-10'>
+      <div className='flex flex-col md:flex-row md:flex-wrap gap-5 justify-center items-center mt-10'>
         {blogs.map((blog, index) => (
           <div key={index} className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[40%]'>
             <img className='w-[100%]' src={blog.image} alt={blog.title} />
