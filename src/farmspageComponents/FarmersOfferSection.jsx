@@ -1,5 +1,4 @@
 import React from 'react';
-import blogimage4 from "../assets/images/blogimage4.png";
 import pic1 from '../assets/images/Linda Gift/sec1.png';
 import pic2 from '../assets/images/Linda Gift/sec2.png';
 import pic3 from '../assets/images/Linda Gift/sec3.png';
