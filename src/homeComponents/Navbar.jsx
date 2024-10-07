@@ -31,8 +31,8 @@ const Navbar = () => {
 
     <div className='hidden lg:flex justify-center items-center space-x-12'>
     
-    <button type="button"
-       className='bg-[#009933] px-7 rounded-lg py-2 text-white text-[0.8rem] md:text-[1rem]'>Join Waitlist</button>
+    <Link to="/WaitingListForm"><button type="button"
+       className='bg-[#009933] px-7 rounded-lg py-2 text-white text-[0.8rem] md:text-[1rem]'>Join Waitlist</button></Link>
     </div>
 
     <div className='lg:hidden md:flex flex-col justify-end'>

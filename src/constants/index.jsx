@@ -4,6 +4,7 @@ export const navItems = [
   { label: "Product Listing", href: "product_listing" },
   { label: "Blog", href: "blog" },
   
+  
 ];
 
 import blogimage1 from '../assets/images/blogImage1.png';
