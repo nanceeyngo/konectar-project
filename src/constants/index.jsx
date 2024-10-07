@@ -3,9 +3,7 @@ export const navItems = [
   { label: "About", href: "about" },
   { label: "Product Listing", href: "product_listing" },
   { label: "Blog", href: "blog" },
-  { label: "Farmers page", href: "FarmersPage" },
-  { label: "Buyers page", href: "BuyersPage" },
-  { label: "Truckers page", href: "TruckersPage" },
+  
 ];
 
 import blogimage1 from '../assets/images/blogImage1.png';
