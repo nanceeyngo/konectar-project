@@ -10,7 +10,7 @@ const FarmersOfferSection = () => {
             
            <h1 className='text-center font-Manrope font-semibold text-[1.4rem] md:text-[2.3rem] leading-tight md:leading-snug'>What Konectar Offers Farmers</h1>
 
-           <div className='w-full flex justify-between items-center mt-10'>
+           <div className='w-full flex justify-between gap-3 md:gap-0 items-center mt-10'>
 
             <div className='basis-[46%] ml-12'>
             <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Unlocking Market Potential</h1>
@@ -28,7 +28,7 @@ const FarmersOfferSection = () => {
 
            
            
-           <div className='w-full flex justify-between items-center mt-10'>
+           <div className='w-full flex justify-between items-center mt-10 gap-3 md:gap-0'>
 
             <div className='basis-[47%]'>
                 <img className='h-full w-full' src={pic2} alt="Picture 2" />
@@ -46,7 +46,7 @@ const FarmersOfferSection = () => {
 
           
           
-           <div className='w-full flex justify-between items-center mt-10'>
+           <div className='w-full flex justify-between items-center mt-10 gap-3 md:gap-0'>
 
             <div className='basis-[46%] ml-12'>
             <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Supply Chain Efficiency</h1>

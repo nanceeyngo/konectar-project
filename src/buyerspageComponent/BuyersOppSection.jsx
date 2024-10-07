@@ -7,11 +7,11 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 const BuyersOppSection = () => {
     return (
         <>
-            <section className='bg-[#EDEDF2] w-full px-10 py-14'>
+            <section className='bg-[#EDEDF2] w-full px-6 md:px-10 py-14'>
 
                 <div className=' w-full md:w-[45%] text-center md:text-left md:ml-16'>
-                    <h1 className='font-Manrope font-bold text-[2.5rem] leading-tight md:leading-snug'>Maximize every opportunity with Konectar.</h1>
-                    <p>Konectar connects businesses with farmers globally for easy, seamless transactions.</p>
+                    <h1 className='font-Manrope font-bold text-[1.7rem] md:text-[2.5rem] leading-tight md:leading-snug'>Maximize every opportunity with Konectar.</h1>
+                    <p className='mt-6'>Konectar connects businesses with farmers globally for easy, seamless transactions.</p>
                 </div>
 
 

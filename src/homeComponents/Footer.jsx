@@ -6,16 +6,16 @@ const Footer = () => {
     return (
         
         <>
-        <section className='w-full bg-[#CECEDE] flex flex-col justify-center items-center py-11'>
+        <section className='w-full bg-[#CECEDE] flex flex-col justify-center items-center py-11 px-12 md:px-4'>
 
             
             <div className=''>
                 <img className='' src={Logo} alt="Logo" />
             </div>
 
-            <h1 className='mt-5 font-Manrope font-bold text-[1.2rem] md:text-[1.7rem] leading-tight md:leading-snug'>Subscribe to our newsletter to get first hand updates.</h1>
+            <h1 className='text-center mt-5 font-Manrope font-bold text-[1rem] md:text-[1.7rem] leading-tight md:leading-snug'>Subscribe to our newsletter to get first hand updates.</h1>
 
-            <div className='mt-5 flex justify-center items-start gap-5'>
+            <div className='mt-5 flex flex-col md:flex-row justify-center items-center md:items-start gap-5'>
                 <input className='w-[200px] md:w-[400px] border-solid border-[#948e8e] border-[1px] rounded-lg py-1 md:py-1.5 px-5' type="text" placeholder='Enter Email' name='email' />
                 
 
@@ -102,7 +102,7 @@ const Footer = () => {
 
         </section>
 
-        <section className='w-full bg-[#003311] py-3 text-center text-white'>
+        <section className='w-full bg-[#003311] py-3 text-center text-white px-3'>
             <p>Konectar Copyright, 2024. All rights reserved.</p>
         </section>
         </>

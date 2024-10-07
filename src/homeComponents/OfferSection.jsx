@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const OfferSection = () => {
   return (
     <>
-    <section className="bg-[linear-gradient(to_right_,rgba(6,8,15,0.8),rgba(6,8,12,0.8)),url('assets/images/bgW.png')] bg-cover bg-center bg-no-repeat font-Manrope justify-center items-center py-14 lg:px-16 px-16"> 
-       <h1 className='font-Manrope text-white text-[2.5rem] font-bold ml-16 mb-6'>What We Offer!</h1>
+    <section className="bg-[linear-gradient(to_right_,rgba(6,8,15,0.8),rgba(6,8,12,0.8)),url('assets/images/bgW.png')] bg-cover bg-center bg-no-repeat font-Manrope justify-center items-center py-14 px-8 md:px-16"> 
+       <h1 className='font-Manrope text-white text-[1.5rem] md:text-[2.5rem] font-bold ml-16 mb-6'>What We Offer!</h1>
        <hr />
 
        <div className='flex flex-col md:flex-row gap-5 justify-center items-center mt-10'>

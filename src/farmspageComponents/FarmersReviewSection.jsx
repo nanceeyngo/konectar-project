@@ -11,7 +11,7 @@ const FarmersReviewSection = () => {
             <section className='bg-[#003311] w-full p-14'>
             <h1 className='mb-20 text-center font-Manrope font-bold text-white text-[1.4rem] md:text-[2.3rem] leading-tight md:leading-snug'>What People Say About Us</h1>
 
-                <div className='flex flex-col md:flex-row gap-20 md:gap-6 mt-10 px-5 md:px-16'>
+                <div className='flex flex-col md:flex-row gap-20 md:gap-6 mt-10 px-2 md:px-16'>
 
                     <div className='container bg-white rounded-lg px-4 py-5 text-center flex flex-col items-center'>
                         <div className='size-24 mt-[-3.9rem]'>

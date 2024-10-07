@@ -9,7 +9,7 @@ const TruckersBenefitSection = () => {
             <section className='w-full bg-[#BFBFD4] p-16'>
                 <h1 className='text-[2.3rem] font-bold text-center'>Benefits of Joining Our 3PL Network</h1>
 
-                <div className='mt-14 flex flex-col md:flex-row md:px-36 gap-16'>
+                <div className='mt-14 flex flex-col md:flex-row md:px-36 gap-10'>
 
                     <div className='bg-white basis-[50%] p-4 rounded-md'>
 
@@ -38,7 +38,7 @@ const TruckersBenefitSection = () => {
 
 
 
-                <div className='mt-8 flex flex-col md:flex-row md:px-36 gap-16'>
+                <div className='mt-8 flex flex-col md:flex-row md:px-36 gap-10'>
 
                     <div className='bg-white basis-[50%] p-4 rounded-md'>
 

@@ -11,14 +11,14 @@ const TeamSection = () => {
       <section className="text-center px-12 mt-10">
         <h1 className="text-[2rem] font-bold">Meet Our Beautiful Team</h1>
         <div className="w-[60%] m-auto">
-          <p>
+          <p className="mt-5">
             We are a passionate and diverse group of professionals, driven by innovation and a shared commitment to delivering exceptional results.
           </p>
         </div>
       </section>
 
       {/* Team members grid */}
-      <section className="flex flex-wrap flex-col md:flex-row justify-center px-16 gap-32 mt-48">
+      <section className="flex flex-wrap flex-col md:flex-row justify-center pb-14 px-16 gap-32 mt-24 md:mt-40">
         {teamMembers.map((member, index) => (
           <div key={index} className="basis-[20%]">
             <div className="bg-[#003311] rounded-[50%] h-[16.6rem] flex justify-center items-center">
