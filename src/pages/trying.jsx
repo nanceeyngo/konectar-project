@@ -130,6 +130,7 @@ const Trying = () => {
           colors: {
             ...theme.colors,
             primary25: 'lightgreen',
+            danger: 'black',
             primary: 'grey',
           },
         })}
@@ -139,7 +140,7 @@ const Trying = () => {
 
       <label className='font-bold' htmlFor='produce2'>
         Supply Frequency  </label><br></br>
-      <Select className='hover:border-[#424b50] bg-[#dcd6ec99]'
+      <Select className='hover:border-[#424b50] hover:bg-[#dcd6ec99]'
         name='produce2'
         options={options2}
         value={selectedOptions2}

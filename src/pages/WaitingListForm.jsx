@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Trying from './trying';
+import { Link } from 'react-router-dom';
+import { FaWhatsapp } from "react-icons/fa";
+import { IoCheckmarkCircle } from "react-icons/io5";
 
 
 const WaitingListForm = () => {
 
-
+    const [showModal, setShowModal] = useState(false);
     const [inputValues, setInputValues] = useState({});
 
     const [error, setError] = useState('');
@@ -29,10 +32,11 @@ const WaitingListForm = () => {
     //function to drop an alert messeage, as well as print input values into the console, if all fields have been filled
     const handleSubmit = (event) => {
         event.preventDefault();
+        
         if (!error) {
-
-            console.log('Form submitted with input:', inputValues);
-            alert('THANK YOU FOR JOINING THE WAIT LIST! YOUR RESPONSE HAS BEEN RECEIVED.');
+            setShowModal(true);
+            console.log('Form submitted with input:', { inputValues});
+            
         }
     }
 
@@ -83,7 +87,7 @@ const WaitingListForm = () => {
                     <br></br><br></br>
 
 
-                    <label className='font-bold' htmlFor='contact'>
+                    <label className='font-bold' htmlFor="contact">
                         Contact Information  </label><br></br>
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
@@ -96,9 +100,9 @@ const WaitingListForm = () => {
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="tel"
-                        name='contact'
+                        name='contact2'
                         placeholder='Enter phone number'
-                        value={inputValues.contact || ""}
+                        value={inputValues.contact2 || ""}
                         onChange={handleInputChange} required />
                     <br></br><br></br>
 
@@ -179,61 +183,90 @@ const WaitingListForm = () => {
 
                     </div> */}
 
-<label className='font-bold' htmlFor='location'>
+                    <label className='font-bold' htmlFor='location'>
                         Farm Size  </label><br></br>
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
-                        name='location'
+                        name='farmsize'
                         placeholder='Select farm size e.g., 2-7 acres, less than 2 acres, more than 20 acres, etc.'
-                        value={inputValues.location || ""}
+                        value={inputValues.farmsize || ""}
                         onChange={handleInputChange} required />
                     <br></br><br></br>
 
 
-                        <Trying/>
+                    <Trying />
 
 
-                        <label className='font-bold' htmlFor='text1'>
+                    <label className='font-bold' htmlFor='text1'>
                         Main Challenges  </label><br></br>
-                        <textarea className='h-[300px] bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full' 
+                    <textarea className='h-[300px] bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         name="text1"
                         placeholder='Describe the challenges you face'
                         value={inputValues.text1 || ""}
                         onChange={handleInputChange} required></textarea>
-                       <br></br><br></br>
+                    <br></br><br></br>
 
-                       <label className='font-bold' htmlFor='checkbox3'>
+                    <label className='font-bold' htmlFor='checkbox3'>
                         Update and Notifications  </label><br></br>
 
-                        <input className='bg-[#32be51] mt-3'
-                                type="checkbox"
-                                name='checkbox3'
-                                value={inputValues.checkbox3 || ""}
-                                onChange={handleInputChange} required />
+                    <input className='bg-[#32be51] mt-3'
+                        type="checkbox"
+                        name='checkbox3'
+                        value={inputValues.checkbox3 || ""}
+                        onChange={handleInputChange} required />
 
 
-                                <label className='ml-2 text-[0.8rem]' htmlFor='checkbox3'>
-                                    I agree to receive updates and notifications from Konectar  </label><br></br> <br />
+                    <label className='ml-2 text-[0.8rem]' htmlFor='checkbox3'>
+                        I agree to receive updates and notifications from Konectar  </label><br></br> <br />
 
 
-
-                                    <button type="button"
-            className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem] w-full'
-          >
-            Submit
-          </button>
-
-                        
-
-                       
-
-                    
-
-                    
+                    {error && <p className='text-error70 ease-in font-bold'>{error}</p>}
+                    <button type="submit"
+                        className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem] w-full'
+                    >
+                        Submit
+                    </button>
                 </form>
 
             </section>
+
+            {showModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
+                    <div className="bg-white p-8 w-[90%] md:w-[35%] rounded-md shadow-md text-center transition-all duration-300 ease-in-out scale-95">
+                        <div className='flex justify-center items-center'><div className='text-[#009933] '><IoCheckmarkCircle size={100}/></div></div>
+                        <h1 className="text-[1.4rem] font-bold mt-11">Thank you for joining the Konectar Waitlist</h1>
+                       
+                        <p className="mt-3">We've received your information and you're now on the list to be one of the first to 
+                            experience our platform. Keep an eye on your inbox for updates, and we'll notify you as soon 
+                            as we're ready to launch!
+                        </p>
+                         
+
+                        <div className='flex gap-4 mt-6 justify-center items-center font-bold'>
+          
+          <button type="button"
+            className='bg-[#009933] px-6 py-2 rounded-lg text-[0.9rem] md:text-[1rem] text-white flex gap-2 items-center'
+          >
+            Join Whatsapp <FaWhatsapp className='text-white' />
+          </button>
+          
+
+          <Link to="/home"><button
+            type='button'
+            className='bg-white px-6 py-2 rounded-lg text-[0.9rem] md:text-[1rem] text-[#009933]'
+          >
+            Back to Home
+          </button>
+          </Link>
+        </div>
+                        {/* hover:-translate-y-1 hover:scale-110 hover:w-24 hover:rounded-xl duration-300" */}
+
+                       
+                    </div>
+
+                </div>
+            )}
         </>
     );
 };
