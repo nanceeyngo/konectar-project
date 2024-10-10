@@ -29,7 +29,7 @@ const SdgSection = () => {
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="transition-all duration-300 ease-in-out"
+            className="transition-all duration-500 ease-in-out"
           >
             <img
               className='h-[100%] w-[100%]'

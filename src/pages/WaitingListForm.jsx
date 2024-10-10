@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Trying from './trying';
+
 
 const WaitingListForm = () => {
 
@@ -37,7 +39,7 @@ const WaitingListForm = () => {
 
     return (
         <>
-            <section className='mt-10 mb-10 m-auto w-[80%] md:w-[55%] px-8 py-12 rounded-md border-solid border-[1px] border-[#afb8c299]'>
+            <section className='mt-10 mb-10 m-auto w-[80%] md:w-[50%] px-8 py-12 rounded-md border-solid border-[1px] border-[#afb8c299]'>
 
                 <h1 className='font-bold text-center text-[1rem] md:text-[1.5rem]'>Register Your Farm with Konectar</h1>
 
@@ -48,7 +50,7 @@ const WaitingListForm = () => {
 
                     {/* specifying input type as 'text' name as 'username' (used to track input valuesin 'value={inputValues.username}, placeholder to give info in the inputfield, and the handleInputChange to handle onChange events*/}
                     {/* inserting 'required' in my form fields (example on line 57) helps validate the form by putting up the notification 'Please fill out this field' whenever a user fails to fill in all fields */}
-                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px]  rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
                         name='username'
                         placeholder='Enter your full name'
@@ -60,7 +62,7 @@ const WaitingListForm = () => {
                     <label className='font-bold' htmlFor='farmname'>
                         Farm Name  </label><br></br>
 
-                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
                         name='farmname'
                         placeholder='Enter your farm name'
@@ -72,7 +74,7 @@ const WaitingListForm = () => {
                     <label className='font-bold' htmlFor='location'>
                         Full Location  </label><br></br>
 
-                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
                         name='location'
                         placeholder='Enter your city, state and Country'
@@ -84,7 +86,7 @@ const WaitingListForm = () => {
                     <label className='font-bold' htmlFor='contact'>
                         Contact Information  </label><br></br>
 
-                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="email"
                         name='contact'
                         placeholder='Enter email address'
@@ -92,7 +94,7 @@ const WaitingListForm = () => {
                         onChange={handleInputChange} required />
                     <br></br>
 
-                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="tel"
                         name='contact'
                         placeholder='Enter phone number'
@@ -100,20 +102,7 @@ const WaitingListForm = () => {
                         onChange={handleInputChange} required />
                     <br></br><br></br>
 
-
-                    <label className='font-bold' htmlFor='produce'>
-                        Types of Produce  </label><br></br>
-
-                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
-                        type="text"
-                        name='produce'
-                        placeholder='Type of produce'
-                        value={inputValues.location || ""}
-                        onChange={handleInputChange} required />
-                    <br></br><br></br>
-
-
-                    <div className='text-[0.7rem] md:text-[0.9rem] flex bg-[#dcd6ec99] p-4 rounded-md md:w-[70%] gap-8'>
+                    {/* <div className='text-[0.7rem] md:text-[0.9rem] flex bg-[#dcd6ec99] p-4 rounded-md md:w-[70%] gap-8'>
 
 
                         <div className='flex flex-col gap-4'>
@@ -188,11 +177,60 @@ const WaitingListForm = () => {
                         </div>
 
 
-                    </div>
+                    </div> */}
 
-                    <p className='text-[0.7rem]'>Indicate in the input field above if you don't see your category here</p>
+<label className='font-bold' htmlFor='location'>
+                        Farm Size  </label><br></br>
+
+                    <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                        type="text"
+                        name='location'
+                        placeholder='Select farm size e.g., 2-7 acres, less than 2 acres, more than 20 acres, etc.'
+                        value={inputValues.location || ""}
+                        onChange={handleInputChange} required />
+                    <br></br><br></br>
 
 
+                        <Trying/>
+
+
+                        <label className='font-bold' htmlFor='text1'>
+                        Main Challenges  </label><br></br>
+                        <textarea className='h-[300px] bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full' 
+                        name="text1"
+                        placeholder='Describe the challenges you face'
+                        value={inputValues.text1 || ""}
+                        onChange={handleInputChange} required></textarea>
+                       <br></br><br></br>
+
+                       <label className='font-bold' htmlFor='checkbox3'>
+                        Update and Notifications  </label><br></br>
+
+                        <input className='bg-[#32be51] mt-3'
+                                type="checkbox"
+                                name='checkbox3'
+                                value={inputValues.checkbox3 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2 text-[0.8rem]' htmlFor='checkbox3'>
+                                    I agree to receive updates and notifications from Konectar  </label><br></br> <br />
+
+
+
+                                    <button type="button"
+            className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem] w-full'
+          >
+            Submit
+          </button>
+
+                        
+
+                       
+
+                    
+
+                    
                 </form>
 
             </section>

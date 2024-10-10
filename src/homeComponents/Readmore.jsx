@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { data } from './data';
 
-const ReadMore = ({ children }) => {
+const ReadMore = ({ trial, children }) => {
 
 
     const text = children;
@@ -14,11 +14,11 @@ const ReadMore = ({ children }) => {
 
 
     return (
-        <div className='text-[#003311] bg-[#FFCECB] rounded-md py-4 px-3'>
+        <div className='text-[#003311] bg-[#FFCECB] rounded-md py-2 px-3 mb-7'>
             
             
             <div className='flex justify-between items-center'>
-                <p>What is Konectar about?</p>
+                <p>{trial.question}</p>
                 <p className='cursor-pointer text-[2.3rem] font-bold' onClick={toggleReadMore}>{isReadMore ? "+" : " -"}</p>
             </div>
             
@@ -35,8 +35,8 @@ const ReadMore = ({ children }) => {
 const Content = () => {
     return (
         <div>
-            {data.map((data, index) => (
-                <ReadMore key={index}>
+            {data.map(data => (
+                <ReadMore key={data.id} trial={data}>
                     {data.answer}
                 </ReadMore>
             ))}

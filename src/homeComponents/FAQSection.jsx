@@ -1,6 +1,6 @@
 import React from 'react';
 import Content from './Readmore';
-import { data } from './data';
+
 
 const FAQSection = () => {
     return (
