@@ -76,7 +76,7 @@ const WaitingListForm = () => {
 
 
                     <label className='font-bold' htmlFor='location'>
-                        Full Location  </label><br></br>
+                        Farm Location  </label><br></br>
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
