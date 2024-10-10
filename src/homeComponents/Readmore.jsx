@@ -14,7 +14,7 @@ const ReadMore = ({ trial, children }) => {
 
 
     return (
-        <div className='text-[#003311] bg-[#FFCECB] rounded-md py-2 px-3 mb-7'>
+        <div className='text-[#003311] bg-[#75c08e] rounded-md py-2 px-3 mb-7'>
             
             
             <div className='flex justify-between items-center'>
