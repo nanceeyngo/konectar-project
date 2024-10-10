@@ -246,15 +246,15 @@ const WaitingListForm = () => {
                         <div className='flex gap-4 mt-6 justify-center items-center font-bold'>
           
           <button type="button"
-            className='bg-[#009933] px-6 py-2 rounded-lg text-[0.9rem] md:text-[1rem] text-white flex gap-2 items-center'
+            className='bg-[#009933] px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
           >
             Join Whatsapp <FaWhatsapp className='text-white' />
           </button>
           
 
-          <Link to="/home"><button
+          <Link to="/"><button
             type='button'
-            className='bg-white px-6 py-2 rounded-lg text-[0.9rem] md:text-[1rem] text-[#009933]'
+            className='bg-white px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-[#009933]'
           >
             Back to Home
           </button>
