@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import Trying from './trying';
+// import Trying from './trying';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import Example from './trying2';
 
 
 const WaitingListForm = () => {
@@ -195,7 +196,7 @@ const WaitingListForm = () => {
                     <br></br><br></br>
 
 
-                    <Trying />
+                    <Example/>
 
 
                     <label className='font-bold' htmlFor='text1'>
@@ -220,6 +221,7 @@ const WaitingListForm = () => {
                     <label className='ml-2 text-[0.8rem]' htmlFor='checkbox3'>
                         I agree to receive updates and notifications from Konectar  </label><br></br> <br />
 
+                        
 
                     {error && <p className='text-error70 ease-in font-bold'>{error}</p>}
                     <button type="submit"
