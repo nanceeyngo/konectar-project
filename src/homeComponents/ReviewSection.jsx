@@ -15,12 +15,10 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={LindaJohnson} alt="First customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"As a new business in the food industry, we struggled to find relaible supppliers. Konectar 
-                            provided us with a new seamless platform to connect with quality vendors. The variety of fruits 
-                            and vegetables available is impressive, and the support team is always ready to assist. 
-                            Thanks to Konectar, we can confidently meet our clients' demands."</p>
-                            <p className='mt-3'>Linda Johnson</p>
-                            <p className='text-[0.6rem]'>Co-founder of FarmFreshDelivery</p>
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"Before Konectar, I used to depend on middlemen who often delayed payments and offered unfair prices. Now, I connect directly with buyers, negotiate better deals, and receive my payments on time. It's given me the confidence to expand my farm!"
+</p>
+                            <p className='mt-3'>Musa Adebayo,</p>
+                            <p className='text-[0.6rem]'>Bell Peppers Farmer, Ogun State.</p>
                             </div>
 
                     </div>
@@ -28,12 +26,10 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={RobertSmith} alt="Second customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"Konectar has been an invaluable partner for our business. Thea ability to source local 
-                            produce at competitive prices has not only reduced our costs but also heled us support local 
-                            farmers. The transparency in transactions and real-time inventory updates are game-changers for our 
-                            purchasing strategy."</p>
-                            <p className='mt-3'>Robert Smith</p>
-                            <p className='text-[0.6rem]'>Supply Chain Manager at EcoFoods Distribution</p>
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"As a small-scale farmer, it was always hard to find reliable buyers. But with Konectar, I’ve been able to access wholesale buyers who value my fresh produce. The best part? I no longer worry about the quality checks or payment delays – Konectar takes care of that!"
+</p>
+                            <p className='mt-3'>Grace Ogunseyin,</p>
+                            <p className='text-[0.6rem]'>Vegetable Farmer, Ekiti State.</p>
                             </div>
 
                     </div>
@@ -48,11 +44,9 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={BosunThomas} alt="First customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"We've been using Konectar for over a year now, and it has transformed the way we handle our procurement. 
-                            The diverse range of products, coupled with the ease of use, make sourcing fruits and vegetables straightforward 
-                            and efficient. Our operational efficiency has skyrocketed!"</p>
-                            <p className='mt-3'>Bosun Thomas</p>
-                            <p className='text-[0.6rem]'>Founder of Jaiz Restaurants</p>
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"Konectar has completely changed the way I do business. I don’t have to wait for market days or struggle with low prices anymore. I just post my produce, and buyers come directly to me. It’s made farming so much easier, and I can now plan my harvests knowing I have a ready market."</p>
+                            <p className='mt-3'>Aliyu Muritador, </p>
+                            <p className='text-[0.6rem]'>Tomato Farmer, Plateau State.</p>
                             </div>
 
                     </div>
@@ -60,11 +54,9 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={ReginaTina} alt="Second customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"Konectar has made sourcing fresh produce more accessible than ever. The user-friendly platform ensures we 
-                            receive the best quality at competitive prices, helping us build stronger relationships with farmers. The service 
-                            and support we receive make it vitl part of our business operations."</p>
-                            <p className='mt-3'>Regina Tina</p>
-                            <p className='text-[0.6rem]'>Head Chef at Basket Hotel & Suits</p>
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"I was skeptical at first, but Konectar has proven to be a game-changer. The platform helped me find buyers faster, and I get paid securely through their escrow system. Now, I have more time to focus on growing high-quality tomatoes instead of worrying about finding buyers."</p>
+                            <p className='mt-3'>Fatima Abdulrafiu,</p>
+                            <p className='text-[0.6rem]'>Tomato Farmer, Kaduna State.</p>
                             </div>
 
                     </div>
