@@ -134,7 +134,7 @@ export default function Example() {
                 options={options}
                 isMulti={true}
                 closeMenuOnSelect={false}
-                hideSelectedOptions={false}
+                hideSelectedOptions={true}
                 components={{
                     Option
                 }}
