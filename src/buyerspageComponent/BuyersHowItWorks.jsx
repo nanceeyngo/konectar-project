@@ -7,7 +7,7 @@ import phone4 from '../assets/images/iPhone 16.png'
 const BuyersHowItWorks = () => {
     return (
         <>
-            <section className='w-full bg-[#55D480] py-16'>
+            <section className='w-full bg-[#97d6ad] py-16'>
             
             <h1 className='text-center font-Manrope font-semibold text-[1.2rem] md:text-[2rem] leading-tight md:leading-snug'>How It Works</h1>
  

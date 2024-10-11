@@ -77,7 +77,15 @@ const TruckersHowSection = () => {
 
     </div>
 
-     <div className='container bg-white rounded-lg p-6'>
+
+</div>
+
+
+
+
+<div className='flex flex-col md:flex-row gap-6 mt-6 px-5 md:px-16'>
+
+<div className='container bg-white rounded-lg p-6'>
         <div className='text-[#009933] rounded-md w-[56px] h-[54px] flex justify-center items-center'>
         <IoCardOutline size={50} />
         </div>
@@ -110,7 +118,7 @@ const TruckersHowSection = () => {
 
         <p className='mt-8 text-[0.8rem] md:text-[1rem]'>After successful delivery, the payment will be processed through Konectar’s secure escrow system, ensuring you receive your funds promptly. Encourage buyers to leave feedback, helping you build your reputation within the platform.
         </p>
-
+</div>
      <div className='container bg-white rounded-lg p-6'>
         <div className='text-[#009933] rounded-md w-[56px] h-[54px] flex justify-center items-center'>
         <IoCardOutline size={50} />
@@ -135,8 +143,8 @@ const TruckersHowSection = () => {
 
     </div>
 
-</div>
 
+</div>
 </section>  
         </>
     );
