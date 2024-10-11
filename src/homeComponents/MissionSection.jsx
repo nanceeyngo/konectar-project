@@ -7,7 +7,9 @@ const MissionSection = () => {
       <div className="md:w-1/2 text-left">
         <h2 className="text-3xl md:text-4xl font-bold text-green-900">OUR MISSION</h2>
         <p className="mt-4 text-tertiary50 text-[17px] text-lg">
-          Our mission is to leverage digital innovation to streamline the procurement and distribution of fruits and vegetables, creating value for our customers, partners, and stakeholders. We are committed to fostering a sustainable and inclusive agricultural ecosystem that promotes economic growth, food security, and environmental sustainability in Nigeria.
+         
+"At Konectar, our mission is to increase the Profitability of Fruits and Vegetables Farmers by providing direct market access, ensuring fair trade, increasing smallholder farmers' resilience.”
+
         </p>
       </div>
 
