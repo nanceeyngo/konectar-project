@@ -17,13 +17,15 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Partnering with Konectar has improved our delivery efficiency by 30% and increased our revenue."</p>
+                        <p className='mt-5'>"Partnering with Konectar has transformed our business. The direct access to farmers and buyers has significantly increased our order volume, and the platform's ease of use makes our logistics management a breeze!"
+</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
                             <div><img className='size-8' src={Tcust1} alt="First Customer" /></div>
 
-                            <p className='text-[0.9rem]'>Deji & Kola Logistics</p>
+                            <p className='text-[0.9rem]'>Amaka Nwosu, Cold-Chain Logistics Provider
+</p>
                         </div>
                     </div>
 
@@ -32,13 +34,13 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Thanks to Konectar, we’ve connected with valuable clients and expanded our service area significantly."</p>
+                        <p className='mt-5'>“The real-time tracking feature is a game changer. It allows us to provide timely updates to our clients, enhancing transparency and trust. Our efficiency has skyrocketed since we joined Konectar!"</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
                             <div><img className='size-8' src={Tcust2} alt="Second Customer" /></div>
 
-                            <p className='text-[0.9rem]'>Deji & Kola Logistics</p>
+                            <p className='text-[0.9rem]'>Tunde Adeyemi, Logistics Manager</p>
                         </div>
                     </div>
 
@@ -47,13 +49,13 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Working with Konectar allows us to tap into a vast agricultural network, enhancing our services."</p>
+                        <p className='mt-5'>"Konectar's commitment to quality aligns perfectly with our values. Working together, we ensure that fresh produce arrives in optimal condition, which keeps our clients happy and coming back for more!"</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
                             <div><img className='size-8' src={Tcust2} alt="Second Customer" /></div>
 
-                            <p className='text-[0.9rem]'>Cold Logistics Owner</p>
+                            <p className='text-[0.9rem]'>Chinonso Eze, Owner of Eze Logistics</p>
                         </div>
                     </div>
 
@@ -70,13 +72,13 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Konectar’s reliable payment system has made our logistics operations smoother and more profitable."</p>
+                        <p className='mt-5'>"Since joining Konectar, we have expanded our client base beyond what we thought was possible. The networking opportunities and collaborative spirit among partners are truly inspiring!"</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
                             <div><img className='size-8' src={Tcust1} alt="First Customer" /></div>
 
-                            <p className='text-[0.9rem]'>Cold Logistics Owner</p>
+                            <p className='text-[0.9rem]'>Fatima Shehu, Cold-Chain Operator</p>
                         </div>
                     </div>
 
@@ -85,13 +87,13 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"We appreciate the transparency Konectar provides, making every transaction straightforward and trustworthy."</p>
+                        <p className='mt-5'>“What I love most about Konectar is the community. Being part of a network that prioritizes efficiency and quality in agriculture logistics is rewarding, and it has helped us build lasting relationships in the industry."</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
                             <div><img className='size-8' src={Tcust2} alt="Second Customer" /></div>
 
-                            <p className='text-[0.9rem]'>Cold Logistic Owner</p>
+                            <p className='text-[0.9rem]'>Jide Ogundipe, Supply Chain Expert</p>
                         </div>
                     </div>
 
