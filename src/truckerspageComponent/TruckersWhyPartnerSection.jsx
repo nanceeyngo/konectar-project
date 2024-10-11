@@ -17,10 +17,10 @@ const TruckersWhyPartnerSection = () => {
                             <IoContractOutline size={45} />
                         </div>
 
-                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Seamless Integration with Digital Platforms</p>
+                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Direct Access to Demand:</p>
 
-                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Easily integrate your current logistics system with Konectar’s platform. 
-                            Streamline your operations and reduce disruptions effectively
+                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Tap into a growing network of farmers and buyers seeking reliable cold-chain solutions.
+
                         </p>
 
                     </div>
@@ -32,10 +32,9 @@ const TruckersWhyPartnerSection = () => {
                             <IoRocketOutline size={45} />
                         </div>
 
-                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Boost Your Business and Operations Effectively</p>
+                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Increased Revenue Potential:</p>
 
-                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Expand your business with Konectar’s vast 
-                            network of farmers and businesses. Gain new opportunities and maximize delivery routes
+                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Partnering with Konectar opens up new revenue streams by connecting you with diverse agricultural markets in need of cold-chain services
                         </p>
 
                     </div>
@@ -46,10 +45,21 @@ const TruckersWhyPartnerSection = () => {
                             <HiArrowTrendingUp size={45} />
                         </div>
 
-                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Strengthen Your Brand and Gain Recognition</p>
+                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Streamlined Operations:</p>
 
-                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Join the movement towards sustainability 
-                            in agriculture. Build a positive brand reputation by supporting the agri-tech sector
+                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Benefit from our integrated platform that simplifies logistics management, ensuring efficient and timely deliveries
+                        </p>
+
+                    </div>
+
+                     <div className='container bg-[#EDEDF2] rounded-lg p-4 py-6 pr-20'>
+                        <div className='text-[#009933] rounded-md w-[56px] h-[54px] flex justify-center items-center'>
+                            <HiArrowTrendingUp size={45} />
+                        </div>
+
+                        <p className='font-bold text-[1rem] md:text-[1.3rem] mt-5'>Enhanced Visibility:</p>
+
+                        <p className='mt-8 text-[1rem] md:text-[1.3rem]'>Gain real-time tracking and updates, allowing you to monitor shipments and maintain transparency with clients.
                         </p>
 
                     </div>
