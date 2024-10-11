@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { data } from './data';
+import { farmdata } from '../homeComponents/data';
 
-const ReadMore = ({ trial, children }) => {
+const FarmersReadMore = ({ farmtrial, children }) => {
 
 
     const text = children;
@@ -14,11 +14,11 @@ const ReadMore = ({ trial, children }) => {
 
 
     return (
-        <div className='text-[#003311] bg-[#D2FFE1] rounded-md py-2 px-3 mb-7 font-semibold'>
+        <div className='text-[#003311] bg-neutral20 rounded-md py-2 px-3 mb-7 font-semibold'>
             
             
             <div className='flex justify-between items-center'>
-                <p>{trial.question}</p>
+                <p>{farmtrial.question}</p>
                 <p className='cursor-pointer text-[2.3rem] font-bold' onClick={toggleReadMore}>{isReadMore ? "+" : " -"}</p>
             </div>
             
@@ -32,17 +32,16 @@ const ReadMore = ({ trial, children }) => {
 };
 
 
-const Content = () => {
+const FarmersContent = () => {
     return (
         <div>
-            {data.map(data => (
-                <ReadMore key={data.id} trial={data}>
-                    {data.answer}
-                </ReadMore>
+            {farmdata.map(farmdata => (
+                <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
+                    {farmdata.answer}
+                </FarmersReadMore>
             ))}
         </div>
     );
 };
  
-export default Content;
-
+export default FarmersContent;
