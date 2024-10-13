@@ -56,11 +56,61 @@ export const data = [
         minus: "-"
     },
 
+    {
+        question: "How does Konectar handle logistics and delivery?",
+        answer: "Konectar partners with verified logistics providers to ensure that the produce is delivered in optimal condition from the farmer to the buyer. Once a transaction is completed, the platform arranges for transportation based on the buyer’s delivery preferences through 3PL partners.",
+        plus: "+",
+        minus: "-"
+    },
 
+    {
+        question: "What happens if there is a dispute between the farmer and the buyer?",
+        answer: "Konectar has a dispute resolution process in place. In case of any disagreement regarding the quality or quantity of the produce, both parties can raise a dispute, and our team will mediate to resolve the issue. Payments will remain in escrow until the dispute is resolved.",
+        plus: "+",
+        minus: "-"
+    },
 
+    {
+        question: "Can I cancel an order on Konectar?",
+        answer: "Yes, both farmers and buyers have the option to cancel an order, but this must be done before the produce is dispatched. Cancellations after dispatch may incur penalties, depending on the situation.",
+        plus: "+",
+        minus: "-"
+    },
 
+    {
+        question: "Is there any subscription fee to use Konectar?",
+        answer: "Konectar operates on a transaction-based fee model, meaning there is no upfront subscription cost for using the platform. Farmers and buyers only pay a small service fee per transaction.",
+        plus: "+",
+        minus: "-"
+    },
 
+    {
+        question: "How does Konectar handle data privacy and security?",
+        answer: "Konectar uses industry-standard encryption and security measures to protect users' data and transactions. Personal information and transaction details are stored securely, and we comply with all relevant data protection regulations.",
+        plus: "+",
+        minus: "-"
+    },
 
+    {
+        question: "Does Konectar offer trade financing?",
+        answer: "Yes, through Konpay, Konectar offers trade financing options that allow buyers to purchase on credit and pay over a designated period. This service is provided in collaboration with our financial partners.",
+        plus: "+",
+        minus: "-"
+    },
+
+    {
+        question: "How can I contact Konectar for support?",
+        answer: "For any queries or support, you can reach out to our customer service team via the contact form on our website or email us at support@konectar.ng. We also offer live chat support on the app during business hours.",
+        plus: "+",
+        minus: "-"
+    },
+
+    {
+        question: "What are the long-term goals of Konectar?",
+        answer: "Konectar aims to revolutionize the agricultural supply chain by providing a fair and transparent marketplace for smallholder farmers and buyers. We plan to expand our platform’s offerings to include more produce categories and introduce innovative services like farm financing, agronomy support, and farm-to-export solutions.",
+        plus: "+",
+        minus: "-"
+    }
 
 ]
 

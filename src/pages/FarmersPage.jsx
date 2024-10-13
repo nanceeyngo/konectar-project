@@ -4,13 +4,18 @@ import FarmersOfferSection from '../farmspageComponents/FarmersOfferSection';
 import OpportunitySection from '../farmspageComponents/OpportunitySection';
 import FarmersReviewSection from '../farmspageComponents/FarmersReviewSection';
 import FarmersFAQSection from '../farmspageComponents/FarmersFAQSection';
+import FarmersWhatWeOffer from '../farmspageComponents/FarmersWhatWeOffer';
+import FarmersHowItWorks from '../farmspageComponents/FarmersHowItWorks';
+import FarmersBenefit from '../farmspageComponents/FarmersBenefit';
 
 const FarmersPage = () => {
     return (
        
        <>
         <FHeroSection />
-        <FarmersOfferSection />
+        <FarmersWhatWeOffer />
+        <FarmersHowItWorks/>
+        <FarmersBenefit/>
         <OpportunitySection/>
         <FarmersReviewSection/>
         <FarmersFAQSection/>

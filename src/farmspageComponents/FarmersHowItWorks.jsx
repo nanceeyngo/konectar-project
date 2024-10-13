@@ -1,15 +1,14 @@
 import React from 'react';
-import phone1 from '../assets/images/iPhone 18.png'
-import phone2 from '../assets/images/iPhone 17.png'
-import phone3 from '../assets/images/iPhone 13 Pro.png'
-import phone4 from '../assets/images/iPhone 16.png'
+import phone1 from '../assets/images/iPhone 16 Pro.png';
+import phone2 from '../assets/images/iPhone 15 Pro.png';
+import phone3 from '../assets/images/Screen 3.png';
 
-const BuyersHowItWorks = () => {
+const FarmersHowItWorks = () => {
     return (
         <>
-            <section className='w-full bg-[#97d6ad] py-16'>
+          <section className='w-full bg-[#07190B] py-16 text-white'>
             
-            <h1 className='text-center font-Manrope font-bold text-[1.2rem] md:text-[2rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
+            <h1 className='text-center font-Manrope font-bold text-[1.2rem] md:text-[2rem] leading-tight md:leading-snug'>How It Works</h1>
  
             <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
  
@@ -33,7 +32,7 @@ const BuyersHowItWorks = () => {
             <div className='w-full flex justify-between gap-6 items-center mt-10 px-12 md:px-20'>
  
             <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone2} alt="Picture 2" />
+                 <img className='[60%]' src={phone3} alt="Picture 2" />
              </div>
              
              <div className='basis-[75%]'>
@@ -45,8 +44,6 @@ const BuyersHowItWorks = () => {
 
                 
              </div>
- 
-             
  
             </div>
  
@@ -64,34 +61,17 @@ const BuyersHowItWorks = () => {
                 </div>
  
              <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone3} alt="Picture 3" />
+                 <img className='[60%]' src={phone2} alt="Picture 3" />
              </div>
  
             </div>
 
 
 
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
- 
-            <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone4} alt="Picture 3" />
-             </div>
-             
-             <div className='basis-[75%]'>
-             <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Step 4: Chat Supplier or Add to Cart</h1>
-             <p className='text-[0.8rem] md:text-[1.4rem]'>Konectar bridges the gap between farmers and markets, providing unparalleled access to buyers and wholesalers. 
-                 By eliminating intermediaries, farmers reap better prices for their produces, boosting sales revenue 
-                 and negotiation power.
-             </p>
-             </div>
- 
-             
- 
-            </div>
- 
-             </section> 
+           
+             </section>   
         </>
     );
 };
 
-export default BuyersHowItWorks;
+export default FarmersHowItWorks;

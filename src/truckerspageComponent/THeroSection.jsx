@@ -10,10 +10,10 @@ const THeroSection = () => {
                 
 
                     <div className='text-center flex flex-col gap-6 justify-center items-center'>
-                        <h1 className='text-[2.5rem] font-extrabold'>Revolutionize Agricultural Logistics with <span className='text-[#009933]'>Konectar's 3PL Solutions</span></h1>
+                        <h1 className='text-[2.5rem] font-extrabold'>Grow Your Business. Deliver More. Earn More</h1>
 
-                        <p>Join us in transforming fresh produce delivery with advanced technology and reliable
-                            logistics solutions, ensuring freshness from farm to table.</p>
+                        <p>At Konectar, we are transforming the agricultural marketplace by connecting Cold-chain logistics 
+                            providers like you with an ever increasing network of farmers and wholesales buyers.</p>
 
 
                         <div className='flex gap-6 font-bold'>
@@ -21,7 +21,7 @@ const THeroSection = () => {
                             <button type="button"
                                 className='bg-[#009933] text-white px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem]'
                             >
-                                Partner with Us
+                                Contact Us
                             </button>
                             <button
                                 type='button'

@@ -1,5 +1,6 @@
 import React from 'react';
-import frame1 from "../assets/images/Frame1.png"
+import frame1 from "../assets/images/Frame1.png";
+import { Link } from 'react-router-dom';
 
 const FHeroSection = () => {
     return (
@@ -7,15 +8,19 @@ const FHeroSection = () => {
           <section className="flex flex-col-reverse md:flex-row text-center md:text-left items-center gap-5 justify-center my-16 px-8 md:px-16">
             
         <div className='md:basis-[50%]'>
-            <h1 className='font-Manrope font-semibold text-[1.8rem] md:text-[2.8rem] leading-tight md:leading-snug'>Unlock New Markets, Maximize Your Farms Potential</h1>
+            <h1 className='font-Manrope font-semibold text-[1.8rem] md:text-[2.8rem] leading-tight md:leading-snug'>Unlock New Markets and Increase Profits</h1>
 
-            <p className='mt-5'>Connect directly with buyers across the nation, secure fair prices, and grow your farm with Konectar. 
-                Cut out the middlemen and watch your business thrive.
+            <p className='mt-5'>Skip multiple middlemen and sell directly to businesses like: Supermarkets, Quick Servie, Restaurants, 
+              Hotels and Food Processors in One Click!
             </p>
 
-            <button className='mt-5 bg-[#009933] text-white px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem]'>
-            Sign up for free now!
+            <Link to="/WaitingListForm">
+          <button type="button"
+            className='bg-[#009933] mt-4 px-6 py-2 md:px-9 rounded-lg text-[0.8rem] md:text-[1rem] text-white'
+          >
+            Join Waitlist
           </button>
+          </Link>
 
         </div>
         

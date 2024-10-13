@@ -7,7 +7,7 @@ const BuyersReviewSection = () => {
             <section className='w-full py-14 bg-[#003333] px-8 md:px-20'>
                 <h1 className='mb-20 text-center font-Manrope font-bold text-white text-[2.3rem] leading-tight md:leading-snug'>See what they are saying about Konectar</h1>
 
-                <div className='flex flex-col md:flex-row gap-16'>
+                <div className='flex flex-col md:flex-row gap-16 justify-center items-center'>
 
                     <div className='bg-white rounded-md w-full px-16 py-9'>
 

@@ -6,7 +6,7 @@ import pic3 from '../assets/images/Offering3.png';
 const BuyersOurOffering = () => {
     return (
         <>
-           <section className='bg-[#CECEDE] w-full px-10 py-14'>
+           <section className='bg-[#EDEDF2] w-full px-10 py-14'>
          <h1 className='text-center font-Manrope font-bold text-[2.5rem] leading-tight md:leading-snug'>Our Offering</h1>
         
 
