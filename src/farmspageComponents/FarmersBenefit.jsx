@@ -1,46 +1,25 @@
 import React from 'react';
 import pic1 from '../assets/images/image 1.png';
+import KonectarTruck from '../assets/images/Linda Gift/KonectarTruck.png';
 
 const FarmersBenefit = () => {
     return (
         <>
-            <section className='w-full p-10'>
+            <section className='w-full p-10 text-[#003311] pb-32'>
 
-                <h1 className='text-[1.5rem] md:text-[2rem] font-bold text-center'>Our Benefits</h1>
+                <h1 className='text-[1.5rem] md:text-[2.2rem] font-bold text-center'>The Benefits: For Farmers</h1>
 
-                <div className='flex flex-col md:flex-row justify-center items-center md:items-end px-14 mt-10 gap-5 md:gap-0'>
+                <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 gap-5 md:gap-0'>
 
-                    <div className='md:basis-[42%] md:z-50 md:mr-[-2rem] md:mb-[-2rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
 
-                    <div className='container bg-[#55D480] rounded-lg py-3 md:py-8 px-16 md:basis-[58%]'>
+                    <div className='container bg-[#9acfab] rounded-lg py-3 md:py-16 px-16 md:basis-[58%]'>
 
-                        <p className='font-bold text-[1rem] md:text-[1.3rem]'>Lorem ipsum</p>
+                        <p className='font-bold text-[1rem] md:text-[1.4rem]'>Direct Market Access</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quam, expedita,
-                            eveniet corrupti quidem tempore odio maiores iure quod nisi facilis, necessitatibus quae possimus.
-                            Vero, molestiae facere impedit repellendus in quas deleniti omnis minus tenetur autem, dolorum
-                            voluptatum ullam repellat ipsum
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div className='flex flex-col md:flex-row justify-center items-center md:items-end px-14 mt-16 gap-5 md:gap-0'>
-
-                    <div className='md:basis-[42%] md:z-50 md:mr-[-2rem] md:mb-[-2rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
-
-                    <div className='container bg-[#55D480] rounded-lg py-3 md:py-8 px-16 md:basis-[58%]'>
-
-                        <p className='font-bold text-[1rem] md:text-[1.3rem]'>Lorem ipsum</p>
-
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quam, expedita,
-                            eveniet corrupti quidem tempore odio maiores iure quod nisi facilis, necessitatibus quae possimus.
-                            Vero, molestiae facere impedit repellendus in quas deleniti omnis minus tenetur autem, dolorum
-                            voluptatum ullam repellat ipsum
+                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Konectar connects farmers directly with wholesale buyers, eliminating middlemen and
+                            allowing them to receive fair prices for their produce. This direct access enhances their market 
+                            reach and boosts profitability.
 
                         </p>
 
@@ -50,18 +29,37 @@ const FarmersBenefit = () => {
 
 
 
-                <div className='flex flex-col md:flex-row justify-center items-center md:items-end px-14 mt-16 gap-5 md:gap-0'>
+                <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 md:mt-20 gap-5 md:gap-0'>
 
-                    <div className='md:basis-[42%] md:z-50 md:mr-[-2rem] md:mb-[-2rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
 
-                    <div className='container bg-[#55D480] rounded-lg py-3 md:py-8 px-16 md:basis-[58%]'>
+                    <div className='container bg-[#9acfab] rounded-lg py-3 md:py-16 px-16 md:basis-[58%]'>
 
-                        <p className='font-bold text-[1rem] md:text-[1.3rem]'>Lorem ipsum</p>
+                        <p className='font-bold text-[1rem] md:text-[1.4rem]'>Secure Transactions with Escrow Payments</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quam, expedita,
-                            eveniet corrupti quidem tempore odio maiores iure quod nisi facilis, necessitatibus quae possimus.
-                            Vero, molestiae facere impedit repellendus in quas deleniti omnis minus tenetur autem, dolorum
-                            voluptatum ullam repellat ipsum
+                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>The escrow payment system ensures farmers receive payments only when buyers confirms satisfaction 
+                            with the delivery. This builds trust and reduces the risk of payment delays, providing peace of mind 
+                            for farmers.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 md:mt-20 gap-5 md:gap-0'>
+
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={KonectarTruck} alt="Picture 3" /></div>
+
+                    <div className='container bg-[#9acfab] rounded-lg py-3 md:py-10 px-16 md:basis-[58%]'>
+
+                        <p className='font-bold text-[1rem] md:text-[1.4rem]'>Cold Chain Logistics Support</p>
+
+                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Through partnerships with our Third-party Cold-Chain Logistics providers. We help farmers preserve 
+                            the freshness and quality of their produce during transportation. This reduces post-harvest losses and 
+                            increases the likelihood of securing better prices from buyers.
 
                         </p>
 

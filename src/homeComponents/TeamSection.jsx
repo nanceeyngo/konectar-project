@@ -9,7 +9,7 @@ const TeamSection = () => {
   return (
     <>
       <section className="text-center px-12 mt-10">
-        <h1 className="text-[2rem] font-bold">Meet Our Beautiful Team</h1>
+        <h1 className="text-[2rem] font-bold">Our Team: The Beacons</h1>
         <div className="w-[60%] m-auto">
           <p className="mt-5">
             We are a passionate and diverse group of professionals, driven by innovation and a shared commitment to delivering exceptional results.
@@ -18,16 +18,16 @@ const TeamSection = () => {
       </section>
 
       {/* Team members grid */}
-      <section className="flex flex-wrap flex-col md:flex-row justify-center pb-14 px-16 gap-32 mt-24 md:mt-40">
+      <section className="flex flex-col md:flex-row justify-center px-16 gap-12 mt-16">
         {teamMembers.map((member, index) => (
-          <div key={index} className="basis-[20%]">
-            <div className="bg-[#003311] rounded-[50%] h-[16.6rem] flex justify-center items-center">
+          <div key={index} className="basis-[20%] flex flex-col items-center justify-center">
+            <div className="rounded-full flex justify-center items-center">
               <img
-                className="md:w-[100%] rounded-[50%]"
-                style={{
-                  height: member.imageHeight,
-                  marginBottom: member.marginBottom,
-                }}
+                className="md:size-full rounded-[50%]"
+                // style={{
+                //   height: member.imageHeight,
+                //   marginBottom: member.marginBottom,
+                // }}
                 src={member.image}
                 alt={`Team Member ${index + 1}`}
               />

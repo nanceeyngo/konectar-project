@@ -1,69 +1,75 @@
 import React from 'react';
-import Benefit1 from '../assets/images/Linda Gift/Benefit1.png';
-import Benefit2 from '../assets/images/Linda Gift/Benefit2.png';
+import pic1 from '../assets/images/image 1.png';
+import KonectarTruck from '../assets/images/Linda Gift/KonectarTruck.png';
 
 
 const TruckersBenefitSection = () => {
     return (
         <>
-            <section className='w-full bg-[#BFBFD4] p-16'>
-                <h1 className='text-[2.3rem] font-bold text-center'>Benefits of Joining Our 3PL Network</h1>
+            <section className='w-full p-10 text-[#003311] pb-32'>
 
-                <div className='mt-14 flex flex-col md:flex-row md:px-36 gap-10'>
+                <h1 className='text-[1.5rem] md:text-[2.2rem] font-bold text-center'>The Benefits: For Logistics Providers</h1>
 
-                    <div className='bg-white basis-[50%] p-4 rounded-md'>
+                <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 gap-5 md:gap-0'>
 
-                        <div className=''>
-                            <div><img className=' m-auto' src={Benefit1} alt='Pic 1' /></div>
-                        </div>
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
 
-                        <p className='mt-3'>Access to nationwide and international agricultural trade opportunities that significantly expand your business reach.</p>
+                    <div className='container bg-[#9acfab] rounded-lg py-3 md:py-10 px-16 md:basis-[58%]'>
+
+                        <p className='font-bold text-[1rem] md:text-[1.4rem]'>Consistent Demand for Services</p>
+
+                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>By Partnering with Konectar, Cold Chain Logistics providers gain access to a growing network 
+                            of farmers and buyers, ensuring a steady demand for temperature-controlled transportation services. 
+                            This creates a reliable stream of business opportunities within the agricultural sector.
 
 
-                    </div>
-
-                    <div className='bg-white basis-[50%] p-4 rounded-md'>
-
-                        <div className=''>
-                            <div><img className='m-auto' src={Benefit2} alt='Pic 2' /></div>
-                        </div>
-
-                        <p className='mt-3'>Reliable payments and secure contracts guarantee your financial safety while working with Konectar partners.</p>
-
+                        </p>
 
                     </div>
-
 
                 </div>
 
 
 
-                <div className='mt-8 flex flex-col md:flex-row md:px-36 gap-10'>
+                <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 md:mt-20 gap-5 md:gap-0'>
 
-                    <div className='bg-white basis-[50%] p-4 rounded-md'>
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
 
-                        <div className=''>
-                            <div><img className=' m-auto' src={Benefit2} alt='Pic 3' /></div>
-                        </div>
+                    <div className='container bg-[#9acfab] rounded-lg py-3 md:py-14 px-16 md:basis-[58%]'>
 
-                        <p className='mt-3'>Enhanced visibility for your logistics services through our platform increases your market presence and opportunities.</p>
+                        <p className='font-bold text-[1rem] md:text-[1.4rem]'>Optimized Route Planning</p>
 
+                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>With Konectar's platform, logistics providers can plan and optimize their delivery routes 
+                            based on real-time orders from farmers and buyers. This helps reduce operational costs, improve 
+                            delivery times, and maximize vehicle utilization.
 
-                    </div>
-
-                    <div className='bg-white basis-[50%] p-4 rounded-md'>
-
-                        <div className=''>
-                            <div><img className='m-auto' src={Benefit1} alt='Pic 4' /></div>
-                        </div>
-
-                        <p className='mt-3'>Optimized delivery routes designed to reduce transportation costs while ensuring timely and efficient service.</p>
-
+                        </p>
 
                     </div>
-
 
                 </div>
+
+
+
+                <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 md:mt-20 gap-5 md:gap-0'>
+
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={KonectarTruck} alt="Picture 3" /></div>
+
+                    <div className='container bg-[#9acfab] rounded-lg py-3 md:py-10 px-16 md:basis-[58%]'>
+
+                        <p className='font-bold text-[1rem] md:text-[1.4rem]'>Enhanced Market Visibility</p>
+
+                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Cold Chain providers listed on Konectar benefit from increased visibility to farmers and 
+                            wholesale buyers who require reliable logistics for transporting perishable goods. This 
+                            enhances their market presence and allows them to build long-term partnerships with key players 
+                            in the agricultural supply chain.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
 
             </section>
         </>

@@ -6,17 +6,19 @@ import phone3 from '../assets/images/Screen 3.png';
 const FarmersHowItWorks = () => {
     return (
         <>
-          <section className='w-full bg-[#07190B] py-16 text-white'>
+          <section className='w-full bg-[#003311] py-16 text-white'>
             
-            <h1 className='text-center font-Manrope font-bold text-[1.2rem] md:text-[2rem] leading-tight md:leading-snug'>How It Works</h1>
+            <h1 className='text-center font-Manrope font-bold text-[1.2rem] md:text-[2.2rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
  
             <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
  
-             <div className='basis-[75%]'>
-             <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Step 1: Prompt-to-Procure: Search and Connect</h1>
+             <div className='basis-[65%] md:basis-[75%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
+             <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 1</h1>
+             <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Sign Up and Add Your Farm Information</h1>
                 
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Type a prompt to search for suppliers based on Product type. Price, Proximity, Quantity and Quality</li>
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>From the search results, Review profiles of farmers and connect with them to discuss your business needs.</li>
+                    <p className='text-[0.8rem] md:text-[1.4rem] mt-3 md:mt-5'>Get started by creating an account on Konectar. Fill in your farm details, including 
+                        location, crops grown, and expected harvest timelines. This helps connect you with the right buyers.
+                    </p>
 
                 
              </div>
@@ -35,12 +37,13 @@ const FarmersHowItWorks = () => {
                  <img className='[60%]' src={phone3} alt="Picture 2" />
              </div>
              
-             <div className='basis-[75%]'>
-             <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Step 2: Place Orders and Secure Payment</h1>
-             
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Select produce from farmers inventory and contact the supplier</li>
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Negotiate terms and place your orders through the platform</li>
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Enjoy the safety of our secure escrow payment system, which holds funds until you confirm delivery satisfaction</li>
+             <div className='basis-[65%] md:basis-[75%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
+             <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 2</h1>
+             <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Upload Your Produce and Manage Inventory</h1>
+                
+                    <p className='text-[0.8rem] md:text-[1.4rem] mt-3 md:mt-5'>Easily upload your available produce to the platform. Add quantities, quality specifications and 
+                        pricing. Keep track of your inventory in real-time and make updates as needed.
+                    </p>
 
                 
              </div>
@@ -51,14 +54,16 @@ const FarmersHowItWorks = () => {
            
             <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
  
-             <div className='basis-[75%]'>
-             <h1 className='text-[1rem] md:text-[1.8rem] font-bold'>Step 3: Receive and Review</h1>
-             
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Track your shipments in real-time and inspect the products upon deliver</li>
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Leave feedback for suppliers to help maintain quality and build long-term partnerships</li>
-                    <li className='text-[0.8rem] md:text-[1.4rem]'>Enjoy the safety of our secure escrow payment system, which holds funds until you confirm delivery satisfaction</li>           
+            <div className='basis-[65%] md:basis-[75%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
+             <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 3</h1>
+             <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Manage Orders and Confirm Payments</h1>
+                
+                    <p className='text-[0.8rem] md:text-[1.4rem] mt-3 md:mt-5'>Once buyers place orders, manage them through your dashboard. Confirm sales, arrange delivery 
+                        and receive secure payments through our escrow system, ensuring peace of mind with every transaction.
+                    </p>
 
-                </div>
+                
+             </div>
  
              <div className='basis-[20%]'>
                  <img className='[60%]' src={phone2} alt="Picture 3" />
