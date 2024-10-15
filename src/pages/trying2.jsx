@@ -97,13 +97,15 @@ const Option = (props) => {
     );
 };
 
-export default function Example() {
+export default function Example({handleChange}) {
 
     const [selectedOptions, setSelectedOptions] = useState([]);
 
     const handleSelectChange = (selectedOptions) => {
         setSelectedOptions(selectedOptions);
+        handleChange(selectedOptions)
     };
+    console.log(selectedOptions)
 
     const [selectedOptions2, setSelectedOptions2] = useState([]);
 

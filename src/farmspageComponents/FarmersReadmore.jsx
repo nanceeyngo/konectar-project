@@ -37,7 +37,9 @@ const FarmersContent = () => {
         <div>
             {farmdata.map(farmdata => (
                 <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
-                    {farmdata.answer}
+                    {farmdata.answer.map(answer => (
+                        <p key={answer}>{answer}</p>
+                    ))}
                 </FarmersReadMore>
             ))}
         </div>

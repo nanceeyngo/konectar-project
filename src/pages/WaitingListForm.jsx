@@ -41,6 +41,12 @@ const WaitingListForm = () => {
         }
     }
 
+    const exampleData = (options) => {
+        setInputValues(values => ({ ...values, "trial": options }));
+            console.log(options, "----")
+    }
+    
+
 
     return (
         <>
@@ -196,7 +202,9 @@ const WaitingListForm = () => {
                     <br></br><br></br>
 
 
-                    <Example/>
+                    <Example
+                        handleChange = {exampleData}
+                    />
 
 
                     <label className='font-bold' htmlFor='text1'>
