@@ -17,7 +17,7 @@ const ProductsSection = () => {
 
                 <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-10'>
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:basis-[30%]'>
 
 
                         <div className='text-white'><FaMobileAlt size={20} /></div>
@@ -28,7 +28,7 @@ const ProductsSection = () => {
                     </div>
 
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:basis-[35%]'>
 
 
                         <div className='text-white'><BsShop size={20} /></div>
@@ -39,7 +39,7 @@ const ProductsSection = () => {
                         </p>
                     </div>
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:basis-[30%]'>
 
 
                         <div className='text-white'><RiSecurePaymentFill size={20} /></div>

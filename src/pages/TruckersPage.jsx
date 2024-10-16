@@ -3,8 +3,8 @@ import React from 'react';
 
 
 
-import TruckersReviewSection from '../truckerspageComponent/TruckersReviewSection';
-import TruckersReadySection from '../truckerspageComponent/TruckersReadySection';
+
+
 import TruckersFAQSection from '../truckerspageComponent/TruckersFAQSection';
 import TruckersWhatWeOffer from '../truckerspageComponent/TruckersWhatWeOffer';
 import TruckersHeroSection from '../truckerspageComponent/TruckersHeroSection';
@@ -21,8 +21,8 @@ const TruckersPage = () => {
            
           <TruckersBenefitSection/>  
           <TruckersFAQSection/>  
-          <TruckersReviewSection/>  
-          <TruckersReadySection/>  
+          
+         
         </>
     );
 };

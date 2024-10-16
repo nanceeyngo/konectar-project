@@ -33,15 +33,32 @@ const FarmersReadMore = ({ farmtrial, children }) => {
 
 
 const FarmersContent = () => {
+    const [isExpanded, setIsExpanded] = useState(false); // State for expanding/collapsing the first ReadMore
+
+    
+    const toggleViewMore = () => {
+        setIsExpanded(!isExpanded);
+        
+    };
+    
     return (
         <div>
-            {farmdata.map(farmdata => (
+            {farmdata.slice(0, 5).map(farmdata => (
                 <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
-                    {farmdata.answer.map(answer => (
-                        <p key={answer}>{answer}</p>
-                    ))}
+                    {farmdata.answer}
                 </FarmersReadMore>
             ))}
+
+            {isExpanded && (
+                farmdata.slice(5)).map(farmdata => (
+                    <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
+                        {farmdata.answer}
+                    </FarmersReadMore>
+                ))
+            }
+                <div className='flex justify-end'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
+                {isExpanded ? "View Less FAQs" : "View More FAQs"}
+            </button></div>
         </div>
     );
 };

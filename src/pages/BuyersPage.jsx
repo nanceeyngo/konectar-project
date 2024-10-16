@@ -1,7 +1,7 @@
 import React from 'react';
 import BHeroSection from '../buyerspageComponent/BHeroSection';
 
-import BuyersReviewSection from '../buyerspageComponent/BuyersReviewSection';
+
 import BuyersFAQSection from '../buyerspageComponent/BuyersFAQSection';
 import BuyersHowItWorks from '../buyerspageComponent/BuyersHowItWorks';
 
@@ -21,7 +21,7 @@ const BuyersPage = () => {
            
             
             
-           <BuyersReviewSection/> 
+            
            <BuyersFAQSection/> 
         </>
     );

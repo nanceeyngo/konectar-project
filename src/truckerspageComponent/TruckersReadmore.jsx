@@ -33,13 +33,34 @@ const TruckersReadMore = ({ trucktrial, children }) => {
 
 
 const TruckersContent = () => {
+
+    const [isExpanded, setIsExpanded] = useState(false); // State for expanding/collapsing the first ReadMore
+
+    
+    const toggleViewMore = () => {
+        setIsExpanded(!isExpanded);
+        
+    };
+
     return (
         <div>
-            {truckdata.map(truckdata => (
+             {truckdata.slice(0, 5).map(truckdata => (
                 <TruckersReadMore key={truckdata.id} trucktrial={truckdata}>
                     {truckdata.answer}
                 </TruckersReadMore>
             ))}
+
+            {isExpanded && (
+                truckdata.slice(5)).map(truckdata => (
+                    <TruckersReadMore key={truckdata.id} trucktrial={truckdata}>
+                        {truckdata.answer}
+                    </TruckersReadMore>
+                ))
+            }
+            
+                <div className='flex justify-end'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
+                {isExpanded ? "View Less FAQs" : "View More FAQs"}
+            </button></div>
         </div>
     );
 };

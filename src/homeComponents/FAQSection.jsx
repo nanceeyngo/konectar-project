@@ -2,7 +2,11 @@ import React from 'react';
 import Content from './Readmore';
 
 
+
 const FAQSection = () => {
+
+   
+    
     return (
         <>
            <section className='w-[90%] md:w-[50%] bg-neutral20 rounded-md text-[#003311] mt-10 m-auto py-4 px-6'>
@@ -11,6 +15,9 @@ const FAQSection = () => {
                 <p className='mt-3 text-center mb-12'>So we've answered some of them.</p>
             
                 <Content/>
+                             
+               
+                
             </section> 
         </>
     );

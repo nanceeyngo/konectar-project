@@ -8,7 +8,7 @@ import ProcessSection from "../homeComponents/ProcessSection";
 import BlogSection from "../homeComponents/BlogSection";
 import PartnersSection from "../homeComponents/PartnersSection";
 import TeamSection from "../homeComponents/TeamSection";
-import ReviewSection from '../homeComponents/ReviewSection';
+
 import FAQSection from '../homeComponents/FAQSection';
 import AboutUsSection from '../homeComponents/AboutUsSection';
 import OurVisionSection from '../homeComponents/OurVisionSection';
@@ -28,7 +28,7 @@ const Home = () => {
     <OfferSection />
     <ProcessSection />
     <BlogSection />
-    <ReviewSection />
+    
     <FAQSection />
     <TeamSection />
         </>
