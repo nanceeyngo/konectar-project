@@ -36,6 +36,7 @@ const TeamSection = () => {
               <p className="font-bold">{member.name}</p>
               <p className="text-[#0b0c0b] text-[0.8rem] mt-1">{member.role}</p>
               <p className="text-[0.6rem] mt-2">{member.email}</p>
+              <p className="text-[0.6rem] mt-2">{member.portfolio}</p>
             </div>
           </div>
         ))}

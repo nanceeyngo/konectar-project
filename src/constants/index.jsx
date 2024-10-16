@@ -70,20 +70,23 @@ import person5 from "../assets/images/person5.png";
       name: "Damilola Atayero",
       role: "Product Manager & Marketer",
       email: "7 years experience in B2B sales, Client Management and managing Digital Producs",
+      portfolio: "THE CLOSER",
       
     },
     {
       image: person2,
-      name: "Hannah Lawal",
-      role: "Product Manager",
+      name: "Ese Jibromah",
+      role: "Founder & CEO",
       email: "lawhann@gmail.com",
+      portfolio: "THE STRATEGIST",
       
     },
     {
       image: person3,
-      name: "Rita Uchenna",
-      role: "Product Designer",
+      name: "LindaGift Awo",
+      role: "Software Engineer",
       email: "uchenrit89033@gmail.com",
+      portfolio: "THE HACKER",
       
     },
     
