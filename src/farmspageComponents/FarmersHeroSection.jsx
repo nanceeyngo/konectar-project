@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const FarmersHeroSection = () => {
     return (
         <>
-           <section className="bg-[linear-gradient(to_right_,rgba(6,8,15,0.6),rgba(6,8,15,0.2)),url('assets/images/Imagholder.png')] h-screen bg-cover md:bg-top bg-center bg-no-repeat text-[white] text-center md:text-left justify-center md:justify-start items-center flex lg:px-0 px-24"> 
+           <section className="bg-[linear-gradient(to_right_,rgba(6,8,15,0.6),rgba(6,8,15,0.2)),url('assets/images/Imagholder.png')] h-screen bg-cover md:bg-top bg-center bg-no-repeat text-[white] text-left justify-center md:justify-start items-center flex lg:px-0 px-24"> 
             
             <div className='md:w-[45%] md:ml-20'>
                       <h1 className='font-Manrope font-semibold text-center md:text-left text-[2.8rem]'>Unlock New Markets and Increase Profits</h1>
