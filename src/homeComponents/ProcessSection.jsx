@@ -1,4 +1,5 @@
-import grouppic from '../assets/images/Grouppic.png'
+import React from 'react'
+import box from '../assets/images/BOX.png'
 
 const ProcessSection = () => {
   return (
@@ -8,7 +9,7 @@ const ProcessSection = () => {
         </div>   
 
         <div className='m-auto md:px-20 w-[80%]'>
-            <img src={grouppic} alt="Our Process: The Golden Path" />
+            <img src={box} alt="Our Process: The Golden Path" />
         </div>
         </>
   )

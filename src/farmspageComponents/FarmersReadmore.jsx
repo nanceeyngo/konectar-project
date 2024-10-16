@@ -43,16 +43,16 @@ const FarmersContent = () => {
     
     return (
         <div>
-            {farmdata.slice(0, 5).map(farmdata => (
+            {farmdata.slice(0, 5).map((farmdata, answer) => (
                 <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
-                    {farmdata.answer}
+                   <p key={answer}> {farmdata.answer} </p>
                 </FarmersReadMore>
             ))}
 
             {isExpanded && (
-                farmdata.slice(5)).map(farmdata => (
+                farmdata.slice(5)).map((farmdata, answer) => (
                     <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
-                        {farmdata.answer}
+                       <p key={answer}> {farmdata.answer} </p>
                     </FarmersReadMore>
                 ))
             }
