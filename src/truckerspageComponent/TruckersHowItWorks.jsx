@@ -1,7 +1,10 @@
 import React from 'react';
-import phone1 from '../assets/images/iPhone 16 Pro.png';
-import phone2 from '../assets/images/iPhone 15 Pro.png';
-import phone3 from '../assets/images/Screen 3.png';
+import phone1 from '../assets/images/ip1.png'
+import phone2 from '../assets/images/ip2.png'
+import phone3 from '../assets/images/ip6.png'
+import phone4 from '../assets/images/ip7.png'
+import phone5 from '../assets/images/ip8.png'
+import phone6 from '../assets/images/ip9.png'
 
 const TruckersHowItWorks = () => {
     return (
@@ -12,7 +15,7 @@ const TruckersHowItWorks = () => {
  
             <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
  
-             <div className='basis-[65%] md:basis-[75%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
+             <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 1</h1>
              <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Sign Up & Add Vehicle Information</h1>
                 
@@ -23,21 +26,23 @@ const TruckersHowItWorks = () => {
                 
              </div>
  
-             <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone1} alt="Picture 1" />
+             <div className='basis-[30%] flex items-end gap-3'>
+                 <div className='basis-[60%]'><img className='' src={phone1} alt="Picture 1" /></div>
+                 <div className='basis-[60%] mb-[-2rem] md:mb-[-4rem]'><img className='' src={phone2} alt="Picture 2" /></div>
              </div>
  
             </div>
  
             
             
-            <div className='w-full flex justify-between gap-6 items-center mt-10 px-12 md:px-20'>
+            <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-20 px-12 md:px-20'>
  
-            <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone3} alt="Picture 2" />
+            <div className='basis-[30%] flex items-end gap-3'>
+                 <div className='basis-[70%]'><img className='' src={phone3} alt="Picture 1" /></div>
+                 <div className='basis-[60%] mb-[-2rem] md:mb-[-3rem]'><img className='' src={phone4} alt="Picture 2" /></div>
              </div>
              
-             <div className='basis-[65%] md:basis-[75%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
+             <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 2</h1>
              <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Access Logistics Dashboard & Manage Orders</h1>
                 
@@ -53,9 +58,9 @@ const TruckersHowItWorks = () => {
  
            
            
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 md:mt-20 px-12 md:px-20'>
  
-            <div className='basis-[65%] md:basis-[75%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
+            <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 3</h1>
              <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Confirm Payment & Track Order History</h1>
                 
@@ -66,8 +71,9 @@ const TruckersHowItWorks = () => {
                 
              </div>
  
-             <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone2} alt="Picture 3" />
+             <div className='basis-[30%] flex items-center gap-3'>
+                 <div className='basis-[70%]'><img className='' src={phone5} alt="Picture 1" /></div>
+                 <div className='basis-[70%]'><img className='' src={phone6} alt="Picture 2" /></div>
              </div>
  
             </div>
