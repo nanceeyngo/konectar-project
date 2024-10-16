@@ -18,7 +18,7 @@ const TeamSection = () => {
       </section>
 
       {/* Team members grid */}
-      <section className="flex flex-col md:flex-row justify-center px-16 gap-20 mt-10">
+      <section className="flex flex-col md:flex-row justify-center px-16 gap-12 md:gap-28 mt-10">
         {teamMembers.map((member, index) => (
           <div key={index} className="basis-[20%] flex flex-col items-center justify-center">
             <div className="rounded-full flex justify-center items-center">

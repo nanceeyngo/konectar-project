@@ -77,7 +77,7 @@ import person5 from "../assets/images/person5.png";
       image: person2,
       name: "Ese Jibromah",
       role: "Founder & CEO",
-      email: "lawhann@gmail.com",
+      email: "2x Agribusiness Founder and graduate of Agricultural Science with over 6 years experience on C-level Roles",
       portfolio: "THE STRATEGIST",
       
     },
@@ -85,7 +85,7 @@ import person5 from "../assets/images/person5.png";
       image: person3,
       name: "LindaGift Awo",
       role: "Software Engineer",
-      email: "uchenrit89033@gmail.com",
+      email: "5 years experience in Product Design and build software solutions",
       portfolio: "THE HACKER",
       
     },
