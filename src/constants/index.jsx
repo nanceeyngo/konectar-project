@@ -58,8 +58,8 @@ import blogimage5 from '../assets/images/blogImage5.png';
     }
   ];
 
-import person1 from "../assets/images/person1.png";
-import person2 from "../assets/images/person2.png";
+import person1 from "../assets/images/dami.jpg";
+import person2 from "../assets/images/Ese.jpg";
 import person3 from "../assets/images/person3.png";
 import person4 from "../assets/images/person4.png";
 import person5 from "../assets/images/person5.png";
@@ -67,42 +67,24 @@ import person5 from "../assets/images/person5.png";
   export const teamMembers = [
     {
       image: person1,
-      name: "Andrew Amos",
-      role: "Founder & CEO",
-      email: "andrewamos202@gmail.com",
-      imageHeight: "24.5rem",
-      marginBottom: "7.7rem"
+      name: "Damilola Atayero",
+      role: "Product Manager & Marketer",
+      email: "7 years experience in B2B sales, Client Management and managing Digital Producs",
+      
     },
     {
       image: person2,
       name: "Hannah Lawal",
       role: "Product Manager",
       email: "lawhann@gmail.com",
-      imageHeight: "30.8rem",
-      marginBottom: "14rem"
+      
     },
     {
       image: person3,
       name: "Rita Uchenna",
       role: "Product Designer",
       email: "uchenrit89033@gmail.com",
-      imageHeight: "24.5rem",
-      marginBottom: "7.7rem"
+      
     },
-    {
-      image: person4,
-      name: "Linda Ikeji-Ada",
-      role: "Frontend Developer",
-      email: "Ikalinda112233@gmail.com",
-      imageHeight: "24.5rem",
-      marginBottom: "7.7rem"
-    },
-    {
-      image: person5,
-      name: "Adams Adewale",
-      role: "Backend Developer",
-      email: "adewaleadamssa@gmail.com",
-      imageHeight: "23rem",
-      marginBottom: "6rem"
-    },
+    
   ];
