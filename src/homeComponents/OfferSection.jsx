@@ -16,21 +16,21 @@ const OfferSection = () => {
                <img className='w-[100%]' src={frame1} alt="SDG2" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Farmers</h1>
                <p className='mt-3'>Farmers harvest fresh produce from their farms, ready for sale... <b className='cursor-pointer'> <Link to="/FarmersPage"> Read More </Link> </b></p>
-               <Link to="/WaitingListForm"><button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Sign Up</button></Link>
+               <Link to="/WaitingListForm"><button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Join The Waitlist</button></Link>
               
            </div>
            <div className='bg-[#ffffff] px-4 py-4 rounded-lg'>
                <img className='w-[100%]' src={frame2} alt="frame 2" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Business Buyers</h1>
                <p className='mt-3'>Farmers harvest fresh produce from their farms, ready for sale... <b className='cursor-pointer'><Link to="/BuyersPage"> Read More </Link></b></p>
-               <button className='bg-[#ADEBC2] px-3 py-2 text-white rounded-lg mt-3'>Coming Soon</button>
+               <button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Contact Us</button>
               
            </div>
            <div className='bg-[#ffffff] px-4 py-4 rounded-lg'>
                <img className='w-[100%]' src={frame3} alt="frame 3" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for 3PL Partners</h1>
                <p className='mt-3'>Farmers harvest fresh produce from their farms, ready for sale... <b className='cursor-pointer'><Link to="/TruckersPage"> Read More </Link></b></p>
-               <button className='bg-[#ADEBC2] px-3 py-2 text-white rounded-lg mt-3'>Coming Soon</button>
+               <button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Contact Us</button>
               
            </div>
           
