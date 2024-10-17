@@ -86,6 +86,8 @@ import person3 from "../assets/images/LindaGift.jpg";
       role: "(Software Engineer)",
       experience: "5 years experience in Product Design and build software solutions",
       portfolio: '"THE HACKER"',
+      imageHeight: "300px",
+      imageWidth: "300px",
       
     },
     
