@@ -60,7 +60,7 @@ import blogimage5 from '../assets/images/blogImage5.png';
 
 import person1 from "../assets/images/dami.jpg";
 import person2 from "../assets/images/Ese.jpg";
-import person3 from "../assets/images/person3.png";
+import person3 from "../assets/images/LindaGift.jpg";
 
 
   export const teamMembers = [
