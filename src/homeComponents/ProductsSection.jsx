@@ -9,13 +9,13 @@ import { FaTools } from "react-icons/fa";
 const ProductsSection = () => {
     return (
         <>
-            <section className='w-full p-16'>
+            <section className='w-full p-10 md:p-16'>
                 <div className='md:w-[80%] md:text-left'> <h1 className='font-bold text-[1.4rem] md:text-[2rem]'>Products: Features of The Platform</h1>
                     <p className='text-[#003311] text-[1rem] md:text-[1.3rem] font-semibold mt-4'>Our products showcase the value Konectar brings to both buyers and suppliers, emphasizing financial
                         security, convenience and quality assurance.
                     </p></div>
 
-                <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-10 w-full px-8'>
+                <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-10 w-full md:px-8'>
 
                     <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:h-[24rem] md:w-[40rem]'>
 
@@ -51,7 +51,7 @@ const ProductsSection = () => {
 
                 </div>
 
-                <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-8 w-full px-8'>
+                <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-8 w-full md:px-8'>
 
 
 
