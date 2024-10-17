@@ -14,12 +14,12 @@ const ContactForm = () => {
     const value = event.target.value;
     setInputValues(values => ({ ...values, [name]: value }));
 
-    // if (!value.trim()) {
-    //   setError('This field is required!');
-    // }
-    // else {
-    //   setError('')
-    // }
+    if (!value.trim()) {
+      setError('This field is required!');
+    }
+    else {
+      setError('')
+    }
   }
 
 
