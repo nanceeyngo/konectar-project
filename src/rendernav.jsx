@@ -9,13 +9,14 @@ import BuyersPage from './pages/BuyersPage';
 import TruckersPage from './pages/TruckersPage';
 import WaitingListForm from './pages/WaitingListForm';
 import ContactForm from './pages/ContactForm';
+import ScrollToTop from './ScrollToTop';
 
 
 const Rendernav = () => {
     return (
         <>
          <Navbar />
-
+         <ScrollToTop />      
          <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
