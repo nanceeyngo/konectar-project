@@ -19,10 +19,10 @@ const TeamSection = () => {
             <div className="rounded-full flex justify-center items-center">
               <img
                 className="md:size-full rounded-[50%]"
-                style={{
-                  height: member.imageHeight,
-                  width: member.imageWidth,
-                }}
+                // style={{
+                //   height: member.imageHeight,
+                //   width: member.imageWidth,
+                // }}
                 src={member.image}
                 alt={`Team Member ${index + 1}`}
               />
