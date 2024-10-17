@@ -1,9 +1,4 @@
 import { teamMembers } from "../constants";
-import person1 from "../assets/images/person1.png";
-import person2 from "../assets/images/person2.png";
-import person3 from "../assets/images/person3.png";
-import person4 from "../assets/images/person4.png";
-import person5 from "../assets/images/person5.png";
 
 const TeamSection = () => {
   return (
@@ -35,8 +30,8 @@ const TeamSection = () => {
             <div className="text-center">
               <p className="font-bold">{member.name}</p>
               <p className="text-[#0b0c0b] text-[0.8rem] mt-1">{member.role}</p>
-              <p className="text-[0.6rem] mt-2">{member.email}</p>
-              <p className="text-[0.6rem] mt-2">{member.portfolio}</p>
+              <p className="text-[0.8rem] mt-4 font-bold">{member.experience}</p>
+              <p className="text-[0.8rem] mt-2 text-[#009933] font-semibold">{member.portfolio}</p>
             </div>
           </div>
         ))}

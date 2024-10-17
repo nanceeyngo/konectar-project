@@ -22,44 +22,42 @@ const PartnersSection = () => {
 
 
 
-            <div className='flex gap-3 md:gap-8 justify-center items-center mt-5 px-6 md:px-14 w-full'>
+            <div className='flex gap-14 md:gap-20 justify-center items-center mt-5 px-6 md:px-14 w-full'>
               
-              <div className="basis:-[90%] md:basis-[30%]">
-                <img className='w-[90rem] md:w-full' src={emery} alt="Emery Logo" />
-              </div>
+             {/* First set of logos */}
+                <img className='w-[30%] md:w-full' src={emery} alt="Emery Logo" />                   
+                <img className='w-[20%] md:w-[10%]' src={pik} alt="Pik Logo" />                          
+                <img className='w-[30%] md:w-[15%]' src={microsoft} alt="roifarm Logo" />             
+                <img className='w-[20%] md:w-[10%]' src={roifarm} alt="Dida Fresh Logo" />                        
+                <img className='w-[30%] md:w-full' src={prepworld} alt="prep Logo" />                         
+                <img className='w-full' src={didafresh} alt="Dida Fresh Logo" />                     
+                <img className='w-full' src={logistics} alt="Fresh Fruits Logistics Logo" />          
+                <img className='w-[10%] md:w-[20%]' src={alx} alt="alx Logo" />           
+                <img className='w-[25%] md:w-[20%]' src={startglobal} alt="start-global Logo" />  
 
-              <div className="basis:-[80%] md:basis-[30%]">
-                <img className='w-full' src={pik} alt="Pik Logo" />
-              </div>
 
-              <div className="basis:-[80%] md:basis-[30%]">
-                <img className='w-[100rem] md:w-full' src={microsoft} alt="roifarm Logo" />
-              </div>
+                  {/* Second set of logos (for seamless scrolling) */}
+                 <img className='w-[30%] md:w-full' src={emery} alt="Emery Logo" />                   
+                <img className='w-[20%] md:w-[10%]' src={pik} alt="Pik Logo" />                          
+                <img className='w-[30%] md:w-[15%]' src={microsoft} alt="roifarm Logo" />             
+                <img className='w-[20%] md:w-[10%]' src={roifarm} alt="Dida Fresh Logo" />                        
+                <img className='w-[30%] md:w-full' src={prepworld} alt="prep Logo" />                         
+                <img className='w-full' src={didafresh} alt="Dida Fresh Logo" />                     
+                <img className='w-full' src={logistics} alt="Fresh Fruits Logistics Logo" />          
+                <img className='w-[10%] md:w-[20%]' src={alx} alt="alx Logo" />           
+                <img className='w-[25%] md:w-[20%]' src={startglobal} alt="start-global Logo" />   
 
-              <div className="basis:-[80%] md:basis-[30%]">
-                <img className='w-[100rem] md:w-full' src={roifarm} alt="Dida Fresh Logo" />
-              </div>
-
-              <div className="basis:-[80%] md:basis-[40%]">
-                <img className='w-[100rem] md:w-full' src={prepworld} alt="prep Logo" />
-              </div>
-
-              <div className="basis:-[80%] md:basis-[40%]">
-                <img className='w-[100rem] md:w-full' src={didafresh} alt="Dida Fresh Logo" />
-              </div>
-
-              <div className="basis:-[100%] md:basis-[60%]">
-                <img className='w-[120rem] md:w-full' src={logistics} alt="Fresh Fruits Logistics Logo" />
-              </div>
-
-              <div className="basis:-[80%] md:basis-[30%]">
-                <img className='w-[800px] md:w-full' src={alx} alt="alx Logo" />
-              </div>
-
-              <div className="basis:-[80%] md:basis-[30%]">
-                <img className='w-[90rem] md:w-full' src={startglobal} alt="start-global Logo" />
-              </div>
-
+                {/* Third set of logos (for seamless scrolling) */}
+                 <img className='w-[30%] md:w-full' src={emery} alt="Emery Logo" />                   
+                <img className='w-[20%] md:w-[10%]' src={pik} alt="Pik Logo" />                          
+                <img className='w-[30%] md:w-[15%]' src={microsoft} alt="roifarm Logo" />             
+                <img className='w-[20%] md:w-[10%]' src={roifarm} alt="Dida Fresh Logo" />                        
+                <img className='w-[30%] md:w-full' src={prepworld} alt="prep Logo" />                         
+                <img className='w-full' src={didafresh} alt="Dida Fresh Logo" />                     
+                <img className='w-full' src={logistics} alt="Fresh Fruits Logistics Logo" />          
+                <img className='w-[10%] md:w-[20%]' src={alx} alt="alx Logo" />           
+                <img className='w-[25%] md:w-[20%]' src={startglobal} alt="start-global Logo" />         
+            
             </div>
 
 

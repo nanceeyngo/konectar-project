@@ -61,32 +61,31 @@ import blogimage5 from '../assets/images/blogImage5.png';
 import person1 from "../assets/images/dami.jpg";
 import person2 from "../assets/images/Ese.jpg";
 import person3 from "../assets/images/person3.png";
-import person4 from "../assets/images/person4.png";
-import person5 from "../assets/images/person5.png";
+
 
   export const teamMembers = [
     {
       image: person1,
       name: "Damilola Atayero",
-      role: "Product Manager & Marketer",
-      email: "7 years experience in B2B sales, Client Management and managing Digital Producs",
-      portfolio: "THE CLOSER",
+      role: "(Product Manager & Marketer)",
+      experience: "7 years experience in B2B sales, Client Management and managing Digital Producs",
+      portfolio: '"THE CLOSER"',
       
     },
     {
       image: person2,
       name: "Ese Jibromah",
-      role: "Founder & CEO",
-      email: "2x Agribusiness Founder and graduate of Agricultural Science with over 6 years experience on C-level Roles",
-      portfolio: "THE STRATEGIST",
+      role: "(Founder & CEO)",
+      experience: "2x Agribusiness Founder and graduate of Agricultural Science with over 6 years experience on C-level Roles",
+      portfolio: '"THE STRATEGIST"',
       
     },
     {
       image: person3,
       name: "LindaGift Awo",
-      role: "Software Engineer",
-      email: "5 years experience in Product Design and build software solutions",
-      portfolio: "THE HACKER",
+      role: "(Software Engineer)",
+      experience: "5 years experience in Product Design and build software solutions",
+      portfolio: '"THE HACKER"',
       
     },
     
