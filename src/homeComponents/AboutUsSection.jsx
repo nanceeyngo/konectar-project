@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutus from '../assets/images/about-us-image.png';
+import { Link } from 'react-router-dom';
 
 const AboutUsSection = () => {
     return (
@@ -16,11 +17,11 @@ const AboutUsSection = () => {
                 </p>
     
                
-              <button type="button"
+              <Link to='/about'><button type="button"
                 className='bg-[#009933] mt-7 px-6 py-2 md:px-9 rounded-lg text-[0.8rem] md:text-[1rem] text-white'
               >
                 Learn More...
-              </button>
+              </button></Link>
               
     
             </div>

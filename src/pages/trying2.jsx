@@ -105,24 +105,27 @@ export default function Example({handleChange}) {
         setSelectedOptions(selectedOptions);
         handleChange(selectedOptions)
     };
-    console.log(selectedOptions)
+    
 
     const [selectedOptions2, setSelectedOptions2] = useState([]);
 
     const handleSelectChange2 = (selectedOptions2) => {
         setSelectedOptions2(selectedOptions2);
+        handleChange(selectedOptions2)
     };
 
     const [selectedOptions3, setSelectedOptions3] = useState([]);
 
     const handleSelectChange3 = (selectedOptions3) => {
         setSelectedOptions3(selectedOptions3);
+        handleChange(selectedOptions3)
     };
 
     const [selectedOptions4, setSelectedOptions4] = useState([]);
 
     const handleSelectChange4 = (selectedOptions4) => {
         setSelectedOptions4(selectedOptions4);
+        handleChange(selectedOptions4)
     };
 
     return (

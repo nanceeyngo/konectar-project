@@ -123,21 +123,11 @@ const ContactForm = () => {
             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
               <div className="bg-white p-8 w-[90%] md:w-[35%] rounded-md shadow-md text-center transition-all duration-300 ease-in-out scale-95">
                 
-                <h1 className="text-[1.4rem] font-bold mt-11">Thank you for joining the Konectar Waitlist</h1>
-
-                <p className="mt-3">We've received your information and you're now on the list to be one of the first to
-                  experience our platform. Keep an eye on your inbox for updates, and we'll notify you as soon
-                  as we're ready to launch!
-                </p>
+                <h1 className="text-[1.4rem] font-bold mt-11">Thank you for Contacting Us! We would reach out to you soon!</h1>
 
 
                 <div className='flex gap-4 mt-6 justify-center items-center font-bold'>
 
-                  <button type="button"
-                    className='bg-[#009933] px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
-                  >
-                    Join Whatsapp 
-                  </button>
 
 
                   <Link to="/"><button
