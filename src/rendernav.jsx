@@ -8,6 +8,7 @@ import Footer from './homeComponents/Footer';
 import BuyersPage from './pages/BuyersPage';
 import TruckersPage from './pages/TruckersPage';
 import WaitingListForm from './pages/WaitingListForm';
+import ContactForm from './pages/ContactForm';
 
 
 const Rendernav = () => {
@@ -22,6 +23,7 @@ const Rendernav = () => {
             <Route path='/BuyersPage' element={<BuyersPage />} />
             <Route path='/TruckersPage' element={<TruckersPage />} />
             <Route path='/WaitingListForm' element={<WaitingListForm />} />
+            <Route path='/ContactForm' element={<ContactForm />} />
             
         
         
