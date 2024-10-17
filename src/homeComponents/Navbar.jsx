@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className='flex justify-between items-center'>
     
      {/* logo */}
-    <div className='basis-[20%]'>
+    <div className='basis-[45%] lg:basis-[20%]'>
     <img className='size-full' src={Logo}  alt="Logo"/>
     </div>
 
