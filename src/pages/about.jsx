@@ -1,9 +1,12 @@
 import React from 'react';
+import AboutusHeroSection from '../aboutusComponent/AboutusHeroSection';
+import AboutStatistics from '../aboutusComponent/AboutStatistics';
 
 const About = () => {
     return (
         <>
-         <h1>This is the about us page</h1>   
+          <AboutusHeroSection/>
+          <AboutStatistics/>
         </>
     );
 };

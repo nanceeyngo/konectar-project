@@ -17,7 +17,7 @@ const ProductsSection = () => {
 
                 <div className='flex flex-col md:flex-row justify-center items-center gap-8 mt-10 w-full px-8'>
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:h-[19rem] md:w-[40rem]'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:h-[24rem] md:w-[40rem]'>
 
 
                         <div className='text-white'><FaMobileAlt size={20} /></div>
@@ -28,7 +28,7 @@ const ProductsSection = () => {
                     </div>
 
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[19rem] md:w-[40rem]'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[24rem] md:w-[40rem]'>
 
 
                         <div className='text-white'><BsShop size={20} /></div>
@@ -39,7 +39,7 @@ const ProductsSection = () => {
                         </p>
                     </div>
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:h-[19rem] md:w-[40rem]'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:py-14 md:h-[24rem] md:w-[40rem]'>
 
 
                         <div className='text-white'><RiSecurePaymentFill size={20} /></div>
@@ -55,7 +55,7 @@ const ProductsSection = () => {
 
 
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[19rem] md:w-[40rem]'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[24rem] md:w-[40rem]'>
 
 
                         <div className='text-white'><GoPeople size={25} /></div>
@@ -67,7 +67,7 @@ const ProductsSection = () => {
 
 
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[19rem] md:w-[40rem]'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[24rem] md:w-[40rem]'>
 
 
                         <div className='text-white'><FaTruck size={25} /></div>
@@ -78,7 +78,7 @@ const ProductsSection = () => {
                     </div>
 
 
-                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[19rem] md:w-[40rem]'>
+                    <div className='bg-[#003311] text-white rounded-lg font-bold p-5 md:h-[24rem] md:w-[40rem]'>
 
 
                         <div className='text-white'><FaTools size={25} /></div>

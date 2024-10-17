@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/images/Konectar Logo.png';
+import Logo from '../assets/images/KLogo.png';
 import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,8 +9,8 @@ const Footer = () => {
         <section className='w-full bg-[#CECEDE] flex flex-col justify-center items-center py-11 px-12 md:px-4'>
 
             
-            <div className=''>
-                <img className='' src={Logo} alt="Logo" />
+            <div className='flex justify-center'>
+                <img className='w-[18%]' src={Logo} alt="Logo" />
             </div>
 
             <h1 className='text-center mt-5 font-Manrope font-bold text-[1rem] md:text-[1.7rem] leading-tight md:leading-snug'>Subscribe to our newsletter to get first hand updates.</h1>
@@ -34,7 +34,7 @@ const Footer = () => {
 
 
        <div>
-        <img src={Logo} alt="Konectar Logo" />
+        <img className='w-[44%]' src={Logo} alt="Konectar Logo" />
         </div>
 
         <p className='mt-4'>Connecting Farms to Businesses: Nigeria's Leading Marketplace for Fresh Fruits and Vegetable</p>

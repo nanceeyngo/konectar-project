@@ -1,4 +1,4 @@
-import Logo from '../assets/images/Konectar Logo.png'
+import Logo from '../assets/images/KLogo.png'
 import { navItems } from "../constants";
 import { Menu, X} from "lucide-react";
 import { useState } from 'react';
@@ -13,15 +13,15 @@ const Navbar = () => {
 
   return (
     <nav className='sticky top-0 z-50 py-3 bg-neutral20 border-b border-neutral70/'>
-    <div className='container mx-auto px-4'>
+    <div className='container mx-auto px-16'>
     <div className='flex justify-between items-center'>
     
      {/* logo */}
-    <div className='flex items-center flex-shrink-0'>
-    <img className='' src={Logo}  alt="Logo"/>
+    <div className='basis-[20%]'>
+    <img className='size-full' src={Logo}  alt="Logo"/>
     </div>
 
-    <ul className='hidden lg:flex ml-14 space-x-12'>
+    <ul className='hidden lg:flex space-x-12'>
     {navItems.map((items, index) => (
       <li key={index}>
       <Link to={items.href}>{items.label}</Link>

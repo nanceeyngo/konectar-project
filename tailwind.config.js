@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Manrope: ["Manrope", "serif"],},
       colors: {
         basewhite: '#FFFFFF',
         baseblack: '#000000',
