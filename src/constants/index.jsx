@@ -68,7 +68,7 @@ import person3 from "../assets/images/LindaGift.jpg";
       image: person1,
       name: "Damilola Atayero",
       role: "(Product Manager & Marketer)",
-      experience: "7 years experience in B2B sales, Client Management and managing Digital Producs",
+      experience: "7 years experience in B2B sales, Client Management and managing Digital Products",
       portfolio: '"THE CLOSER"',
       
     },
@@ -84,7 +84,7 @@ import person3 from "../assets/images/LindaGift.jpg";
       image: person3,
       name: "LindaGift Awo",
       role: "(Software Engineer)",
-      experience: "5 years experience in Product Design and build software solutions",
+      experience: "5 years experience in Product Design and building Software solutions",
       portfolio: '"THE HACKER"',
       imageHeight: "300px",
       imageWidth: "300px",
