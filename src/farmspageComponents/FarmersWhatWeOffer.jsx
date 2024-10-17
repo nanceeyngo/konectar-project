@@ -18,13 +18,13 @@ const FarmersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
 
-                    <div className={`md:basis-[25%] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-4' : 'bg-[#07190B]'
+                    <div className={`md:h-[80px] md:w-[300px] text-white py-4 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-4' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
 
                         <p>{isHovered ? 'Negotiate better deals on the platform without middlemen taking a cut' : 'Negotiate Pricing in Real-Time'}</p></div>
 
-                    <div className={`md:basis-[25%] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered2 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-4' : 'bg-[#07190B]'
+                    <div className={`md:h-[80px] md:w-[300px] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered2 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-4' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered2(true)} onMouseLeave={() => setIsHovered2(false)} >
 
@@ -33,7 +33,7 @@ const FarmersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
 
-                    <div className={`bg-[#07190B] text-white cursor-default py-4 md:py-6 px-4 rounded-lg max-w-[45%] md:max-w-none ${isHovered3 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-6' : 'bg-[#07190B]'
+                    <div className={`md:h-[80px] md:w-[300px] bg-[#07190B] text-white cursor-default py-4 md:py-6 px-4 rounded-lg max-w-[45%] md:max-w-none  ${isHovered3 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-6' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered3(true)} onMouseLeave={() => setIsHovered3(false)} >
 
@@ -44,14 +44,14 @@ const FarmersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
 
-                    <div className={`md:basis-[25%] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered4 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-4' : 'bg-[#07190B]'
+                    <div className={`md:h-[85px] md:w-[300px] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered4 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-6' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} >
 
                         <p>{isHovered4 ? 'Access Cold-chain storage and transport to preserve and transport your fresh produce without losing its quality.' : 'Eficient Logistics & Delivery'}</p></div>
 
 
-                    <div className={`md:basis-[25%] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered5 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-2 md:py-4' : 'bg-[#07190B]'
+                    <div className={`md:h-[80px] md:w-[300px] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered5 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-2 md:py-4' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered5(true)} onMouseLeave={() => setIsHovered5(false)} >
 
