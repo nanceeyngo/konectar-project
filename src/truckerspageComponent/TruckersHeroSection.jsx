@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TruckersHeroSection = () => {
     return (
@@ -13,12 +14,12 @@ const TruckersHeroSection = () => {
             
             <div className='mt-8'>
             
-          <button type="button"
+         <Link to="/ContactForm"> <button type="button"
             className='bg-[#009933] mt-4 px-6 py-2 md:px-9 rounded-lg text-[0.8rem] md:text-[1rem] text-white'
           >
             Contact Us
           </button>
-          
+          </Link>
         
     
             </div>

@@ -18,11 +18,11 @@ const TeamSection = () => {
           <div key={index} className="basis-[20%] flex flex-col items-center justify-center">
             <div className="rounded-full flex justify-center items-center">
               <img
-                className="md:size-full rounded-[50%]"
-                // style={{
-                //   height: member.imageHeight,
-                //   width: member.imageWidth,
-                // }}
+                className="size-full rounded-[50%]"
+                style={{
+                  height: member.imageHeight,
+                  width: member.imageWidth,
+                }}
                 src={member.image}
                 alt={`Team Member ${index + 1}`}
               />
