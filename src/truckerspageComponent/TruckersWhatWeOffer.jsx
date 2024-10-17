@@ -33,15 +33,28 @@ const TruckersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
                    
-                   <div className='bg-[#07190B] text-white py-4 md:py-6 px-4 rounded-lg'><p>Access to Verified Clients</p></div>
+                <div className={`bg-[#07190B] text-white cursor-default py-4 md:py-6 px-4 rounded-lg max-w-[45%] md:max-w-[40%] ${isHovered3 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-4 md:basis-[25%]' : 'bg-[#07190B]'
+                        }`}
+                        onMouseEnter={() => setIsHovered3(true)} onMouseLeave={() => setIsHovered3(false)} >
+
+                        <p>{isHovered3 ? 'Get connected with a large pool of farmers and buyers in need of cold-chain services' : 'Access to Verified Clients'}</p></div>
                    
                </div>
 
 
                <div className='flex justify-center items-center gap-20 md:gap-24 mt-8'>
                    
-                   <div className='bg-[#07190B] text-white py-2 md:py-6 px-6 md:px-12 rounded-lg'><p>Real-Time Tracking</p></div>
-                   <div className='bg-[#07190B] text-white py-2 md:py-6 px-6 md:px-7 rounded-lg'><p>Improved Access Utilization</p></div>
+                   <div className={`cursor-default bg-[#07190B] text-white py-2 md:py-6 px-6 md:px-12 rounded-lg ${isHovered4 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-4 md:px-6 md:basis-[25%]' : 'bg-[#07190B]'
+                        }`}
+                        onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} >
+
+                        <p>{isHovered4 ? 'Provide buyers and farmers with real-time updates on delivery status' : 'Real-Time Tracking'}</p></div>
+                  
+                   <div className={`cursor-default bg-[#07190B] text-white py-2 md:py-6 px-6 md:px-7 rounded-lg ${isHovered5 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-[0.5rem] md:basis-[20%]' : 'bg-[#07190B]'
+                        }`}
+                        onMouseEnter={() => setIsHovered5(true)} onMouseLeave={() => setIsHovered5(false)} >
+
+                        <p>{isHovered5 ? 'Maximize your cold-chain capacity with regular and consistent contracts' : 'Improved Asset Utilization'}</p></div>
                </div>
 
             </section>
