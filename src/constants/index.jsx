@@ -70,8 +70,7 @@ import person3 from "../assets/images/LindaGift.jpg";
       role: "(Product Manager & Marketer)",
       experience: "7 years experience in B2B sales, Client Management and managing Digital Products",
       portfolio: '"THE CLOSER"',
-      imageHeight: "270px",
-      imageWidth: "300px",
+     
     },
     {
       image: person2,
@@ -79,8 +78,7 @@ import person3 from "../assets/images/LindaGift.jpg";
       role: "(Founder & CEO)",
       experience: "2x Agribusiness Founder and graduate of Agricultural Science with over 6 years experience on C-level Roles",
       portfolio: '"THE STRATEGIST"',
-      imageHeight: "270px",
-      imageWidth: "300px",
+      
     },
     {
       image: person3,
@@ -88,7 +86,8 @@ import person3 from "../assets/images/LindaGift.jpg";
       role: "(Software Engineer)",
       experience: "5 years experience in Product Design and building Software solutions",
       portfolio: '"THE HACKER"',
-      
+      // imageHeight: "",
+      // imageWidth: "100%",
       
     },
     

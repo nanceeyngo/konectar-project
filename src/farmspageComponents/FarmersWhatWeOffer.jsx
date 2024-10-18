@@ -33,7 +33,7 @@ const FarmersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
 
-                    <div className={`md:h-[80px] md:w-[300px] bg-[#07190B] text-white cursor-default py-4 md:py-6 px-4 rounded-lg max-w-[45%] md:max-w-none  ${isHovered3 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-6' : 'bg-[#07190B]'
+                    <div className={`md:h-[80px] md:w-[300px] text-white cursor-default py-4 md:py-6 px-4 rounded-lg max-w-[45%] md:max-w-none  ${isHovered3 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-6 md:py-6' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered3(true)} onMouseLeave={() => setIsHovered3(false)} >
 
@@ -44,7 +44,7 @@ const FarmersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
 
-                    <div className={`md:h-[85px] md:w-[300px] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered4 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-6' : 'bg-[#07190B]'
+                    <div className={`md:h-[83px] md:w-[300px] text-white py-2 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered4 ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 max-w-[45%] md:py-[0.5rem]' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered4(true)} onMouseLeave={() => setIsHovered4(false)} >
 
