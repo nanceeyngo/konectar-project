@@ -58,8 +58,8 @@ import blogimage5 from '../assets/images/blogImage5.png';
     }
   ];
 
-import person1 from "../assets/images/dami.jpg";
-import person2 from "../assets/images/Ese.jpg";
+import person1 from "../assets/images/dami3.jpg";
+import person2 from "../assets/images/Ese3.jpg";
 import person3 from "../assets/images/LindaGift.jpg";
 
 

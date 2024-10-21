@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/images/KLogo.png';
 import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -81,7 +82,7 @@ const Footer = () => {
         <h1 className='font-bold'>Legal</h1>
 
         <p className='hover:text-[#009933]'>Terms and Conditions</p>
-        <p className='hover:text-[#009933]'>Privacy Policy</p>
+        <Link to='konectar-privacy-policy'><p className='hover:text-[#009933]'>Privacy Policy</p></Link>
         <p className='hover:text-[#009933]'>FAQs</p>
 
 
@@ -92,8 +93,8 @@ const Footer = () => {
 
         <h1 className='font-bold'>Contact</h1>
 
-        <p className=''>Address: 12b Capital Road, Lagos</p>
-        <p className=''>Phone: +2348065125745</p>
+        <p className=''>Address: ITF House, Plot 12, Funsho Williams Avenue, Iponri Surulere</p>
+        <p className=''>Phone: 09070645178</p>
         <p className=''>konectar.ag@gmail.com</p>
 
 
