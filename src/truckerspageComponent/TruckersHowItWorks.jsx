@@ -1,6 +1,6 @@
 import React from 'react';
 import phone1 from '../assets/images/ip1.png'
-import phone2 from '../assets/images/ip2.png'
+import phone2 from '../assets/images/iphone1-2.png'
 import phone3 from '../assets/images/ip6.png'
 import phone4 from '../assets/images/ip7.png'
 import phone5 from '../assets/images/ip8.png'

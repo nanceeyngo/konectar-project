@@ -31,7 +31,7 @@ const BuyersHowItWorks = () => {
              </div>
  
              <div className='basis-[30%] flex items-end gap-3'>
-                 <div className=''><img className='' src={phone1} alt="Picture 1" /></div>
+                 <div className=''><img className='' src={phone3} alt="Picture 1" /></div>
                  
              </div>
             </div>
@@ -75,7 +75,7 @@ const BuyersHowItWorks = () => {
              </div>
  
              <div className='basis-[30%] flex items-center gap-3'>
-                 <div className=''><img className='' src={phone3} alt="Picture 1" /></div>
+                 <div className=''><img className='' src={phone1} alt="Picture 3" /></div>
               
              </div>
  

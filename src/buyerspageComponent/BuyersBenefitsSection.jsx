@@ -8,7 +8,7 @@ const BuyersBenefitsSection = () => {
         <>
             <section className='w-full p-10 text-[#003311] pb-32'>
 
-                <h1 className='text-[1.5rem] md:text-[2.2rem] font-bold text-center'>The Benefits: For Logistics Providers</h1>
+                <h1 className='text-[1.5rem] md:text-[2.2rem] font-bold text-center'>The Benefits: For Wholesale Buyers</h1>
 
                 <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-14 mt-10 gap-5 md:gap-0'>
 
