@@ -11,11 +11,11 @@ import phone3 from '../assets/images/ip12.png'
 const BuyersHowItWorks = () => {
     return (
         <>
-            <section className='w-full bg-[#003311] py-16 text-white'>
+            <section className='w-full bg-[#003311] py-16 md:px-6 text-white'>
             
-            <h1 className='text-center font-Manrope font-bold text-[1.2rem] md:text-[2.2rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
+            <h1 className='text-center font-Manrope font-bold text-[2rem] md:text-[2.8rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
  
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-32'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-9 md:px-20'>
  
              <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 1</h1>

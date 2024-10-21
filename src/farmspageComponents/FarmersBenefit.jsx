@@ -8,11 +8,11 @@ const FarmersBenefit = () => {
         <>
             <section className='w-full p-10 text-[#003311] pb-32'>
 
-                <h1 className='text-[1.5rem] md:text-[2.2rem] font-bold text-center'>The Benefits: For Farmers</h1>
+                <h1 className='text-[2rem] md:text-[2.6rem] font-bold text-center'>The Benefits: For Farmers</h1>
 
                 <div className='flex flex-col md:flex-row justify-center items-center md:items-end md:px-12 mt-10 gap-5 md:gap-0'>
 
-                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full h-full' src={pic1} alt="Picture 1" /></div>
+                    <div className='md:basis-[42%] md:z-40 md:mr-[-2rem] md:mb-[-2.5rem]'><img className='rounded-lg w-full md:h-full' src={pic1} alt="Picture 1" /></div>
 
                     <div className='container bg-[#9acfab] rounded-lg py-3 md:py-16 px-16 md:basis-[58%]'>
 

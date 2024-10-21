@@ -13,7 +13,7 @@ const FarmersHowItWorks = () => {
             
             <h1 className='text-center font-Manrope font-bold text-[2rem] md:text-[2.8rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
  
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-10 md:px-20'>
  
              <div className='basis-[65%] md:basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 1</h1>

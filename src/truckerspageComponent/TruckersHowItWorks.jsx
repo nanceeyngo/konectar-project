@@ -9,11 +9,11 @@ import phone6 from '../assets/images/ip9.png'
 const TruckersHowItWorks = () => {
     return (
         <>
-           <section className='w-full bg-[#003311] py-16 text-white'>
+           <section className='w-full bg-[#003311] py-16 px-3 md:px-6 text-white'>
             
-            <h1 className='text-center font-Manrope font-bold text-[1.2rem] md:text-[2.2rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
+            <h1 className='text-center font-Manrope font-bold text-[2rem] md:text-[2.8rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
  
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-12 md:px-20'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-7 md:px-20'>
  
              <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 1</h1>
@@ -35,7 +35,7 @@ const TruckersHowItWorks = () => {
  
             
             
-            <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-20 px-12 md:px-20'>
+            <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-20 px-7 md:px-20'>
  
             <div className='basis-[30%] flex items-end gap-3'>
                  <div className='basis-[70%]'><img className='' src={phone3} alt="Picture 1" /></div>
@@ -58,7 +58,7 @@ const TruckersHowItWorks = () => {
  
            
            
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 md:mt-20 px-12 md:px-20'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 md:mt-20 px-7 md:px-20'>
  
             <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 3</h1>

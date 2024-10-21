@@ -10,7 +10,7 @@ const Footer = () => {
 
             
             <div className='flex justify-center'>
-                <img className='w-[18%]' src={Logo} alt="Logo" />
+                <img className='w-[40%] md:w-[18%]' src={Logo} alt="Logo" />
             </div>
 
             <h1 className='text-center mt-5 font-Manrope font-bold text-[1rem] md:text-[1.7rem] leading-tight md:leading-snug'>Subscribe to our newsletter to get first hand updates.</h1>

@@ -15,8 +15,8 @@ const BuyersWhatWeOffer = () => {
     return (
         <>
             <section className='w-full bg-[#CECEDE] p-10 py-24 text-center'>
-                <h1 className='text-center text-[#07190B] font-bold text-[1.5rem] md:text-[2rem]'>What We Offer</h1>
-                <p className='text-center'>Prompt, Source, Negotiate and Procure Quality Fruits and Vegetables.</p>
+                <h1 className='text-center text-[#0d2727] font-bold text-[2rem] md:text-[2.8rem]'>What We Offer</h1>
+                <p className='text-center text-[1rem] md:text-[1.3rem] text-[#003311] font-semibold'>Prompt, Source, Negotiate and Procure Quality Fruits and Vegetables.</p>
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
                    
