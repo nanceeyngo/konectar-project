@@ -20,7 +20,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-screen text-white text-left justify-left items-center flex lg:px-0 px-8 md:px-24 overflow-hidden">
+    <section className="relative h-screen text-white text-left justify-left items-center flex lg:px-0 px-8 md:px-16 overflow-hidden">
       {/* Background Image */}
       <img 
         src={images[currentImageIndex]} 
@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Hero content */}
-      <div className="relative w-full md:w-[54%] ml-0 md:ml-20 z-10 text-left">
+      <div className="relative w-full md:w-[54%] ml-0 md:ml-24 z-10 text-left">
         <h1 className='font-Manrope font-semibold text-[1.4rem] md:text-[2.8rem] leading-tight md:leading-snug'>
           Connecting Farms to Businesses: Nigeria's Leading Marketplace for Fresh Fruits and Vegetables
         </h1>

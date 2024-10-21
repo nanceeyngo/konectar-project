@@ -1,5 +1,5 @@
 import React from 'react'
-import box from '../assets/images/BOX.png'
+import box from '../assets/images/BOX1.png'
 
 const ProcessSection = () => {
   return (

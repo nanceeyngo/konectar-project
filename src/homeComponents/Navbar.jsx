@@ -13,11 +13,11 @@ const Navbar = () => {
 
   return (
     <nav className='sticky top-0 z-50 py-3 bg-neutral20 border-b border-neutral70/'>
-    <div className='container mx-auto px-16'>
+    <div className='container mx-auto px-8 md:px-16'>
     <div className='flex justify-between items-center'>
     
      {/* logo */}
-    <div className='basis-[45%] lg:basis-[20%]'>
+    <div className='basis-[40%] lg:basis-[20%]'>
     <img className='size-full' src={Logo}  alt="Logo"/>
     </div>
 
