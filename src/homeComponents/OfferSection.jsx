@@ -22,14 +22,14 @@ const OfferSection = () => {
            <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%]'>
                <img className='w-[100%]' src={frame2} alt="frame 2" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Wholesale Buyers</h1>
-               <p className='mt-3'>By becoming a 3rd-party logistics partner, you will gain access to... <b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'><Link to="/BuyersPage"> Read More </Link></b></p>
+               <p className='mt-3'>Effortlessly Find, Order, and Receive High-quality Fruits and Vegetables... <b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'><Link to="/BuyersPage"> Read More </Link></b></p>
                <Link to="/ContactForm"><button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Contact Us</button></Link>
               
            </div>
            <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%]'>
                <img className='w-[100%]' src={frame3} alt="frame 3" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Logistics</h1>
-               <p className='mt-3'>Effortlessly Find, Order, and Receive High-quality Fruits and Vegetables... <b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'><Link to="/TruckersPage"> Read More </Link></b></p>
+               <p className='mt-3'>By becoming a 3rd-party logistics partner, you will gain access to...<b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'><Link to="/TruckersPage"> Read More </Link></b></p>
               <Link to='/ContactForm'> <button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Contact Us</button></Link>
               
            </div>
