@@ -34,7 +34,7 @@ const HeroSection = () => {
 
       {/* Hero content */}
       <div className="relative w-full md:w-[54%] ml-0 md:ml-24 z-10 text-left">
-        <h1 className='font-Manrope font-semibold text-[1.4rem] md:text-[2.8rem] leading-tight md:leading-snug'>
+        <h1 className='font-Manrope font-semibold text-[2rem] md:text-[2.8rem] leading-tight md:leading-snug'>
           Connecting Farms to Businesses: Nigeria's Leading Marketplace for Fresh Fruits and Vegetables
         </h1>
         <div className='flex gap-4 mt-6 font-Manrope items-start'>

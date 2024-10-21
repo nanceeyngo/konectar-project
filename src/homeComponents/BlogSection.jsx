@@ -11,7 +11,7 @@ import { ArrowRight } from "lucide-react";
 const BlogSection = () => {
   return (
     <section className="bg-[#001F0A] font-Manrope justify-center items-center py-14 md:px-16 px-10">
-      <h1 className='font-Manrope text-white text-[1.5rem] md:text-[2.5rem] font-bold mb-6 text-center'>OUR BLOG POST</h1>
+      <h1 className='font-Manrope text-white text-[2rem] md:text-[2.8rem] font-bold mb-6 text-center'>Our Blog Post</h1>
       <div className='flex flex-col md:flex-row md:flex-wrap gap-5 justify-center items-center mt-10'>
         {blogs.map((blog, index) => (
           <div key={index} className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[40%]'>

@@ -20,7 +20,7 @@ const SdgSection = () => {
 
   return (
     <section className='bg-[#003333] py-20'>
-      <h1 className='font-Manrope text-white text-[1.2rem] md:text-[2rem] font-bold ml-16 mb-6 text-center md:text-left'>KONECTAR's SDG MISSION</h1>
+      <h1 className='font-Manrope text-white text-[2rem] md:text-[2.8rem] font-bold ml-16 mb-6 text-center'>Konectar's SDG Mission</h1>
       <hr />
 
       <div className='flex gap-5 justify-center items-center mt-10 px-10'>

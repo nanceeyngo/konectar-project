@@ -13,7 +13,7 @@ const PartnersSection = () => {
   return (
     <>
       <section className='font-Manrope bg-[#55BB77] py-5'>
-        <h1 className='text-[#001F0A] font-extrabold text-[1.2rem] md:text-[2rem] text-center'>OUR PARTNERS</h1>
+        <h1 className='text-[#0d2727] font-extrabold text-[2rem] md:text-[2.8rem] text-center'>Our Partners</h1>
 
         <div className="overflow-hidden w-full">
 

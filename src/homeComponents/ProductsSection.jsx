@@ -10,7 +10,7 @@ const ProductsSection = () => {
     return (
         <>
             <section className='w-full p-10 md:p-16 md:px-24'>
-                <div className='md:w-[80%] md:text-left'> <h1 className='font-bold text-[1.4rem] md:text-[2rem]'>Products: Features of The Platform</h1>
+                <div className='md:w-[80%] md:text-left'> <h1 className='font-bold text-[2rem] md:text-[2.8rem]'>Products: Features of The Platform</h1>
                     <p className='text-[#003311] text-[1rem] md:text-[1.3rem] font-semibold mt-4'>Our products showcase the value Konectar brings to both buyers and suppliers, emphasizing financial
                         security, convenience and quality assurance.
                     </p></div>
