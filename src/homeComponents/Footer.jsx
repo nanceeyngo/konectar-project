@@ -37,7 +37,7 @@ const Footer = () => {
         <img className='w-[44%]' src={Logo} alt="Konectar Logo" />
         </div>
 
-        <p className='mt-4'>Connecting Farms to Businesses: Nigeria's Leading Marketplace for Fresh Fruits and Vegetable</p>
+        <p className='mt-4'>Connecting Farms to Businesses: Nigeria's Leading Marketplace for Fresh Fruits and Vegetables</p>
 
         <p className='font-bold mt-5'>Social Media</p>
 
