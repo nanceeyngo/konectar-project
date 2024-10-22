@@ -11,6 +11,7 @@ import WaitingListForm from './pages/WaitingListForm';
 import ContactForm from './pages/ContactForm';
 import ScrollToTop from './ScrollToTop';
 import KonectarPrivacyPolicy from './pages/konectar-privacy-policy';
+import KonectarTermsOfUse from './pages/konectar-terms-of-use';
 
 
 const Rendernav = () => {
@@ -27,6 +28,8 @@ const Rendernav = () => {
             <Route path='/WaitingListForm' element={<WaitingListForm />} />
             <Route path='/ContactForm' element={<ContactForm />} />
             <Route path='/konectar-privacy-policy' element={<KonectarPrivacyPolicy />} />
+            <Route path='/konectar-terms-of-use' element={<KonectarTermsOfUse />} />
+            
             
         
         

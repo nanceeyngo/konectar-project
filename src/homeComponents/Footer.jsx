@@ -81,7 +81,7 @@ const Footer = () => {
 
         <h1 className='font-bold'>Legal</h1>
 
-        <p className='hover:text-[#009933]'>Terms and Conditions</p>
+        <Link to='konectar-terms-of-use'><p className='hover:text-[#009933]'>Terms and Conditions</p></Link>
         <Link to='konectar-privacy-policy'><p className='hover:text-[#009933]'>Privacy Policy</p></Link>
         <p className='hover:text-[#009933]'>FAQs</p>
 
