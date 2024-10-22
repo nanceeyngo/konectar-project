@@ -13,16 +13,16 @@ const TeamSection = () => {
       </section>
 
       {/* Team members grid */}
-      <section className="flex flex-col md:flex-row justify-center px-16 gap-12 md:gap-28 mt-10 py-10">
+      <section className="flex flex-col md:flex-row justify-center items-center px-16 gap-12 md:gap-28 mt-10 py-10">
         {teamMembers.map((member, index) => (
           <div key={index} className="basis-[20%] flex flex-col items-center justify-center">
             <div className="rounded-full flex justify-center items-center">
               <img
                 className="size-full rounded-[50%]"
-                style={{
-                  height: member.imageHeight,
-                  width: member.imageWidth,
-                }}
+                // style={{
+                //   height: member.imageHeight,
+                //   width: member.imageWidth,
+                // }}
                 src={member.image}
                 alt={`Team Member ${index + 1}`}
               />

@@ -42,7 +42,7 @@ const FarmersContent = () => {
     };
     
     return (
-        <div>
+        <div className='block'>
             {farmdata.slice(0, 5).map((farmdata, answer) => (
                 <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
                    <p key={answer}> {farmdata.answer} </p>
