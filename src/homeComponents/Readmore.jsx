@@ -25,7 +25,7 @@ const ReadMore = ({ trial }) => {
 
 
                 <div className="mt-4">
-                    {isReadMore ? "" : <p>{trial.answer}</p>}
+                    {isReadMore ? "" :<div>{trial.answer.map(item => <p key={item}>{item}</p> )}</div>}
 
                 </div>
 

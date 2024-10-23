@@ -24,7 +24,7 @@ const BuyersReadMore = ({ buytrial }) => {
             
 
             <div className="mt-4">
-                {isReadMore ? "" : <p>{buytrial.answer}</p>}
+                {isReadMore ? "" : <div>{buytrial.answer.map(item => <p key={item}>{item}</p> )}</div>}
 
             </div>
         </div>
