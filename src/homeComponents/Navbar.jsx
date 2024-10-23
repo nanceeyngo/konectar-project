@@ -46,11 +46,12 @@ const Navbar = () => {
     <div>
 
     {mobileMenu && (
-      <div className='lg:hidden w-full py-12 fixed bg-white flex flex-col border-solid border-[1px] border-[#4665] justify-center items-center -z-50'>
+      <div onClick={toggleNavbar} className='lg:hidden w-full py-12 fixed bg-white flex flex-col border-solid border-[1px] border-[#4665] justify-center items-center -z-50'>
       <ul>
       {navItems.map((item, index) => (
         <li key={index} className='py-4'>
-        <a href={item.href}>{item.label}</a>
+        <Link to={item.href}>{item.label}</Link>
+        
         </li>
       ))}
       </ul>

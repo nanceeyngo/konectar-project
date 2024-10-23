@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { farmdata } from '../homeComponents/data';
 
-const FarmersReadMore = ({ farmtrial, children }) => {
+const FarmersReadMore = ({ farmtrial }) => {
 
 
-    const text = children;
+   
     const [isReadMore, setIsReadMore] = useState(true);
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
@@ -23,10 +23,10 @@ const FarmersReadMore = ({ farmtrial, children }) => {
             </div>
             
 
-            <p className="mt-4">
-                {isReadMore ? "" : text}
+            <div className="mt-4">
+                {isReadMore ? "" : <div>{farmtrial.answer.map(item => <p key={item}>{item}</p> )}</div>}
 
-            </p>
+            </div>
         </div>
     );
 };
@@ -43,20 +43,19 @@ const FarmersContent = () => {
     
     return (
         <div className='block'>
-            {farmdata.slice(0, 5).map((farmdata, answer) => (
-                <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
-                   <p key={answer}> {farmdata.answer} </p>
-                </FarmersReadMore>
+            {farmdata.slice(0, 5).map((item) => (
+                <FarmersReadMore key={item.question} farmtrial={item}/>
+                   
+                
             ))}
 
             {isExpanded && (
-                farmdata.slice(5)).map((farmdata, answer) => (
-                    <FarmersReadMore key={farmdata.id} farmtrial={farmdata}>
-                       <p key={answer}> {farmdata.answer} </p>
-                    </FarmersReadMore>
+                farmdata.slice(5)).map((item) => (
+                    <FarmersReadMore key={item.question} farmtrial={item}/>
+                      
                 ))
             }
-                <div className='flex justify-end'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
+                <div className='flex justify-end font-bold'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
                 {isExpanded ? "View Less FAQs" : "View More FAQs"}
             </button></div>
         </div>

@@ -5,6 +5,7 @@ export const navItems = [
   { label: "Blog", href: "blog" },
   
   
+  
 ];
 
 import blogimage1 from '../assets/images/blogImage1.png';

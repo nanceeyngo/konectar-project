@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { data } from './data';
 
-const ReadMore = ({ trial, children }) => {
+const ReadMore = ({ trial }) => {
 
 
-    const text = children;
+    
     const [isReadMore, setIsReadMore] = useState(true);
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
@@ -24,10 +24,10 @@ const ReadMore = ({ trial, children }) => {
                 </div>
 
 
-                <p className="mt-4">
-                    {isReadMore ? "" : text}
+                <div className="mt-4">
+                    {isReadMore ? "" : <p>{trial.answer}</p>}
 
-                </p>
+                </div>
 
             </div>
 
@@ -54,20 +54,19 @@ const Content = () => {
 
     return (
         <div>
-            {data.slice(0, 5).map(data => (
-                <ReadMore key={data.id} trial={data}>
-                    {data.answer}
-                </ReadMore>
+            {data.slice(0, 5).map(item => (
+                <ReadMore key={item.question} trial={item}/>
+                    
+               
             ))}
 
             {isExpanded && (
-                data.slice(5)).map(data => (
-                    <ReadMore key={data.id} trial={data}>
-                        {data.answer}
-                    </ReadMore>
+                data.slice(5)).map(item => (
+                    <ReadMore key={item.question} trial={item}/>
+                     
                 ))
             }
-                <div className='flex justify-end'><button onClick={toggleViewMore} className='text-white rounded-md bg-[#003311] p-3'>
+                <div className='flex justify-end font-bold'><button onClick={toggleViewMore} className='text-white rounded-md bg-[#003311] p-3'>
                 {isExpanded ? "View Less FAQs" : "View More FAQs"}
             </button></div>
         </div>

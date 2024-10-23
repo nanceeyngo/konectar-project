@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { truckdata } from '../homeComponents/data';
 
-const TruckersReadMore = ({ trucktrial, children }) => {
+const TruckersReadMore = ({ trucktrial }) => {
 
 
-    const text = children;
+    
     const [isReadMore, setIsReadMore] = useState(true);
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
@@ -23,10 +23,10 @@ const TruckersReadMore = ({ trucktrial, children }) => {
             </div>
             
 
-            <p className="mt-4">
-                {isReadMore ? "" : text}
+            <div className="mt-4">
+                {isReadMore ? "" : <p>{trucktrial.answer}</p>}
 
-            </p>
+            </div>
         </div>
     );
 };
@@ -44,21 +44,19 @@ const TruckersContent = () => {
 
     return (
         <div>
-             {truckdata.slice(0, 5).map(truckdata => (
-                <TruckersReadMore key={truckdata.id} trucktrial={truckdata}>
-                    {truckdata.answer}
-                </TruckersReadMore>
+             {truckdata.slice(0, 5).map(item => (
+                <TruckersReadMore key={item.question} trucktrial={item}/>
+                   
             ))}
 
             {isExpanded && (
-                truckdata.slice(5)).map(truckdata => (
-                    <TruckersReadMore key={truckdata.id} trucktrial={truckdata}>
-                        {truckdata.answer}
-                    </TruckersReadMore>
+                truckdata.slice(5)).map(item => (
+                    <TruckersReadMore key={item.question} trucktrial={item}/>
+                       
                 ))
             }
             
-                <div className='flex justify-end'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
+                <div className='flex justify-end font-bold'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
                 {isExpanded ? "View Less FAQs" : "View More FAQs"}
             </button></div>
         </div>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { buydata } from '../homeComponents/data';
 
-const BuyersReadMore = ({ buytrial, children }) => {
+const BuyersReadMore = ({ buytrial }) => {
 
 
-    const text = children;
+    // const text = children;
     const [isReadMore, setIsReadMore] = useState(true);
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
@@ -23,10 +23,10 @@ const BuyersReadMore = ({ buytrial, children }) => {
             </div>
             
 
-            <p className="mt-4">
-                {isReadMore ? "" : text}
+            <div className="mt-4">
+                {isReadMore ? "" : <p>{buytrial.answer}</p>}
 
-            </p>
+            </div>
         </div>
     );
 };
@@ -44,21 +44,19 @@ const BuyersContent = () => {
     
     return (
         <div>
-            {buydata.slice(0, 5).map(buydata => (
-                <BuyersReadMore key={buydata.id} buytrial={buydata}>
-                    {buydata.answer}
-                </BuyersReadMore>
+            {buydata.slice(0, 5).map(item => (
+                <BuyersReadMore key={item.question} buytrial={item}/>
+                   
             ))}
 
             {isExpanded && (
-                buydata.slice(5)).map(buydata => (
-                    <BuyersReadMore key={buydata.id} buytrial={buydata}>
-                        {buydata.answer}
-                    </BuyersReadMore>
+                buydata.slice(5)).map(item => (
+                    <BuyersReadMore key={item.question} buytrial={item}/>
+                        
                 ))
             }
             
-                <div className='flex justify-end'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
+                <div className='flex justify-end font-bold'><button onClick={toggleViewMore} className='text-[#003311] rounded-md bg-white p-3'>
                 {isExpanded ? "View Less FAQs" : "View More FAQs"}
             </button></div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/images/KLogo.png';
-import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -43,9 +44,9 @@ const Footer = () => {
         <p className='font-bold mt-5'>Social Media</p>
 
         <div className='cursor-pointer mt-5 flex gap-8'>
-            <div className='text-[#4080c9]'><FaTwitter size={20} /></div>
-            <div><FaInstagram size={20} /></div>
-            <div className='text-[#20348d]'><FaLinkedin size={20}/></div>
+            <div className='text-[#20348d] hover:text-[#b86e3d]'><a href="https://www.facebook.com/profile.php?id=61566026614806&mibextid=ZbWKwL"><FaFacebook size={20} /></a></div>
+            <div className='hover:text-[#b86e3d]'><a href="https://www.instagram.com/konectar_b2b?igsh=a2poM2JtejBxdnVt"><FaInstagram size={20} /></a></div>
+            <div className='text-[#20348d] hover:text-[#b86e3d]'><a href="https://www.linkedin.com/company/konectar.com/"><FaLinkedin size={20}/></a></div>
         </div>
 
 
