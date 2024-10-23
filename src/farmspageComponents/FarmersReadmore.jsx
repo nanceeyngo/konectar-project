@@ -25,7 +25,7 @@ const FarmersReadMore = ({ farmtrial }) => {
 
             <div className="mt-4">
                 {isReadMore ? "" : <div>{farmtrial.answer.map(item => <p key={item}>{item}</p> )}</div>}
-
+               
             </div>
         </div>
     );
