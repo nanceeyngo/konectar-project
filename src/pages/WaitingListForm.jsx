@@ -10,35 +10,53 @@ const WaitingListForm = () => {
 
     const [showModal, setShowModal] = useState(false);
     const [inputValues, setInputValues] = useState({});
+    const [message, setMessage] = useState('');
 
-    const [error, setError] = useState('');
+    // const [error, setError] = useState('');
+    // const [isChecked, setIsChecked] = useState(false);
+
+    // const handleCheckBox = () => {
+    //     setIsChecked(!isChecked);
+    // };
 
     const handleInputChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
+        const type = event.target.type;
+        const checked = event.target.checked;
+
+        const newValue = type === 'checkbox' ? checked : value;
         // controling the values of all input fields by mapping and concatenating with the 3 dots
-        setInputValues(values => ({ ...values, [name]: value }));
+        setInputValues(values => ({ ...values, [name]: newValue }));
 
 
-        if (!value.trim()) {
-            setError('This field is required!');
+        // if (!value.trim()) {
+        //     setError('This field is required!');
 
-        }
-        else {
-            setError('')
-        }
+        // }
+        // else {
+        //     setError('')
+        // }
 
     }
 
     //function to drop an alert messeage, as well as print input values into the console, if all fields have been filled
-    const handleSubmit = (event) => {
+    const handleSubmit =  async (event) => {
         event.preventDefault();
+
+        try {
+            const response = await axios.post('http://localhost:3000/waitlist', inputValues);
+            setMessage(response.data.message);
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setMessage('Failed to submit form.');
+        }
         
-        if (!error) {
+        /*if (!error) {
             setShowModal(true);
             console.log('Form submitted with input:', { inputValues});
             
-        }
+        } */
     }
 
     const exampleData = (options) => {
@@ -216,13 +234,14 @@ const WaitingListForm = () => {
                         onChange={handleInputChange} required></textarea>
                     <br></br><br></br>
 
-                    <label className='font-bold' htmlFor='checkbox3'>
+                    <label className='font-bold' htmlFor=''>
                         Update and Notifications  </label><br></br>
 
                     <input className='bg-[#32be51] mt-3'
                         type="checkbox"
                         name='checkbox3'
-                        value={inputValues.checkbox3 || ""}
+                        id='checkbox3'
+                        value={inputValues.isChecked}
                         onChange={handleInputChange} required />
 
 
@@ -231,7 +250,7 @@ const WaitingListForm = () => {
 
                         
 
-                    {error && <p className='text-error70 ease-in font-bold'>{error}</p>}
+                    {/* {error && <p className='text-error70 ease-in font-bold'>{error}</p>} */}
                     <button type="submit"
                         className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem] w-full'
                     >
@@ -239,6 +258,7 @@ const WaitingListForm = () => {
                     </button>
                 </form>
 
+                {message && <p>{message}</p>}
             </section>
 
             {showModal && (
