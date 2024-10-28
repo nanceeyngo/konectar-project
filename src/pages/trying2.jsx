@@ -61,28 +61,36 @@ const options = [
     { value: 'cabbage', label: 'Cabbage - Ewedu Oyibo' },
     { value: 'okra', label: 'Okra - Ila' },
     { value: 'beetroots', label: 'Beetroots - Ata Dudu' }
-  ]
-  
-  const options2 = [
+]
+
+const options2 = [
     { value: 'twice-a-week', label: 'Twice a week' },
     { value: 'once-a-month', label: 'Once a month' },
     { value: 'others', label: 'Others' },
-  ]
-  
-  const options3 = [
+]
+
+const options3 = [
     { value: 'local-market', label: 'Local market' },
     { value: 'wholesalers', label: 'Wholesalers' },
     { value: 'direct-sales', label: 'Direct sales' },
-  ]
-  
-  const options4 = [
+]
+
+const options4 = [
     { value: 'organic-certification', label: 'Organic Certification' },
-    { value: 'wholesalers', label: 'Farm Tours or Educational Programs' },
+    { value: 'farm-tours-or-educational-programs', label: 'Farm Tours or Educational Programs' },
     { value: 'direct-to-consumer-sales', label: 'Direct-to-Consumer sales' },
     { value: 'value-added-products', label: 'Value-Added Products' },
     { value: 'packaging-service', label: 'Packaging Service' },
     { value: 'pesticide-free-produce', label: 'Pesticide-Free Produce' },
-  ]
+]
+
+const options5 = [
+    { value: 'linkedin', label: 'LinkedIn' },
+    { value: 'facebook', label: 'Facebook' },
+    { value: 'instagram', label: 'Instagram' },
+    { value: 'friends', label: 'Friends' }
+   
+]
 
 
 const Option = (props) => {
@@ -100,36 +108,59 @@ const Option = (props) => {
     );
 };
 
-export default function Example({handleChange}) {
+export default function Example({ handleChange, handleOptionText }) {
 
-    const [selectedOptions, setSelectedOptions] = useState([]);
+    const [selectedOptions, setSelectedOptions] = useState({
+        typesofproduce: null,
+        supplyfrequency: null,
+        distributionchannels: null,
+        additionalofferings: null,
+        referralsource: null,
+    });
+    const [otherText, setOtherText] = useState('');
 
-    const handleSelectChange = (selectedOptions) => {
-        setSelectedOptions(selectedOptions);
-        handleChange(selectedOptions)
-    };
-    
-
-    const [selectedOptions2, setSelectedOptions2] = useState([]);
-
-    const handleSelectChange2 = (selectedOptions2) => {
-        setSelectedOptions2(selectedOptions2);
-        handleChange(selectedOptions2)
-    };
-
-    const [selectedOptions3, setSelectedOptions3] = useState([]);
-
-    const handleSelectChange3 = (selectedOptions3) => {
-        setSelectedOptions3(selectedOptions3);
-        handleChange(selectedOptions3)
+    const handleSelectChange = (name) => (selectedOption) => {
+        setSelectedOptions((fields) => ({
+            ...fields,
+            [name]: selectedOption,
+        }));
+        handleChange({ ...selectedOptions, [name]: selectedOption });
     };
 
-    const [selectedOptions4, setSelectedOptions4] = useState([]);
+     const handleTextChange = (e) => { 
+       
+        handleOptionText(e, setOtherText);
+    }
 
-    const handleSelectChange4 = (selectedOptions4) => {
-        setSelectedOptions4(selectedOptions4);
-        handleChange(selectedOptions4)
-    };
+
+    // const [selectedOptions2, setSelectedOptions2] = useState([]);
+    // const [otherText, setOtherText] = useState('');
+
+    // const handleSelectChange2 = (selectedOptions2) => {
+    //     setSelectedOptions2(selectedOptions2);
+    //     if (selectedOptions2.value !== 'others') {
+    //         setOtherText(''); // Clear the text input if another option is selected
+    //     } 
+    //     handleChange(selectedOptions2);
+    // };
+    // const handleTextChange = (e) => { 
+       
+    //     handleChange2(e, setOtherText);
+    // }
+
+    // const [selectedOptions3, setSelectedOptions3] = useState([]);
+
+    // const handleSelectChange3 = (selectedOptions3) => {
+    //     setSelectedOptions3(selectedOptions3);
+    //     handleChange(selectedOptions3)
+    // };
+
+    // const [selectedOptions4, setSelectedOptions4] = useState([]);
+
+    // const handleSelectChange4 = (selectedOptions4) => {
+    //     setSelectedOptions4(selectedOptions4);
+    //     handleChange(selectedOptions4)
+    // };
 
     return (
 
@@ -142,14 +173,14 @@ export default function Example({handleChange}) {
                 options={options}
                 isMulti={true}
                 closeMenuOnSelect={false}
-                hideSelectedOptions={true}
+                hideSelectedOptions={false}
                 components={{
                     Option
                 }}
                 placeholder="Select produce"
-                onChange={handleSelectChange}
+                onChange={handleSelectChange('typesofproduce')}
                 allowSelectAll={true}
-                value={selectedOptions}
+                value={selectedOptions.typesofproduce}
                 theme={(theme) => ({
                     ...theme,
                     borderRadius: 7,
@@ -174,9 +205,14 @@ export default function Example({handleChange}) {
                 hideSelectedOptions={false}
 
                 placeholder="Select frequency"
-                onChange={handleSelectChange2}
+                onChange={(selectedOption) => {
+                    handleSelectChange('supplyfrequency')(selectedOption);
+                    if (selectedOption?.value !== 'others') {
+                        setOtherText(''); // Clear the text input if another option is selected
+                    }
+                }}
                 allowSelectAll={true}
-                value={selectedOptions2}
+                value={selectedOptions.supplyfrequency}
                 theme={(theme) => ({
                     ...theme,
                     borderRadius: 7,
@@ -189,6 +225,22 @@ export default function Example({handleChange}) {
                 })}
                 required /> <br />
 
+            {selectedOptions.supplyfrequency?.value === 'others' && (
+                <div>
+                    <p className='text-[0.7rem]'>Indicate here if you don't see your category above</p>
+                    <label className='font-bold' htmlFor="other">Please specify:</label>
+                    <input className='bg-[#dcd6ec99] mt-3 mb-6 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
+                        type="text"
+                        id="other"
+                        name="other"
+                        value={otherText.other}
+                        onChange={handleTextChange}
+                    /> 
+                </div> 
+            )} 
+
+
+
             <label className='font-bold' htmlFor='produce3'>
                 Distribution Channels  </label><br></br>
             <ReactSelect className='hover:border-[#424b50] bg-[#dcd6ec99]'
@@ -198,10 +250,10 @@ export default function Example({handleChange}) {
                 closeMenuOnSelect={true}
                 hideSelectedOptions={false}
 
-                placeholder="Select how you want to distribute your produce"
-                onChange={handleSelectChange3}
+                placeholder="What distribution channels are you currently using?"
+                onChange={handleSelectChange('distributionchannels')}
                 allowSelectAll={true}
-                value={selectedOptions3}
+                value={selectedOptions.distributionchannels}
                 theme={(theme) => ({
                     ...theme,
                     borderRadius: 7,
@@ -227,9 +279,36 @@ export default function Example({handleChange}) {
                     Option
                 }}
                 placeholder="Select additional offerings"
-                onChange={handleSelectChange4}
+                onChange={handleSelectChange('additionalofferings')}
                 allowSelectAll={true}
-                value={selectedOptions4}
+                value={selectedOptions.additionalofferings}
+                theme={(theme) => ({
+                    ...theme,
+                    borderRadius: 7,
+                    colors: {
+                        ...theme.colors,
+                        primary25: 'lightgreen',
+                        danger: 'black',
+                        primary: 'lightgrey',
+                    },
+                })}
+                required /> <br />
+
+<label className='font-bold' htmlFor='produce5'>
+               Referral Source  </label><br></br>
+            <ReactSelect className='hover:border-[#424b50] bg-[#dcd6ec99]'
+                name="produce5"
+                options={options5}
+                isMulti={true}
+                closeMenuOnSelect={false}
+                hideSelectedOptions={false}
+                components={{
+                    Option
+                }}
+                placeholder="How did you hear about us?"
+                onChange={handleSelectChange('referralsource')}
+                allowSelectAll={true}
+                value={selectedOptions. referralsource}
                 theme={(theme) => ({
                     ...theme,
                     borderRadius: 7,

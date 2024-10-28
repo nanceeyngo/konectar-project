@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import Example from './trying2';
+//import axios from 'axios'; // Import axios
+
 
 
 const WaitingListForm = () => {
@@ -19,7 +21,7 @@ const WaitingListForm = () => {
     //     setIsChecked(!isChecked);
     // };
 
-    const handleInputChange = (event) => {
+ const handleInputChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
         const type = event.target.type;
@@ -28,6 +30,7 @@ const WaitingListForm = () => {
         const newValue = type === 'checkbox' ? checked : value;
         // controling the values of all input fields by mapping and concatenating with the 3 dots
         setInputValues(values => ({ ...values, [name]: newValue }));
+        console.log(newValue)
 
 
         // if (!value.trim()) {
@@ -43,10 +46,14 @@ const WaitingListForm = () => {
     //function to drop an alert messeage, as well as print input values into the console, if all fields have been filled
     const handleSubmit =  async (event) => {
         event.preventDefault();
-
+        console.log('Form submitted with input:', { inputValues});
         try {
-            const response = await axios.post('http://localhost:3000/waitlist', inputValues);
+            const response = await axios.post('https://konectar-backend-side-5.onrender.com/waitlist', inputValues);
             setMessage(response.data.message);
+            // Show modal on successful submission
+            setShowModal(true);
+
+            
         } catch (error) {
             console.error('Error submitting form:', error);
             setMessage('Failed to submit form.');
@@ -60,8 +67,8 @@ const WaitingListForm = () => {
     }
 
     const exampleData = (options) => {
-        setInputValues(values => ({ ...values, "trial": options }));
-            console.log(options, "----")
+        setInputValues(values => ({ ...values, "select field options": options }));
+            console.log(options)
     }
     
 
@@ -100,14 +107,14 @@ const WaitingListForm = () => {
                     <br></br><br></br>
 
 
-                    <label className='font-bold' htmlFor='location'>
+                    <label className='font-bold' htmlFor='farmlocation'>
                         Farm Location  </label><br></br>
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
-                        name='location'
+                        name='farmlocation'
                         placeholder='Enter your city, state and Country'
-                        value={inputValues.location || ""}
+                        value={inputValues.farmlocation || ""}
                         onChange={handleInputChange} required />
                     <br></br><br></br>
 
@@ -117,17 +124,19 @@ const WaitingListForm = () => {
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="email"
-                        name='contact'
+                        id='contact'
+                        name='emailcontact'
                         placeholder='Enter email address'
-                        value={inputValues.contact || ""}
+                        value={inputValues.emailcontact || ""}
                         onChange={handleInputChange} required />
                     <br></br>
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="tel"
-                        name='contact2'
+                        id='contact'
+                        name='phoneno'
                         placeholder='Enter phone number'
-                        value={inputValues.contact2 || ""}
+                        value={inputValues.phoneno || ""}
                         onChange={handleInputChange} required />
                     <br></br><br></br>
 
@@ -208,7 +217,7 @@ const WaitingListForm = () => {
 
                     </div> */}
 
-                    <label className='font-bold' htmlFor='location'>
+                    <label className='font-bold' htmlFor='farmsize'>
                         Farm Size  </label><br></br>
 
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
@@ -222,30 +231,31 @@ const WaitingListForm = () => {
 
                     <Example
                         handleChange = {exampleData}
+                        handleOptionText = {handleInputChange}
                     />
 
 
-                    <label className='font-bold' htmlFor='text1'>
+                    <label className='font-bold' htmlFor='mainchallenges'>
                         Main Challenges  </label><br></br>
                     <textarea className='h-[300px] bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
-                        name="text1"
+                        name="mainchallenges"
                         placeholder='Describe the challenges you face'
-                        value={inputValues.text1 || ""}
+                        value={inputValues.mainchallenges || ""}
                         onChange={handleInputChange} required></textarea>
                     <br></br><br></br>
 
-                    <label className='font-bold' htmlFor=''>
+                    <label className='font-bold' htmlFor='checkbox1'>
                         Update and Notifications  </label><br></br>
 
                     <input className='bg-[#32be51] mt-3'
                         type="checkbox"
-                        name='checkbox3'
-                        id='checkbox3'
+                        name='receiveupdates'
+                        id='receiveupdates'
                         value={inputValues.isChecked}
                         onChange={handleInputChange} required />
 
 
-                    <label className='ml-2 text-[0.8rem]' htmlFor='checkbox3'>
+                    <label className='ml-2 text-[0.8rem]' htmlFor='receiveupdates'>
                         I agree to receive updates and notifications from Konectar  </label><br></br> <br />
 
                         
@@ -277,17 +287,17 @@ const WaitingListForm = () => {
           
           <button type="button"
             className='bg-[#009933] px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
-          >
+          ><a href="https://chat.whatsapp.com/GaTyitdKOvgBCu7W2ANMWY">
             Join Whatsapp <FaWhatsapp className='text-white' />
-          </button>
+          </a></button>
           
 
           <Link to="/"><button
             type='button'
             className='bg-white px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-[#009933]'
-          >
+          > 
             Back to Home
-          </button>
+          </button> 
           </Link>
         </div>
                         {/* hover:-translate-y-1 hover:scale-110 hover:w-24 hover:rounded-xl duration-300" */}
