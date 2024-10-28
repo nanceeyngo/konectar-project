@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import Example from './trying2';
-//import axios from 'axios'; // Import axios
+import axios from 'axios'; // Import axios
 
 
 
@@ -56,7 +56,7 @@ const WaitingListForm = () => {
             
         } catch (error) {
             console.error('Error submitting form:', error);
-            setMessage('Failed to submit form.');
+            setMessage('Failed to submit form!');
         }
         
         /*if (!error) {
@@ -268,7 +268,7 @@ const WaitingListForm = () => {
                     </button>
                 </form>
 
-                {message && <p>{message}</p>}
+                {message && <p className='text-red-500'>{message}</p>}
             </section>
 
             {showModal && (
