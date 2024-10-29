@@ -111,11 +111,11 @@ const Option = (props) => {
 export default function Example({ handleChange, handleOptionText }) {
 
     const [selectedOptions, setSelectedOptions] = useState({
-        typesofproduce: null,
+        typesofproduce: [],
         supplyfrequency: null,
         distributionchannels: null,
-        additionalofferings: null,
-        referralsource: null,
+        additionalofferings: [],
+        referralsource: [],
     });
     const [otherText, setOtherText] = useState('');
 
@@ -127,7 +127,12 @@ export default function Example({ handleChange, handleOptionText }) {
         handleChange({ ...selectedOptions, [name]: selectedOption });
     };
 
-     const handleTextChange = (e) => { 
+    // const handleSelectChange = (selected) => {
+    //     handleChange({ typesofproduce: selected }); // Adjust based on your requirements
+    // };
+
+    
+    const handleTextChange = (e) => { 
        
         handleOptionText(e, setOtherText);
     }

@@ -13,6 +13,15 @@ const WaitingListForm = () => {
     const [showModal, setShowModal] = useState(false);
     const [inputValues, setInputValues] = useState({});
     const [message, setMessage] = useState('');
+    const [options, setOptions] = useState({ // Define options state here
+        typesofproduce: [],
+        supplyfrequency: null,
+        distributionchannels: null,
+        additionalofferings: [],
+        referralsource: [],
+    });
+
+    // const [otherText, setOtherText] = useState('');
 
     // const [error, setError] = useState('');
     // const [isChecked, setIsChecked] = useState(false);
@@ -21,7 +30,7 @@ const WaitingListForm = () => {
     //     setIsChecked(!isChecked);
     // };
 
- const handleInputChange = (event) => {
+    const handleInputChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
         const type = event.target.type;
@@ -30,6 +39,7 @@ const WaitingListForm = () => {
         const newValue = type === 'checkbox' ? checked : value;
         // controling the values of all input fields by mapping and concatenating with the 3 dots
         setInputValues(values => ({ ...values, [name]: newValue }));
+        // setOtherText(values => ({ ...values, [name]: newValue }));
         console.log(newValue)
 
 
@@ -43,22 +53,72 @@ const WaitingListForm = () => {
 
     }
 
-    //function to drop an alert messeage, as well as print input values into the console, if all fields have been filled
-    const handleSubmit =  async (event) => {
-        event.preventDefault();
-        console.log('Form submitted with input:', { inputValues});
+    // const exampleData = (options) => {
+    //     setInputValues(values => ({ ...values, options}));
+    //         console.log(options)
+    // }
+    const exampleData = (data) => {
+        setOptions((prevOptions) => ({ ...prevOptions, ...data })); // Update options state
+        console.log(data);
+    };
+
+
+
+    const submitFormData = async (data) => {
+        
         try {
-            const response = await axios.post('https://konectar-backend-side-5.onrender.com/waitlist', inputValues);
+            const response = await axios.post('https://konectar-backend-side-15.onrender.com/waitlist', data, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
             setMessage(response.data.message);
             // Show modal on successful submission
             setShowModal(true);
 
-            
+
         } catch (error) {
             console.error('Error submitting form:', error);
             setMessage('Failed to submit form!');
         }
-        
+    };
+
+
+    //function to drop an alert messeage, as well as print input values into the console, if all fields have been filled
+    const handleSubmit = async (event) => {
+
+        event.preventDefault();
+
+
+
+        const payload = {
+            username: inputValues.username,
+            farmname: inputValues.farmname,
+            farmsize: inputValues.farmsize,
+            farmlocation: inputValues.farmlocation,
+            contactinformation: {
+                emailcontact: inputValues.emailcontact,
+                phoneno: inputValues.phoneno,
+            },
+            typeofproduce: options.typesofproduce.map(option => option.value || ''), // Use options state
+            supplyfrequency: options.supplyfrequency?.value || '',
+            customSupplyfrequency: inputValues.other,
+            // supplyfrequency: {
+            //     frequency: options.supplyfrequency?.value || '',
+            //     customFrequency: '',
+            // },
+            distributionchannels: options.distributionchannels?.value || '',
+            additionalofferings: options.additionalofferings.map(option => option.value || ''),
+            referralsource: options.referralsource.map(option => option.value || ''),
+            mainchallenges: inputValues.mainchallenges,
+            receiveupdates: inputValues.receiveupdates || false, // Default value 
+        };
+
+        console.log('Form submitted with input:', { payload });
+        await submitFormData(payload);
+
+
         /*if (!error) {
             setShowModal(true);
             console.log('Form submitted with input:', { inputValues});
@@ -66,11 +126,10 @@ const WaitingListForm = () => {
         } */
     }
 
-    const exampleData = (options) => {
-        setInputValues(values => ({ ...values, "select field options": options }));
-            console.log(options)
-    }
-    
+
+
+
+
 
 
     return (
@@ -230,8 +289,8 @@ const WaitingListForm = () => {
 
 
                     <Example
-                        handleChange = {exampleData}
-                        handleOptionText = {handleInputChange}
+                        handleChange={exampleData}
+                        handleOptionText={handleInputChange}
                     />
 
 
@@ -258,7 +317,7 @@ const WaitingListForm = () => {
                     <label className='ml-2 text-[0.8rem]' htmlFor='receiveupdates'>
                         I agree to receive updates and notifications from Konectar  </label><br></br> <br />
 
-                        
+
 
                     {/* {error && <p className='text-error70 ease-in font-bold'>{error}</p>} */}
                     <button type="submit"
@@ -274,35 +333,35 @@ const WaitingListForm = () => {
             {showModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
                     <div className="bg-white p-8 w-[90%] md:w-[35%] rounded-md shadow-md text-center transition-all duration-300 ease-in-out scale-95">
-                        <div className='flex justify-center items-center'><div className='text-[#009933] '><IoCheckmarkCircle size={100}/></div></div>
+                        <div className='flex justify-center items-center'><div className='text-[#009933] '><IoCheckmarkCircle size={100} /></div></div>
                         <h1 className="text-[1.4rem] font-bold mt-11">Thank you for joining the Konectar Waitlist</h1>
-                       
-                        <p className="mt-3">We've received your information and you're now on the list to be one of the first to 
-                            experience our platform. Keep an eye on your inbox for updates, and we'll notify you as soon 
+
+                        <p className="mt-3">We've received your information and you're now on the list to be one of the first to
+                            experience our platform. Keep an eye on your inbox for updates, and we'll notify you as soon
                             as we're ready to launch!
                         </p>
-                         
+
 
                         <div className='flex gap-4 mt-6 justify-center items-center font-bold'>
-          
-          <button type="button"
-            className='bg-[#009933] px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
-          ><a href="https://chat.whatsapp.com/GaTyitdKOvgBCu7W2ANMWY">
-            Join Whatsapp <FaWhatsapp className='text-white' />
-          </a></button>
-          
 
-          <Link to="/"><button
-            type='button'
-            className='bg-white px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-[#009933]'
-          > 
-            Back to Home
-          </button> 
-          </Link>
-        </div>
+                            <button type="button"
+                                className='bg-[#009933] px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
+                            ><a href="https://chat.whatsapp.com/GaTyitdKOvgBCu7W2ANMWY">
+                                    Join Whatsapp <FaWhatsapp className='text-white' />
+                                </a></button>
+
+
+                            <Link to="/"><button
+                                type='button'
+                                className='bg-white px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-[#009933]'
+                            >
+                                Back to Home
+                            </button>
+                            </Link>
+                        </div>
                         {/* hover:-translate-y-1 hover:scale-110 hover:w-24 hover:rounded-xl duration-300" */}
 
-                       
+
                     </div>
 
                 </div>
