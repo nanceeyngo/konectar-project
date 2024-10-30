@@ -7,19 +7,19 @@ const ContactForm = () => {
   const [showModal, setShowModal] = useState(false);
   const [inputValues, setInputValues] = useState({});
 
-  const [error, setError] = useState('');
+  // const [error, setError] = useState('');
 
   const handleInputChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setInputValues(values => ({ ...values, [name]: value }));
 
-    if (!value.trim()) {
-      setError('This field is required!');
-    }
-    else {
-      setError('')
-    }
+    // if (!value.trim()) {
+    //   setError('This field is required!');
+    // }
+    // else {
+    //   setError('')
+    // }
   }
 
 
@@ -109,7 +109,7 @@ const ContactForm = () => {
               onChange={handleInputChange} required></textarea>
             <br></br><br></br>
 
-            {error && <p className='text-error70 ease-in font-bold'>{error}</p>}
+            {/* {error && <p className='text-error70 ease-in font-bold'>{error}</p>} */}
             <button type="submit"
               className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem]'
             >

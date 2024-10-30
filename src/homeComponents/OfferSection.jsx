@@ -12,7 +12,7 @@ const OfferSection = () => {
        <hr />
 
        <div className='flex flex-col md:flex-row gap-5 justify-center items-center mt-10'>
-           <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%]'>
+       <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%] w-full'>
                <img className='w-[100%]' src={frame1} alt="SDG2" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Farmers</h1>
                <p className='mt-3'>Skip multiple middlemen and sell directly to businesses like... <b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'> <Link to="/FarmersPage"> Read More </Link> </b></p>

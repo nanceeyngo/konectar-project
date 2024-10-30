@@ -62,15 +62,36 @@ const WaitingListForm = () => {
         console.log(data);
     };
 
+    //https://konectar-backend-side-15.onrender.com/waitlist
 
+    // const checkUserExists = async (username) => {
+    //     try {
+    //         const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', { username });
+    //         return response.data.exists; // API should return { exists: true/false }
+    //     } catch (error) {
+    //         console.error('Error checking username existence:', error);
+    //         return false; // Handle error gracefully
+    //     }
+    // };
 
+    // const checkEmailExists = async (email) => {
+    //     try {
+    //         const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', { email });
+    //         return response.data.exists; // API should return { exists: true/false }
+    //     } catch (error) {
+    //         console.error('Error checking email existence:', error);
+    //         return false; // Handle error gracefully
+    //     }
+    // };
+
+    
     const submitFormData = async (data) => {
         
         try {
-            const response = await axios.post('https://konectar-backend-side-15.onrender.com/waitlist', data, {
+            const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', data, {
                 headers: {
                     'Content-Type': 'application/json'
-                }
+                } 
             });
 
             setMessage(response.data.message);
@@ -90,8 +111,20 @@ const WaitingListForm = () => {
 
         event.preventDefault();
 
+        // const userExists = await checkUserExists(inputValues.username);
+        // if (userExists) {
+        //     setMessage('This username is already taken!');
+        //     return; // Prevent form submission if user exists
+        // };
 
 
+         // Check if email exists
+        //  const emailExists = await checkEmailExists(inputValues.emailcontact);
+        //  if (emailExists) {
+        //      setMessage('This email address is already registered!');
+        //      return; // Prevent form submission if email exists
+        //  }
+         
         const payload = {
             username: inputValues.username,
             farmname: inputValues.farmname,
@@ -104,10 +137,6 @@ const WaitingListForm = () => {
             typeofproduce: options.typesofproduce.map(option => option.value || ''), // Use options state
             supplyfrequency: options.supplyfrequency?.value || '',
             customSupplyfrequency: inputValues.other,
-            // supplyfrequency: {
-            //     frequency: options.supplyfrequency?.value || '',
-            //     customFrequency: '',
-            // },
             distributionchannels: options.distributionchannels?.value || '',
             additionalofferings: options.additionalofferings.map(option => option.value || ''),
             referralsource: options.referralsource.map(option => option.value || ''),
@@ -345,9 +374,9 @@ const WaitingListForm = () => {
                         <div className='flex gap-4 mt-6 justify-center items-center font-bold'>
 
                             <button type="button"
-                                className='bg-[#009933] px-6 py-2 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
-                            ><a href="https://chat.whatsapp.com/GaTyitdKOvgBCu7W2ANMWY">
-                                    Join Whatsapp <FaWhatsapp className='text-white' />
+                                className='bg-[#009933] px-6 py-3 rounded-lg text-[0.8rem] md:text-[1rem] text-white flex gap-2 items-center'
+                            ><a className='flex items-center gap-2' href="https://chat.whatsapp.com/GaTyitdKOvgBCu7W2ANMWY">
+                                    Join Whatsapp <FaWhatsapp size={15} className='text-white' />
                                 </a></button>
 
 
