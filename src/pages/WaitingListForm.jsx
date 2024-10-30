@@ -64,31 +64,29 @@ const WaitingListForm = () => {
 
     //https://konectar-backend-side-15.onrender.com/waitlist
 
-    // const checkUserExists = async (username) => {
+    // const userExist = async (username, emailcontact) => {
     //     try {
-    //         const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', { username });
-    //         return response.data.exists; // API should return { exists: true/false }
+    //         const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', {
+                
+    //             username,
+    //             emailcontact,
+    //         });
+    //         return response.data.exists; // Assuming your API returns { exists: true/false }
     //     } catch (error) {
-    //         console.error('Error checking username existence:', error);
+    //         console.error('Error checking user existence:', error);
     //         return false; // Handle error gracefully
+
+            
     //     }
     // };
 
-    // const checkEmailExists = async (email) => {
-    //     try {
-    //         const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', { email });
-    //         return response.data.exists; // API should return { exists: true/false }
-    //     } catch (error) {
-    //         console.error('Error checking email existence:', error);
-    //         return false; // Handle error gracefully
-    //     }
-    // };
+   
 
     
     const submitFormData = async (data) => {
         
         try {
-            const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', data, {
+            const response = await axios.post('https://konectar-backend-side-19.onrender.com/waitlist', data, {
                 headers: {
                     'Content-Type': 'application/json'
                 } 
@@ -99,10 +97,22 @@ const WaitingListForm = () => {
             setShowModal(true);
 
 
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            setMessage('Failed to submit form!');
+        // } catch (error) {
+        //     console.error('Error submitting form:', error);
+        //     setMessage('Failed to submit form!');
         }
+
+        catch (error) {
+                // Check if there's a response and extract the message
+                if (error.response && error.response.data) {
+                    const errorMessage = error.response.data.error 
+                    console.error(errorMessage);
+                    alert(errorMessage)
+                    setMessage('Failed to submit form!');
+                } else {
+                    setMessage('An unexpected error occurred!');
+                }
+            }
     };
 
 
@@ -111,19 +121,12 @@ const WaitingListForm = () => {
 
         event.preventDefault();
 
-        // const userExists = await checkUserExists(inputValues.username);
-        // if (userExists) {
-        //     setMessage('This username is already taken!');
-        //     return; // Prevent form submission if user exists
-        // };
-
-
-         // Check if email exists
-        //  const emailExists = await checkEmailExists(inputValues.emailcontact);
-        //  if (emailExists) {
-        //      setMessage('This email address is already registered!');
-        //      return; // Prevent form submission if email exists
-        //  }
+         // Check if user or email exists
+    //   const userExists = await userExist(inputValues.username, inputValues.emailcontact);
+    //     if (userExists) {
+    //         setMessage('A user with this username or email already exists!');
+    //         return; // Prevent form submission if user exists
+    //     } 
          
         const payload = {
             username: inputValues.username,
