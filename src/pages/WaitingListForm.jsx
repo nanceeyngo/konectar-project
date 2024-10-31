@@ -20,6 +20,7 @@ const WaitingListForm = () => {
         additionalofferings: [],
         referralsource: [],
     });
+    const [loading, setLoading] = useState(false);
 
     // const [otherText, setOtherText] = useState('');
 
@@ -67,7 +68,7 @@ const WaitingListForm = () => {
     // const userExist = async (username, emailcontact) => {
     //     try {
     //         const response = await axios.post('https://konectar-backend-side-18.onrender.com/waitlist', {
-                
+
     //             username,
     //             emailcontact,
     //         });
@@ -76,43 +77,79 @@ const WaitingListForm = () => {
     //         console.error('Error checking user existence:', error);
     //         return false; // Handle error gracefully
 
-            
+
     //     }
     // };
+    const resetForm = () => {
+        setInputValues({
+            username: '',
+            farmname: '',
+            farmsize: '',
+            farmlocation: '',
+            emailcontact: '',
+            phoneno: '',
+            other: '',
+            mainchallenges: '',
+            receiveupdates: false,
 
-   
+        });
+        setOptions({
+            typesofproduce: [],
+            supplyfrequency: null,
+            distributionchannels: null,
+            additionalofferings: [],
+            referralsource: [],
+        });
+    };
 
-    
+    const BouncingLoader = () => (
+        <div className="flex justify-center items-center h-16">
+            <div className="w-4 h-4 bg-[#269149] rounded-full animate-bounce mr-2"></div>
+            <div className="w-4 h-4 bg-[#269149] rounded-full animate-bounce mr-2 delay-200"></div>
+            <div className="w-4 h-4 bg-[#269149] rounded-full animate-bounce delay-400"></div>
+        </div>
+    );
+
+    const LoadingOverlay = () => (
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
+            <BouncingLoader />
+        </div>
+    );
+
     const submitFormData = async (data) => {
-        
+        setLoading(true);
         try {
             const response = await axios.post('https://konectar-backend-side-19.onrender.com/waitlist', data, {
                 headers: {
                     'Content-Type': 'application/json'
-                } 
+                }
             });
 
             setMessage(response.data.message);
             // Show modal on successful submission
             setShowModal(true);
 
+            // Reset the form fields here
+            resetForm(); // Call a function to reset the form
 
-        // } catch (error) {
-        //     console.error('Error submitting form:', error);
-        //     setMessage('Failed to submit form!');
+            // } catch (error) {
+            //     console.error('Error submitting form:', error);
+            //     setMessage('Failed to submit form!');
         }
 
         catch (error) {
-                // Check if there's a response and extract the message
-                if (error.response && error.response.data) {
-                    const errorMessage = error.response.data.error 
-                    console.error(errorMessage);
-                    alert(errorMessage)
-                    setMessage('Failed to submit form!');
-                } else {
-                    setMessage('An unexpected error occurred!');
-                }
+            // Check if there's a response and extract the message
+            if (error.response && error.response.data) {
+                const errorMessage = error.response.data.error
+                console.error(errorMessage);
+                alert(errorMessage)
+                setMessage('Failed to submit form!');
+            } else {
+                setMessage('An unexpected error occurred!');
             }
+        } finally {
+            setLoading(false); // Set loading to false after handling the response
+        }
     };
 
 
@@ -121,13 +158,13 @@ const WaitingListForm = () => {
 
         event.preventDefault();
 
-         // Check if user or email exists
-    //   const userExists = await userExist(inputValues.username, inputValues.emailcontact);
-    //     if (userExists) {
-    //         setMessage('A user with this username or email already exists!');
-    //         return; // Prevent form submission if user exists
-    //     } 
-         
+        // Check if user or email exists
+        //   const userExists = await userExist(inputValues.username, inputValues.emailcontact);
+        //     if (userExists) {
+        //         setMessage('A user with this username or email already exists!');
+        //         return; // Prevent form submission if user exists
+        //     } 
+
         const payload = {
             username: inputValues.username,
             farmname: inputValues.farmname,
@@ -166,6 +203,8 @@ const WaitingListForm = () => {
 
     return (
         <>
+            {loading && <LoadingOverlay />} {/* Show overlay when loading */}
+
             <section className='mt-10 mb-10 m-auto w-[80%] md:w-[50%] px-8 py-12 rounded-md border-solid border-[1px] border-[#afb8c299]'>
 
                 <h1 className='font-bold text-center text-[1rem] md:text-[1.5rem]'>Register Your Farm with Konectar</h1>
@@ -352,15 +391,22 @@ const WaitingListForm = () => {
 
 
                     {/* {error && <p className='text-error70 ease-in font-bold'>{error}</p>} */}
-                    <button type="submit"
-                        className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem] w-full'
-                    >
-                        Submit
-                    </button>
+
+                    
+                        <button type="submit"
+                            className='bg-[#009933] px-6 py-2 md:px-7 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem] w-full'
+                            disabled={loading}
+                        >
+                            {loading ? 'Submitting...' : 'Submit'} {/* Change button text */}
+                        </button>
+                  
+
                 </form>
 
                 {message && <p className='text-red-500'>{message}</p>}
             </section>
+
+
 
             {showModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
