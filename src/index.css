@@ -33,11 +33,13 @@
     transition: transform 0.2s ease;
 }
 
-li:hover .dropdown {
+/* li:hover .dropdown {
   display: block;
   
+} */
+.drop.active .dropdown {
+  display: block;
 }
-
 /* .arrow:hover{
  
   transform: rotate(180deg); 
