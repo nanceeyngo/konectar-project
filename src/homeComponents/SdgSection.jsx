@@ -35,6 +35,7 @@ const SdgSection = () => {
               className='h-[100%] w-[100%]'
               src={hoveredIndex === index ? image.hover : image.default}
               alt={image.alt}
+              loading="lazy"
             />
           </div>
         ))}

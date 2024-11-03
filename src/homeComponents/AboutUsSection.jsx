@@ -27,7 +27,7 @@ const AboutUsSection = () => {
             </div>
             
             <div className="w-full md:w-1/2 md:basis-[50%] mt-6 md:mt-0">
-            <img className="w-full h-auto object-cover rounded-lg" src={aboutus} alt="Hero Image"  />
+            <img className="w-full h-auto object-cover rounded-lg" src={aboutus} alt="Hero Image" loading="lazy"  />
               
                  
              </div>    

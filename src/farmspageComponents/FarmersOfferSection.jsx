@@ -21,7 +21,7 @@ const FarmersOfferSection = () => {
             </div>
 
             <div className='basis-[47%]'>
-                <img className='h-full w-full' src={pic1} alt="Picture 1" />
+                <img className='h-full w-full' src={pic1} alt="Picture 1" loading="lazy"/>
             </div>
 
            </div>
@@ -31,7 +31,7 @@ const FarmersOfferSection = () => {
            <div className='w-full flex justify-between items-center mt-10 gap-3 md:gap-0'>
 
             <div className='basis-[47%]'>
-                <img className='h-full w-full' src={pic2} alt="Picture 2" />
+                <img className='h-full w-full' src={pic2} alt="Picture 2" loading="lazy"/>
             </div>
 
 
@@ -57,7 +57,7 @@ const FarmersOfferSection = () => {
             </div>
 
             <div className='basis-[47%]'>
-                <img className='h-full w-full' src={pic3} alt="Picture 3" />
+                <img className='h-full w-full' src={pic3} alt="Picture 3" loading="lazy"/>
             </div>
 
            </div>

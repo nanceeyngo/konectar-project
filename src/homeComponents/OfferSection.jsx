@@ -13,21 +13,21 @@ const OfferSection = () => {
 
        <div className='flex flex-col md:flex-row gap-5 justify-center items-center mt-10'>
        <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%] w-full'>
-               <img className='w-[100%]' src={frame1} alt="SDG2" />
+               <img className='w-[100%]' src={frame1} alt="SDG2" loading="lazy" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Farmers</h1>
                <p className='mt-3'>Skip multiple middlemen and sell directly to businesses like... <b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'> <Link to="/FarmersPage"> Read More </Link> </b></p>
                <Link to="/WaitingListForm"><button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Join The Waitlist</button></Link>
               
            </div>
            <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%]'>
-               <img className='w-[100%]' src={frame2} alt="frame 2" />
+               <img className='w-[100%]' src={frame2} alt="frame 2" loading="lazy" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Wholesale Buyers</h1>
                <p className='mt-3'>Effortlessly Find, Order, and Receive High-quality Fruits and Vegetables... <b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'><Link to="/BuyersPage"> Read More </Link></b></p>
                <Link to="/ContactForm"><button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Contact Us</button></Link>
               
            </div>
            <div className='bg-[#ffffff] px-4 py-4 rounded-lg basis-[30%]'>
-               <img className='w-[100%]' src={frame3} alt="frame 3" />
+               <img className='w-[100%]' src={frame3} alt="frame 3" loading="lazy" />
                <h1 className='font-bold text-[1.2rem] mt-5'>Konectar for Logistics</h1>
                <p className='mt-3'>By becoming a 3rd-party logistics partner, you will gain access to...<b className='cursor-pointer text-[#009933] hover:text-[1.1rem] hover:text-[#2a6d2a]'><Link to="/TruckersPage"> Read More </Link></b></p>
               <Link to='/ContactForm'> <button className='bg-[#009933] px-3 py-2 text-white rounded-lg mt-3'>Contact Us</button></Link>

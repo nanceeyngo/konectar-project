@@ -243,7 +243,7 @@ const WaitingListForm = () => {
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
                         name='farmlocation'
-                        placeholder='Enter your city, state and Country'
+                        placeholder='Where is your farm located (city, state, country)?'
                         value={inputValues.farmlocation || ""}
                         onChange={handleInputChange} required />
                     <br></br><br></br>
@@ -353,7 +353,7 @@ const WaitingListForm = () => {
                     <input className='bg-[#dcd6ec99] mt-3 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
                         name='farmsize'
-                        placeholder='Select farm size e.g., 2-7 acres, less than 2 acres, more than 20 acres, etc.'
+                        placeholder='What is the approximate size of your farm (in, plots, acres or hectares e.g., 2-7 acres, less than 2 acres, more than 20 acres, etc.'
                         value={inputValues.farmsize || ""}
                         onChange={handleInputChange} required />
                     <br></br><br></br>

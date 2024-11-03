@@ -26,6 +26,7 @@ const HeroSection = () => {
       <img 
         src={images[currentImageIndex]} 
         alt="Hero Background" 
+        loading="lazy"
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
         style={{ opacity: 1 }} 
       />

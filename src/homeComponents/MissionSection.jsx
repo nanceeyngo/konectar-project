@@ -18,6 +18,7 @@ const MissionSection = () => {
         <img
           src={Image1}
           alt="mission image"
+          loading="lazy"
           className="w-full h-auto object-cover rounded-lg"
         />
       </div>

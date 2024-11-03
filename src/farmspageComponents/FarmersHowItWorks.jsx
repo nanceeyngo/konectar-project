@@ -27,8 +27,8 @@ const FarmersHowItWorks = () => {
              </div>
  
              <div className='basis-[30%] flex items-end gap-3'>
-                 <div className='basis-[60%]'><img className='' src={phone1} alt="Picture 1" /></div>
-                 <div className='basis-[60%] mb-[-2rem] md:mb-[-4rem]'><img className='' src={phone2} alt="Picture 2" /></div>
+                 <div className='basis-[60%]'><img className='' src={phone1} alt="Picture 1" loading="lazy"/></div>
+                 <div className='basis-[60%] mb-[-2rem] md:mb-[-4rem]'><img className='' src={phone2} alt="Picture 2" loading="lazy"/></div>
              </div>
  
             </div>
@@ -38,8 +38,8 @@ const FarmersHowItWorks = () => {
             <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-14 px-12 md:px-20'>
  
             <div className='basis-[35%] flex items-end gap-3'>
-                 <div className='basis-[60%]'><img className='' src={phone3} alt="Picture 1" /></div>
-                 <div className='basis-[60%] mb-[-3rem] md:mb-[-5rem]'><img className='' src={phone4} alt="Picture 2" /></div>
+                 <div className='basis-[60%]'><img className='' src={phone3} alt="Picture 1" loading="lazy"/></div>
+                 <div className='basis-[60%] mb-[-3rem] md:mb-[-5rem]'><img className='' src={phone4} alt="Picture 2" loading="lazy"/></div>
              </div>
              
              <div className='basis-[65%] md:basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
@@ -71,7 +71,7 @@ const FarmersHowItWorks = () => {
              </div>
  
              <div className='basis-[20%]'>
-                 <img className='[60%]' src={phone5} alt="Picture 3" />
+                 <img className='[60%]' src={phone5} alt="Picture 3" loading="lazy"/>
              </div>
  
             </div>

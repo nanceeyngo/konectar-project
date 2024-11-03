@@ -108,6 +108,7 @@ const Option = (props) => {
     );
 };
 
+
 export default function Example({ handleChange, handleOptionText }) {
 
     const [selectedOptions, setSelectedOptions] = useState({
@@ -182,7 +183,7 @@ export default function Example({ handleChange, handleOptionText }) {
                 components={{
                     Option
                 }}
-                placeholder="Select produce"
+                placeholder=" What types of fruits and vegetables do you grow on your farm?"
                 onChange={handleSelectChange('typesofproduce')}
                 allowSelectAll={true}
                 value={selectedOptions.typesofproduce}
@@ -209,7 +210,7 @@ export default function Example({ handleChange, handleOptionText }) {
                 closeMenuOnSelect={true}
                 hideSelectedOptions={false}
 
-                placeholder="Select frequency"
+                placeholder="How often do you supply fruits and vegetables to buyers/businesses?"
                 onChange={(selectedOption) => {
                     handleSelectChange('supplyfrequency')(selectedOption);
                     if (selectedOption?.value !== 'others') {
@@ -255,7 +256,7 @@ export default function Example({ handleChange, handleOptionText }) {
                 closeMenuOnSelect={true}
                 hideSelectedOptions={false}
 
-                placeholder="What distribution channels are you currently using?"
+                placeholder="How do you currently distribute your produce?"
                 onChange={handleSelectChange('distributionchannels')}
                 allowSelectAll={true}
                 value={selectedOptions.distributionchannels}
@@ -283,7 +284,7 @@ export default function Example({ handleChange, handleOptionText }) {
                 components={{
                     Option
                 }}
-                placeholder="Select additional offerings"
+                placeholder="Do you offer any additional services or products related to your farm?"
                 onChange={handleSelectChange('additionalofferings')}
                 allowSelectAll={true}
                 value={selectedOptions.additionalofferings}

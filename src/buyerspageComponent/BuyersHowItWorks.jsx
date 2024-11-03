@@ -31,7 +31,7 @@ const BuyersHowItWorks = () => {
              </div>
  
              <div className='basis-[30%] flex items-end gap-3'>
-                 <div className=''><img className='' src={phone3} alt="Picture 1" /></div>
+                 <div className=''><img className='' src={phone3} alt="Picture 1" loading="lazy"/></div>
                  
              </div>
             </div>
@@ -41,7 +41,7 @@ const BuyersHowItWorks = () => {
             <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-14 px-12 md:px-20'>
  
             <div className='basis-[30%] flex items-end gap-3'>
-                 <div className=''><img className='' src={phone2} alt="Picture 2" /></div>
+                 <div className=''><img className='' src={phone2} alt="Picture 2" loading="lazy"/></div>
                 
              </div>
              
@@ -75,7 +75,7 @@ const BuyersHowItWorks = () => {
              </div>
  
              <div className='basis-[30%] flex items-center gap-3'>
-                 <div className=''><img className='' src={phone1} alt="Picture 3" /></div>
+                 <div className=''><img className='' src={phone1} alt="Picture 3" loading="lazy"/></div>
               
              </div>
  

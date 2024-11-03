@@ -7,7 +7,7 @@ const OurVisionSection = () => {
             <section className="flex flex-col-reverse md:flex-row text-left items-center gap-9 justify-center my-16 px-8 md:px-24">
 
                 <div className="w-full md:w-1/2 md:basis-[50%] mt-6 md:mt-0">
-                    <img className="w-full h-auto object-cover rounded-lg" src={pic1} alt="Vision Image" />
+                    <img className="w-full h-auto object-cover rounded-lg" src={pic1} alt="Vision Image" loading="lazy"/>
 
 
                 </div>

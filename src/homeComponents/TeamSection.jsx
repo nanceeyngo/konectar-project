@@ -25,6 +25,7 @@ const TeamSection = () => {
                 // }}
                 src={member.image}
                 alt={`Team Member ${index + 1}`}
+              loading="lazy"
               />
             </div>
             <div className="text-center">
