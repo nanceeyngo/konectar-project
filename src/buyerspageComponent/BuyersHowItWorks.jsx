@@ -49,7 +49,7 @@ const BuyersHowItWorks = () => {
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 2</h1>
              <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Place Orders, Negotiate and Secure Payment</h1>
                 
-                    <p className='text-[0.8rem] md:text-[1.4rem] mt-3 md:mt-5'>After selecting the produce that fitst your needs, place an order through the platform. Negotiate 
+                    <p className='text-[0.8rem] md:text-[1.4rem] mt-3 md:mt-5'>After selecting the produce that fits your needs, place an order through the platform. Negotiate 
                         terms with the supplier and finalize the deal. Our secure escrow payment system ensures your money 
                         is safely held until you confirm that the delivery meets your expectations.
                     </p>

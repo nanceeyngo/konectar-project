@@ -6,6 +6,7 @@ import HeroImg2 from '../assets/images/Hero Image (2).png';
 import HeroImg3 from '../assets/images/Hero Image (3).png';
 import HeroImg4 from '../assets/images/Hero Image (4).png';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from "react-scroll";
 
 const images = [Hero, HeroImg, HeroImg1, HeroImg2, HeroImg3, HeroImg4];
 
@@ -49,7 +50,10 @@ const HeroSection = () => {
             type='button'
             className='bg-transparent border-[#009933] border px-6 py-2 md:px-6 md:py-2.5 rounded-lg text-[0.8rem] md:text-[1rem]'
           >
-            Learn More
+           <ScrollLink to="offers"
+           smooth={true}
+           duration={500}
+           offset={-60}>Learn More</ScrollLink>
           </button>
         </div>
       </div>
