@@ -270,83 +270,6 @@ const WaitingListForm = () => {
                         onChange={handleInputChange} required />
                     <br></br><br></br>
 
-                    {/* <div className='text-[0.7rem] md:text-[0.9rem] flex bg-[#dcd6ec99] p-4 rounded-md md:w-[70%] gap-8'>
-
-
-                        <div className='flex flex-col gap-4'>
-
-                            <div><input className='bg-[#32be51]'
-                                type="checkbox"
-                                name='checkbox1'
-                                value={inputValues.checkbox1 || ""}
-                                onChange={handleInputChange} required />
-
-
-                                <label className='ml-2' htmlFor='checkbox1'>
-                                    Leafy Greens  </label><br></br></div>
-
-                            <div><input className='bg-[#32be51]'
-                                type="checkbox"
-                                name='checkbox2'
-                                value={inputValues.checkbox2 || ""}
-                                onChange={handleInputChange} required />
-
-
-                                <label className='ml-2' htmlFor='checkbox2'>
-                                    Root Vegetables  </label><br></br></div>
-
-
-                            <div><input className='bg-[#32be51]'
-                                type="checkbox"
-                                name='checkbox3'
-                                value={inputValues.checkbox3 || ""}
-                                onChange={handleInputChange} required />
-
-
-                                <label className='ml-2' htmlFor='checkbox3'>
-                                    Cruciferous Vegetables  </label><br></br></div>
-
-                        </div>
-
-
-                        <div className='flex flex-col gap-4'>
-
-                            <div><input className='bg-[#32be51]'
-                                type="checkbox"
-                                name='checkbox1'
-                                value={inputValues.checkbox1 || ""}
-                                onChange={handleInputChange} required />
-
-
-                                <label className='ml-2' htmlFor='checkbox1'>
-                                    Starchy Vegetables  </label><br></br></div>
-
-                            <div><input className='bg-[#32be51]'
-                                type="checkbox"
-                                name='checkbox2'
-                                value={inputValues.checkbox2 || ""}
-                                onChange={handleInputChange} required />
-
-
-                                <label className='ml-2' htmlFor='checkbox2'>
-                                    Fruiting Vegetables  </label><br></br></div>
-
-
-                            <div><input className='bg-[#32be51]'
-                                type="checkbox"
-                                name='checkbox3'
-                                value={inputValues.checkbox3 || ""}
-                                onChange={handleInputChange} required />
-
-
-                                <label className='ml-2' htmlFor='checkbox3'>
-                                    Fruiting Vegetables  </label><br></br></div>
-
-                        </div>
-
-
-                    </div> */}
-
                     <label className='font-bold' htmlFor='farmsize'>
                         Farm Size  </label><br></br>
 
@@ -449,3 +372,81 @@ const WaitingListForm = () => {
 };
 
 export default WaitingListForm;
+
+
+{/* <div className='text-[0.7rem] md:text-[0.9rem] flex bg-[#dcd6ec99] p-4 rounded-md md:w-[70%] gap-8'>
+
+
+                        <div className='flex flex-col gap-4'>
+
+                            <div><input className='bg-[#32be51]'
+                                type="checkbox"
+                                name='checkbox1'
+                                value={inputValues.checkbox1 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2' htmlFor='checkbox1'>
+                                    Leafy Greens  </label><br></br></div>
+
+                            <div><input className='bg-[#32be51]'
+                                type="checkbox"
+                                name='checkbox2'
+                                value={inputValues.checkbox2 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2' htmlFor='checkbox2'>
+                                    Root Vegetables  </label><br></br></div>
+
+
+                            <div><input className='bg-[#32be51]'
+                                type="checkbox"
+                                name='checkbox3'
+                                value={inputValues.checkbox3 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2' htmlFor='checkbox3'>
+                                    Cruciferous Vegetables  </label><br></br></div>
+
+                        </div>
+
+
+                        <div className='flex flex-col gap-4'>
+
+                            <div><input className='bg-[#32be51]'
+                                type="checkbox"
+                                name='checkbox1'
+                                value={inputValues.checkbox1 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2' htmlFor='checkbox1'>
+                                    Starchy Vegetables  </label><br></br></div>
+
+                            <div><input className='bg-[#32be51]'
+                                type="checkbox"
+                                name='checkbox2'
+                                value={inputValues.checkbox2 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2' htmlFor='checkbox2'>
+                                    Fruiting Vegetables  </label><br></br></div>
+
+
+                            <div><input className='bg-[#32be51]'
+                                type="checkbox"
+                                name='checkbox3'
+                                value={inputValues.checkbox3 || ""}
+                                onChange={handleInputChange} required />
+
+
+                                <label className='ml-2' htmlFor='checkbox3'>
+                                    Fruiting Vegetables  </label><br></br></div>
+
+                        </div>
+
+
+                    </div> */}

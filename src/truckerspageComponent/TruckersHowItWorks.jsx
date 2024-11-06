@@ -13,7 +13,7 @@ const TruckersHowItWorks = () => {
             
             <h1 className='text-center font-Manrope font-bold text-[2rem] md:text-[2.8rem] leading-tight md:leading-snug'>How It Works in 3 Simple Steps</h1>
  
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-7 md:px-20'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 px-6 md:px-20'>
  
              <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 1</h1>
@@ -26,7 +26,7 @@ const TruckersHowItWorks = () => {
                 
              </div>
  
-             <div className='basis-[30%] flex items-end gap-3'>
+             <div className='basis-[35%] md:basis-[30%] flex items-end gap-3'>
                  <div className='basis-[60%]'><img className='' src={phone1} alt="Picture 1" loading="lazy"/></div>
                  <div className='basis-[60%] mb-[-2rem] md:mb-[-4rem]'><img className='' src={phone2} alt="Picture 2" loading="lazy"/></div>
              </div>
@@ -35,9 +35,9 @@ const TruckersHowItWorks = () => {
  
             
             
-            <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-20 px-7 md:px-20'>
+            <div className='w-full flex justify-between gap-6 items-center mt-10 md:mt-20 px-6 md:px-20'>
  
-            <div className='basis-[30%] flex items-end gap-3'>
+            <div className='basis-[35%] md:basis-[30%] flex items-end gap-3'>
                  <div className='basis-[70%]'><img className='' src={phone3} alt="Picture 1" loading="lazy"/></div>
                  <div className='basis-[60%] mb-[-2rem] md:mb-[-3rem]'><img className='' src={phone4} alt="Picture 2" loading="lazy"/></div>
              </div>
@@ -58,7 +58,7 @@ const TruckersHowItWorks = () => {
  
            
            
-            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 md:mt-20 px-7 md:px-20'>
+            <div className='w-full flex justify-between gap-2 md:gap-0 items-center mt-10 md:mt-20 px-6 md:px-20'>
  
             <div className='basis-[65%] bg-[#b6d8c1] rounded-xl text-[#003311] p-5 md:p-10'>
              <h1 className='text-[1rem] md:text-[1.8rem] font-bold md:ml-32'>Step 3</h1>
@@ -71,7 +71,7 @@ const TruckersHowItWorks = () => {
                 
              </div>
  
-             <div className='basis-[30%] flex items-center gap-3'>
+             <div className='basis-[35%] md:basis-[30%] flex items-center gap-3'>
                  <div className='basis-[70%]'><img className='' src={phone5} alt="Picture 1" loading="lazy"/></div>
                  <div className='basis-[70%]'><img className='' src={phone6} alt="Picture 2" loading="lazy"/></div>
              </div>

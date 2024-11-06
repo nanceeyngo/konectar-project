@@ -18,7 +18,7 @@ const FarmersWhatWeOffer = () => {
 
                 <div className='flex justify-center items-center gap-24 mt-8'>
 
-                    <div className={`md:h-[80px] md:w-[300px] text-white py-4 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-4' : 'bg-[#07190B]'
+                    <div className={` md:h-[80px] md:w-[300px] text-white py-4 md:py-6 px-5 md:px-5 rounded-lg cursor-default  ${isHovered ? 'bg-[#030a04] text-[0.7rem] sm:text-[0.8rem] text-center py-4 md:py-4' : 'bg-[#07190B]'
                         }`}
                         onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
 

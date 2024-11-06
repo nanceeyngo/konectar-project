@@ -1,3 +1,32 @@
+export const options2 = [
+  { value: 'twice-a-week', label: 'Twice a week' },
+  { value: 'once-a-month', label: 'Once a month' },
+  { value: 'others', label: 'Others' },
+]
+
+export const options3 = [
+  { value: 'local-market', label: 'Local market' },
+  { value: 'wholesalers', label: 'Wholesalers' },
+  { value: 'direct-sales', label: 'Direct sales' },
+]
+
+export const options4 = [
+  { value: 'organic-certification', label: 'Organic Certification' },
+  { value: 'farm-tours-or-educational-programs', label: 'Farm Tours or Educational Programs' },
+  { value: 'direct-to-consumer-sales', label: 'Direct-to-Consumer sales' },
+  { value: 'value-added-products', label: 'Value-Added Products' },
+  { value: 'packaging-service', label: 'Packaging Service' },
+  { value: 'pesticide-free-produce', label: 'Pesticide-Free Produce' },
+]
+
+export const options5 = [
+  { value: 'linkedin', label: 'LinkedIn' },
+  { value: 'facebook', label: 'Facebook' },
+  { value: 'instagram', label: 'Instagram' },
+  { value: 'friends', label: 'Friends' }
+ 
+]
+
 export const fruitOptions = [
     { value: 'mango', label: 'Mango ' },
     { value: 'pawpaw', label: 'Pawpaw ' },

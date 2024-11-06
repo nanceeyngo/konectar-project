@@ -89,18 +89,18 @@ export interface FruitOption {
   }
 
 
-  export const groupedOptions: readonly GroupedOption[] = [
-    {
-      label: 'Fruits',
-      options: fruitOptions,
-    },
-    {
-      label: 'Vegetables',
-      options: vegetableOptions,
-    },
+  // export const groupedOptions: readonly GroupedOption[] = [
+  //   {
+  //     label: 'Fruits',
+  //     options: fruitOptions,
+  //   },
+  //   {
+  //     label: 'Vegetables',
+  //     options: vegetableOptions,
+  //   },
 
-    {
-      label: 'Vegetables',
-      options: fruityvegetablesOptions,
-    },
-  ];
+  //   {
+  //     label: 'Vegetables',
+  //     options: fruityvegetablesOptions,
+  //   },
+  // ];

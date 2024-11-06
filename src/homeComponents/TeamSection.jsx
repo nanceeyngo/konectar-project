@@ -5,7 +5,7 @@ const TeamSection = () => {
     <>
       <section className="text-center px-12 mt-10">
         <h1 className="text-[2rem] md:text-[2.8rem] font-bold text-[#0d2727]">Our Team: The Beacons</h1>
-        <div className="w-[60%] m-auto">
+        <div className="md:w-[60%] m-auto">
           <p className="mt-5 text-[#003311] font-semibold">
             We are a passionate and diverse group of professionals, driven by innovation and a shared commitment to delivering exceptional results.
           </p>
