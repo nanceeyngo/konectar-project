@@ -205,7 +205,7 @@ const WaitingListForm = () => {
         <>
             {loading && <LoadingOverlay />} {/* Show overlay when loading */}
 
-            <section className='mt-10 mb-10 m-auto w-[80%] md:w-[50%] px-8 py-12 rounded-md border-solid border-[1px] border-[#afb8c299]'>
+            <section className='mt-10 mb-10 m-auto w-[90%] md:w-[50%] px-8 py-12 rounded-md border-solid border-[1px] border-[#afb8c299]'>
 
                 <h1 className='font-bold text-center text-[1rem] md:text-[1.5rem]'>Register Your Farm with Konectar</h1>
 
