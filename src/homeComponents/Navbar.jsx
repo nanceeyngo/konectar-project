@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 const Navbar = () => {
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   const toggleNavbar = () => {
