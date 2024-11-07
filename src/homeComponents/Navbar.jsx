@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 const Navbar = () => {
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
 
   const toggleNavbar = () => {
@@ -65,21 +65,21 @@ const Navbar = () => {
     <div>
 
     {mobileMenu && (
-      <div onClick={toggleNavbar} className='lg:hidden w-full py-12 fixed bg-white flex flex-col border-solid border-[1px] border-[#4665] justify-center items-center top-15  z-50'>
+      <div className='lg:hidden w-full py-12 fixed bg-white ease-in-out duration-500 flex flex-col border-solid border-[1px] border-[#4665] justify-center items-center top-15  z-50'>
       <ul className=''>
       
-        <li className='py-4'><Link to='/' onMouseEnter={() => import("../pages/home")}>Home</Link></li>
-        <li className='py-4'><Link to='/about' onMouseEnter={() => import("../pages/about")}>About</Link></li>
+        <li  onClick={toggleNavbar} className='py-4'><Link to='/' onMouseEnter={() => import("../pages/home")}>Home</Link></li>
+        <li  onClick={toggleNavbar} className='py-4'><Link to='/about' onMouseEnter={() => import("../pages/about")}>About</Link></li>
         <li className={`py-4 drop ${isHovered ? 'active' : ''}`}  onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}><Link to='/'>Our Services<span className={`font-extrabold arrow ${isHovered ? 'rotate' : ''}`}><IoIosArrowDown /></span></Link>
-        <ul className='dropdown hidden '>
+        <ul  onClick={toggleNavbar} className='dropdown hidden '>
         <li className='py-4 block mt-4'><Link to='/FarmersPage' onMouseEnter={() => import("../pages/FarmersPage")}>Konectar for Farmers</Link></li>
         <li className='py-4 block'><Link to='/BuyersPage' onMouseEnter={() => import("../pages/BuyersPage")}>Konectar for Buyers</Link></li>
         <li className='py-4  block'><Link to='/TruckersPage' onMouseEnter={() => import("../pages/TruckersPage")}>Konectar for Truckers</Link></li>
         </ul>
         </li>
-        <li className='py-4'><Link to='/blog'>Blog</Link></li>
+        <li  onClick={toggleNavbar} className='py-4'><Link to='/blog'>Blog</Link></li>
       </ul>
-      <Link to="/WaitingListForm" onMouseEnter={() => import("../pages/WaitingListForm")}><button type="button"
+      <Link to="/WaitingListForm"  onClick={toggleNavbar} onMouseEnter={() => import("../pages/WaitingListForm")}><button type="button"
        className='bg-[#009933] px-7 rounded-lg py-2 text-white text-[0.8rem] md:text-[1rem]'>Join Waitlist</button></Link>
      
       
