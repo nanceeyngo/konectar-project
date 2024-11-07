@@ -4,6 +4,7 @@ import Logo from '../assets/images/KLogo.png';
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
 
@@ -81,8 +82,8 @@ const Footer = () => {
 
                     <h1 className='font-bold'>Company</h1>
 
-                    <p className='hover:text-[#009933]'>About</p>
-                    <p className='hover:text-[#009933]'>Contact</p>
+                    <Link to='/about'><p className='hover:text-[#009933]'>About</p></Link>
+                    <Link to='ContactForm'><p className='hover:text-[#009933]'>Contact</p></Link>
                     <p className='hover:text-[#009933]'>Blog</p>
 
 
@@ -95,7 +96,10 @@ const Footer = () => {
 
                     <p className='hover:text-[#009933]'>Product</p>
                     <p className='hover:text-[#009933]'>Blog</p>
-                    <p className='hover:text-[#009933]'>FAQs</p>
+                    <ScrollLink to="faq"
+           smooth={true}
+           duration={500}
+           offset={-60}><p className='hover:text-[#009933]'>FAQs</p></ScrollLink>
 
 
                 </div>
@@ -119,7 +123,7 @@ const Footer = () => {
 
                     <p className=''>Address: ITF House, Plot 12, Funsho Williams Avenue, Iponri Surulere</p>
                     <p className=''>Phone: 09070645178</p>
-                    <p className=''>konectar.ag@gmail.com</p>
+                    <a className='hover:text-[#009933]' href="mailto:konectar.ag@gmail.com">konectar.ag@gmail.com</a>
 
 
                 </div>

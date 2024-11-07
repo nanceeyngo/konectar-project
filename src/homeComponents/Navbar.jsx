@@ -65,7 +65,7 @@ const Navbar = () => {
     <div>
 
     {mobileMenu && (
-      <div className='lg:hidden w-full py-12 bg-white ease-in-out duration-500 flex flex-col border-solid border-[1px] border-[#4665] justify-center items-center fixed top-15'>
+      <div className='lg:hidden w-full py-12 bg-white ease-in-out duration-500 flex flex-col border-solid border-[1px] border-[#4665] justify-center items-center fixed top-15 z-50'>
       <ul className=''>
       
         <li  onClick={toggleNavbar} className='py-4'><Link to='/' onMouseEnter={() => import("../pages/home")}>Home</Link></li>

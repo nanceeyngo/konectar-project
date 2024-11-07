@@ -20,7 +20,7 @@ const TruckersBenefitSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Consistent Demand for Services</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>By Partnering with Konectar, Cold Chain Logistics providers gain access to a growing network 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>By Partnering with Konectar, Cold Chain Logistics providers gain access to a growing network 
                             of farmers and buyers, ensuring a steady demand for temperature-controlled transportation services. 
                             This creates a reliable stream of business opportunities within the agricultural sector.
 
@@ -41,7 +41,7 @@ const TruckersBenefitSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Optimized Route Planning</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>With Konectar's platform, logistics providers can plan and optimize their delivery routes 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>With Konectar's platform, logistics providers can plan and optimize their delivery routes 
                             based on real-time orders from farmers and buyers. This helps reduce operational costs, improve 
                             delivery times, and maximize vehicle utilization.
 
@@ -61,7 +61,7 @@ const TruckersBenefitSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Enhanced Market Visibility</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Cold Chain providers listed on Konectar benefit from increased visibility to farmers and 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>Cold Chain providers listed on Konectar benefit from increased visibility to farmers and 
                             wholesale buyers who require reliable logistics for transporting perishable goods. This 
                             enhances their market presence and allows them to build long-term partnerships with key players 
                             in the agricultural supply chain.

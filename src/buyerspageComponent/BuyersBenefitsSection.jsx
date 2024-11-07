@@ -18,7 +18,7 @@ const BuyersBenefitsSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Quality Assurance</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Buyers can source fresh produce from verified farmers through the platform, ensuring 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>Buyers can source fresh produce from verified farmers through the platform, ensuring 
                             high-quality standards. The inclusion of quality checks at collection centers further 
                             guarantees that buyers receive only the best products.
 
@@ -39,7 +39,7 @@ const BuyersBenefitsSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Time and Cost Efficiency</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Konectar streamlines the procurement process, allowing buyer to easily search for and 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>Konectar streamlines the procurement process, allowing buyer to easily search for and 
                             connect with suppliers based on specific needs. This saves time and reduces costs associated 
                             with traditional sourcing methods.
 
@@ -59,7 +59,7 @@ const BuyersBenefitsSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Real-Time Tracking and Transparency</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Buyers can track their shipments in real-time, enhancing transparency throughout the deliver 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>Buyers can track their shipments in real-time, enhancing transparency throughout the deliver 
                             process. This allows for the better inventory management and ensures timely deliver of fresh produce.
 
                         </p>

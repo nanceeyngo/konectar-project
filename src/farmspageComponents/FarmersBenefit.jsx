@@ -18,7 +18,7 @@ const FarmersBenefit = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Direct Market Access</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Konectar connects farmers directly with wholesale buyers, eliminating middlemen and
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>Konectar connects farmers directly with wholesale buyers, eliminating middlemen and
                             allowing them to receive fair prices for their produce. This direct access enhances their market 
                             reach and boosts profitability.
 
@@ -38,7 +38,7 @@ const FarmersBenefit = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Secure Transactions with Escrow Payments</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>The escrow payment system ensures farmers receive payments only when buyers confirms satisfaction 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>The escrow payment system ensures farmers receive payments only when buyers confirms satisfaction 
                             with the delivery. This builds trust and reduces the risk of payment delays, providing peace of mind 
                             for farmers.
 
@@ -58,7 +58,7 @@ const FarmersBenefit = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Cold Chain Logistics Support</p>
 
-                        <p className='mt-8 text-[0.8rem] md:text-[1.3rem]'>Through partnerships with our Third-party Cold-Chain Logistics providers. We help farmers preserve 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>Through partnerships with our Third-party Cold-Chain Logistics providers. We help farmers preserve 
                             the freshness and quality of their produce during transportation. This reduces post-harvest losses and 
                             increases the likelihood of securing better prices from buyers.
 

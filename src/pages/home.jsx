@@ -13,6 +13,7 @@ import FAQSection from '../homeComponents/FAQSection';
 import AboutUsSection from '../homeComponents/AboutUsSection';
 import OurVisionSection from '../homeComponents/OurVisionSection';
 import ProductsSection from '../homeComponents/ProductsSection';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -53,7 +54,7 @@ const scrollToTop = () => {
     
     <FAQSection />
     <TeamSection />
-       
+  
        {/* Scroll to Top Button */}
       {showButton && (
         <button
@@ -63,6 +64,7 @@ const scrollToTop = () => {
           Back to Top ↑
         </button>
       )}
+
         </>
     );
 };
