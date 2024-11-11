@@ -164,6 +164,9 @@ const WaitingListForm = () => {
         //         setMessage('A user with this username or email already exists!');
         //         return; // Prevent form submission if user exists
         //     } 
+        const fruits = options.typesofproduce.filter(option =>option.category==='fruit').map(option => option.value)
+        const vegetables = options.typesofproduce.filter(option =>option.category==='vegetable').map(option => option.value)
+        const fruityVegetables = options.typesofproduce.filter(option =>option.category==='fruity-vegetable').map(option => option.value)
 
         const payload = {
             username: inputValues.username,
@@ -174,7 +177,7 @@ const WaitingListForm = () => {
                 emailcontact: inputValues.emailcontact,
                 phoneno: inputValues.phoneno,
             },
-            typeofproduce: options.typesofproduce.map(option => option.value || ''), // Use options state
+            typeofproduce: {fruits, vegetables, fruityVegetables}, // Use options state
             supplyfrequency: options.supplyfrequency?.value || '',
             customSupplyfrequency: inputValues.other,
             distributionchannels: options.distributionchannels?.value || '',
@@ -450,3 +453,7 @@ export default WaitingListForm;
 
 
                     </div> */}
+
+
+
+                  

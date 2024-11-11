@@ -245,4 +245,13 @@ export default function Example({ handleChange, handleOptionText }) {
     //     handleChange(selectedOptions4)
     // };
 
+    // fruits: [
+    //     'mango',
+    //     'pawpaw'
+    // ],
+    // vegetables: [
+    //     'carrot',
+    //     'sweetpotatoes'
+    // ],
+    // fruityvegetables
 
